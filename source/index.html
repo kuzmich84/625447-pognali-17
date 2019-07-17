@@ -1,12 +1,211 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
-gi
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+<body>
+<header class="page-header">
+  <div class="main-nav">
+    <img class="page-header__logo-image" src="http://placehold.it/100x19" alt="Погнали?" width="100" height="19">
+    <button class="main-nav__toggle--open" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <img class="page-header__logo-image--popup" src="http://placehold.it/100x19" alt="Погнали?" width="100" height="19">
+      <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
+      <nav class="site-nav">
+        <ul class="site-nav__list site-list">
+          <li class="site-list__item"><a class="site-list_link" href="">О СЕРВИСЕ</a></li>
+          <li class="site-list__item"><a class="site-list_link" href="">НАПРАВЛЕНИЯ</a></li>
+          <li class="site-list__item"><a class="site-list_link" href="">ПОПУТЧИКИ</a></li>
+        </ul>
+      </nav>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__authorization" href="#">АВТОРИЗАЦИЯ</a>
+        </li>
+      </ul>
+      <div class="main-nav__contacts contacts">
+        <p class="contacts__phone">8 800 555-86-28</p>
+        <p class="contacts__email">mail@htmlacademy.ru</p>
+      </div>
+      <div class="main-nav__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
+          <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
+        </ul>
+      </div>
+    </div>
+    <h2 class="main-nav__title">В путешествие с крутыми попутчиками!</h2>
+    <ul class="main-nav__list user-nav">
+      <li class="user-nav__item"><a class="user-nav__phone" href="#">Контактный телефон</a></li>
+      <li class="user-nav__item"><a class="user-nav__email" href="#">Регистрация</a></li>
+      <li class="user-nav__item"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
+    </ul>
+  </div>
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden">Приложение Погнали</h1>
+  <section class="preview">
+    <p class="preview__blockquote">«Лучшее приложение,что я видел в жизни!»</p>
+    <p class="preview__blockquote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+    <ul class="guide-site__list guide-site">
+      <li class="guide-site__item">Выберите направление</li>
+      <li class="guide-site__item">Изучите идеи путешественников</li>
+      <li class="guide-site__item">Находите тех, кто похож на вас</li>
+      <li class="guide-site__item">Путешествуйте вместе!</li>
+    </ul>
+  </section>
+  <section class="about-service">
+    <h2 class="about-service__title">О сервисе</h2>
+    <p class="about-service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+      своими идеями путешествий и черпайте вдохновение в чужих. </p>
+    <b class="about-service__text">А если найдете кого-то близкого по духу — скорее зовите в
+      совместный трип!</b>
+  </section>
+  <section class="direction">
+    <h2 class="direction__title">Направления</h2>
+    <p class="direction__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
+      отправиться и чем можно там заняться.</p>
+    <ul class="direction__list countries">
+      <li class="countries__item">
+        <img class="countries__image" src="http://placehold.it/270x110" alt="Тайланд" width="270" height="110">
+        <div class="countries__wrapper">
+          <img class="countries__flag" src="http://placehold.it/35x24" alt="Флаг Тайланда" width="35" height="24">
+          <h3 class="countries__title">Тайланд</h3>
+          <span class="countries__rating">18321</span>
+          <p class="countries__text">Джунгли зовут!</p>
+        </div>
+      </li>
+      <li class="countries__item">
+        <img class="countries__image" src="http://placehold.it/270x110" alt="Франция" width="270" height="110">
+        <div class="countries__wrapper">
+          <img class="countries__flag" src="http://placehold.it/35x24" alt="Флаг Франции" width="35" height="24">
+          <h3 class="countries__title">Франция</h3>
+          <span class="countries__rating">12518</span>
+          <p class="countries__text">Трэ бьен, манифик!</p>
+        </div>
+      </li>
+      <li class="countries__item">
+        <img class="countries__image" src="http://placehold.it/270x110" alt="Чехия" width="270" height="110">
+        <div class="countries__wrapper">
+          <img class="countries__flag" src="http://placehold.it/35x24" alt="Флаг Чехии" width="35" height="24">
+          <h3 class="countries__title">Чехия</h3>
+          <span class="countries__rating">5326</span>
+          <p class="countries__text">Закоулки старой Европы</p>
+        </div>
+      </li>
+    </ul>
+    <a class="button direction__button" href="form.html">Показать все</a>
+  </section>
+  <section class="users">
+    <h2 class="users__title title">Попутчики</h2>
+    <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+      коктейль, а другому маршрут для хайкинга.</p>
+    <b class="users__text">Теперь можно легко найти единомышленников!</b>
+    <ul class="users__list users-cards">
+      <li class="users-cards__item">
+        <div class="users-level">
+          <span class="users-level__number">99</span>
+          <span class="users-level__desc">level</span>
+        </div>
+        <img class="users-cards__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="аваторка пользователя">
+        <ul class="users-flag__list  flag-list">
+          <li class="flag-list__item"><img class="flag-list__image--sri-lanka" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+          <li class="flag-list__item"><img class="flag-list__image--seychelles" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+          <li class="flag-list__item"><img class="flag-list__image--thailand" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+        </ul>
+        <span class="users__presence users__presence--off-line"></span>
+        <h3 class="users__name">Таня Фирсова</h3>
+        <ul class="users-tags__list tag-list">
+          <li class="tag-list__item">#ЗОЖ</li>
+          <li class="tag-list__item">#ПП</li>
+          <li class="tag-list__item">#Фитнес</li>
+          <li class="tag-list__item">#пляж</li>
+          <li class="tag-list__item">#авокадо</li>
+          <li class="tag-list__item">#смузи</li>
+        </ul>
+        <ul class="users-transport__list transport-list ">
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет">
+          </li>
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус">
+          </li>
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед">
+          </li>
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком">
+          </li>
+        </ul>
+      </li>
+      <li class="users-cards__item">
+        <div class="users-level">
+          <span class="users-level__number">80</span>
+          <span class="users-level__desc">level</span>
+        </div>
+        <img class="users-cards__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="аваторка пользователя">
+        <ul class="users-flag__list  flag-list">
+          <li class="flag-list__item"><img class="flag-list__image--belgium" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+          <li class="flag-list__item"><img class="flag-list__image--czech" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+        </ul>
+        <span class="users__presence users__presence--on-line"></span>
+        <h3 class="users__name">Петя Демин</h3>
+        <ul class="users-tags__list tag-list">
+          <li class="tag-list__item">#бургер</li>
+          <li class="tag-list__item">#бар</li>
+          <li class="tag-list__item">#футбол</li>
+          <li class="tag-list__item">#концерт</li>
+          <li class="tag-list__item">#крафт</li>
+        </ul>
+        <ul class="users-transport__list transport-list ">
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет">
+          </li>
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус">
+          </li>
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед">
+          </li>
+          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком">
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a class="button users__button" href="catalog.html">Показать всех</a>
+  </section>
+  <section class="rate">
+    <h2 class="rate__title">Добавьте свой профиль</h2>
+    <img class="rate__icon" src="http://placehold.it/99x99" width="99" height="99" alt="Иконка">
+    <ul class="rate__list rate-list">
+      <li class="rate-list__item">
+        <p class="rate-list__desc">Базовое размещение</p>
+        <p class="rate-list__desc">Бесплатно</p>
+        <span class="rate-list__number">1</span>
+      </li>
+      <li class="rate-list__item">
+        <p class="rate-list__desc">Вывод на первых позициях</p>
+        <p class="rate-list__desc">99 руб./мес</p>
+        <span class="rate-list__number">2</span>
+      </li>
+      <li class="rate-list__item">
+        <p class="rate-list__desc">Кастомный цвет карточки</p>
+        <p class="rate-list__desc">59 руб./мес</p>
+        <span class="rate-list__number">3</span>
+      </li>
+    </ul>
+    <a class="rate__link--business" href="#">Показать тарифы для бизнеса</a>
+  </section>
+</main>
+<footer class="page-footer">
+  <img class="page-footer__logo-image" src="http://placehold.it/96x15" alt="Погнали?" width="96" height="15">
+  <div class="page-footer__social social">
+    <ul class="social__list">
+      <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
+      <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
+      <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright copyright">
+    <p class="copyright__text">Разработано</p>
+    <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
+  </div>
+</footer>
+</body>
 </html>
+
