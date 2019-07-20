@@ -1,0 +1,43 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.rate {
+  width: 270px;
+  position: absolute;
+  top: 4075px;
+  background-color: #edeff6;
+  border-radius: 0 0 25px 25px;
+  padding: 0 25px 30px;
+  z-index: 3;
+}
+
+.rate__title {
+  padding-left: 25px;
+  padding-right: 140px;
+  margin: 82px 0 44px;
+
+  &::after {
+    content: "";
+    width: 99px;
+    height: 99px;
+    position: absolute;
+    background: transparent url("../../img/rates@1x.png") no-repeat;
+    background-size: 99px 99px;
+    right: 25px;
+    top: 67px;
+  }
+}
+
+.rate__list {
+  margin-left: 25px;
+  margin-bottom: 45px;
+}
+
+.rate__link--business {
+  color: @font-blue;
+  .set-font-bold();
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  margin: 0 auto;
+}

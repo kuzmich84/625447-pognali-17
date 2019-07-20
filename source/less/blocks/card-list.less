@@ -1,0 +1,61 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.card-list {
+  .reset-ul();
+  margin-bottom: 25px;
+}
+
+.card-list__item {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.card-list__avatar-image {
+  border-radius: 50%;
+  float: left;
+  margin-right: 16px;
+  margin-left: 15px;
+}
+
+.card-list__user-name {
+  margin: 0;
+  text-align: left;
+  padding-right: 70px;
+}
+
+.card-list__like-count {
+  .set-font-bold();
+  font-size: 14px;
+  line-height: 21px;
+  color: @font-blue;
+  margin: 0 0 32px;
+}
+
+.card-list__desc {
+  .set-font-normal();
+  font-size: 15px;
+  line-height: 18px;
+  color: @font-grey;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.card-list__user-number {
+  .set-font-bold();
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d2e5b;
+}
+
+.card-list__link {
+  display: block;
+  padding: 5px 72px;
+  border-radius: 20px;
+  margin: 0 25px;
+  font-size: 17px;
+  line-height: 30px;
+}

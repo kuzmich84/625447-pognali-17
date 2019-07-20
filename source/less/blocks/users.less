@@ -1,0 +1,53 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.users {
+  width: 270px;
+  position: absolute;
+  top: 2500px;
+  background-color: #192144;
+  background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back.png"), url("../../img/rogovaya-back-mobile@1x.png");
+  background-position: 150px 90px, 0 90px, -10px 370px;
+  background-repeat: no-repeat;
+  padding: 0 25px 30px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 4;
+}
+
+.users__title {
+  padding-left: 25px;
+}
+
+.users__text {
+  padding-right: 25px;
+  padding-left: 25px;
+  .set-font-light();
+  font-size: 16px;
+  line-height: 22px;
+  color: @font-white;
+  margin: 0 0 27px;
+
+  &--bold {
+    .set-font-bold();
+    margin-bottom: 60px;
+  }
+}
+
+.users-level {
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.users__name {
+  .set-font-bold();
+  font-size: 21px;
+  line-height: 21px;
+  color: @user-name-color;
+  text-align: center;
+}
+
+.users__button {
+  margin: 0 auto;
+}
