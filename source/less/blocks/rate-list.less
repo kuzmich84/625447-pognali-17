@@ -1,0 +1,53 @@
+.rate__list {
+  .reset-ul();
+}
+
+.rate-list__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.rate-list__desc {
+  .set-font-light();
+  font-size: 16px;
+  line-height: 22px;
+  color: @font-grey;
+  margin: 0;
+}
+
+.rate-list__item:first-child {
+  &::after {
+    content: "1";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: -25px;
+    top: 15px;
+    color: @font-white;
+  }
+}
+
+.rate-list__item:last-child {
+  &::after {
+    content: "3";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: -25px;
+    top: 15px;
+    color: @font-white;
+  }
+}
+
+.rate-list__item:nth-child(2) {
+  &::after {
+    content: "2";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: -25px;
+    top: 15px;
+    color: @font-white;
+  }
+}

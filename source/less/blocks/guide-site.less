@@ -1,0 +1,71 @@
+.guide-site {
+  .reset-ul();
+  .set-font-bold();
+  font-size: 18px;
+  line-height: 18px;
+  color: @font-blue;
+}
+
+.guide-site__item {
+  padding-top: 23px;
+  padding-left: 25px;
+  padding-bottom: 28px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  margin-bottom: -8px;
+
+  &--one {
+    background-color: #ff8d30;
+
+    &::after {
+      content: "1";
+      right: 23px;
+      top: 23px;
+      position: absolute;
+      color: @font-white;
+    }
+  }
+
+  &--two {
+    background-color: #ffa530;
+
+    &::after {
+      content: "2";
+      right: 23px;
+      top: 23px;
+      position: absolute;
+      color: @font-white;
+    }
+  }
+
+  &--three {
+    background-color: #ffbd30;
+
+    &::after {
+      content: "3";
+      right: 23px;
+      top: 23px;
+      position: absolute;
+      color: @font-white;
+    }
+  }
+
+  &--four {
+    background-color: #ffd74b;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    &::after {
+      content: "4";
+      right: 23px;
+      top: 23px;
+      position: absolute;
+      color: @font-white;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 23px;
+  }
+}
