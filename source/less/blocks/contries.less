@@ -3,11 +3,22 @@
   font-size: 21px;
   line-height: 21px;
   color: @font-darkblue;
+  margin: 0 0 5px 0;
+}
+
+.countries__image {
+  border-radius: 10px;
 }
 
 .countries__wrapper {
   background-color: #ffffff;
   border-radius: 10px;
+  margin-top: -11px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 25px 18px 24px;
+  position: relative;
+  align-items: baseline;
 }
 
 .countries__rating {
@@ -16,6 +27,7 @@
   line-height: 30px;
   color: @font-grey;
   opacity: 0.3;
+  margin-left: auto;
 }
 
 .countries__text {
@@ -27,6 +39,20 @@
   opacity: 0.3;
 }
 
-.countries__image {
-  border-radius: 10px;
+.countries__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 27px;
+  }
+}
+
+.countries__flag {
+  position: absolute;
+  width: 35px;
+  height: 24px;
+  top: -13px;
+  border-radius: 3px;
 }

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns:data="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <link href="css/style.css" rel="stylesheet">
+  <!-- // Pixel Glass -->
+  <link href="pixelPerfect/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="pixelPerfect/pixel-glass/styles.css">
+  <script src="pixelPerfect/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body>
 <header class="page-header">
@@ -41,8 +46,8 @@
     </div>
     <h2 class="main-nav__title">В путешествие с крутыми попутчиками!</h2>
     <ul class="main-nav__list user-nav">
-      <li class="user-nav__item"><a class="user-nav__phone" href="#">Контактный телефон</a></li>
-      <li class="user-nav__item"><a class="user-nav__email" href="#">Регистрация</a></li>
+      <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон"></a></li>
+      <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация"></a></li>
       <li class="user-nav__item"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
     </ul>
   </div>
@@ -172,7 +177,7 @@
   </section>
   <section class="rate">
     <h2 class="rate__title title">Добавьте свой профиль</h2>
-    <ul class="rate__list rate-list">
+    <ol class="rate__list rate-list">
       <li class="rate-list__item">
         <p class="rate-list__desc">Базовое размещение</p>
         <p class="rate-list__desc">Бесплатно</p>
@@ -185,7 +190,7 @@
         <p class="rate-list__desc">Кастомный цвет карточки</p>
         <p class="rate-list__desc">59 руб./мес</p>
       </li>
-    </ul>
+    </ol>
     <a class="rate__link--business" href="#">Показать тарифы для бизнеса</a>
   </section>
 </main>
