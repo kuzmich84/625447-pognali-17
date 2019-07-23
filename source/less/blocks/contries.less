@@ -4,10 +4,28 @@
   line-height: 21px;
   color: @font-darkblue;
   margin: 0 0 5px 0;
+  order: 1;
 }
 
 .countries__image {
   border-radius: 10px;
+  width: 270px;
+  height: 110px;
+
+  &--thailand {
+    background-image: url("../../img/thailand-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &--france {
+    background-image: url("../../img/france-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &--czech {
+    background-image: url("../../img/czech-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .countries__wrapper {
@@ -28,6 +46,7 @@
   color: @font-grey;
   opacity: 0.3;
   margin-left: auto;
+  order: 2;
 }
 
 .countries__text {
@@ -37,6 +56,7 @@
   line-height: 18px;
   color: @font-grey;
   opacity: 0.3;
+  order: 3;
 }
 
 .countries__item {
@@ -54,5 +74,85 @@
   width: 35px;
   height: 24px;
   top: -13px;
-  border-radius: 3px;
+
+  &--thailand {
+    background: url("../../img/thailand-flag.png") no-repeat;
+    background-size: 100%;
+  }
+
+  &--france {
+    background: url("../../img/france-flag.png") no-repeat;
+    background-size: 100%;
+  }
+
+  &--czech {
+    background: url("../../img/czech-flag.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .countries__item {
+    flex-direction: row-reverse;
+    width: 652px;
+  }
+
+  .countries__wrapper {
+    width: 377px;
+    padding: 32px 24px 0 30px;
+    margin-top: 0;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .countries__image {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+
+    &--thailand {
+      background-image: url("../../img/thailand-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
+
+    &--france {
+      background-image: url("../../img/france-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
+
+    &--czech {
+      background-image: url("../../img/czech-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .countries__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .countries__flag {
+    width: 70px;
+    height: 47px;
+    top: 16px;
+    right: -37px;
+  }
+
+  .countries__text {
+    order: 2;
+    font-size: 20px;
+    line-height: 17.68px;
+    margin-bottom: 17px;
+  }
+
+  .countries__rating {
+    margin-left: 29px;
+    font-size: 20px;
+    line-height: 30px;
+    order: 3;
+  }
+
+  .direction__list {
+    margin-bottom: 48px;
+  }
 }

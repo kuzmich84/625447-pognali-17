@@ -1,20 +1,24 @@
 .users {
-  width: 270px;
+  min-width: 100%;
   position: absolute;
   top: 2332px;
   background-color: #192144;
   background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back.png"), url("../../img/rogovaya-back-mobile@1x.png");
-  background-position: 150px 90px, 0 90px, -10px 363px;
+  background-position: 86% 7.5%, 0 7.5%, -4% 27.8%;
   background-repeat: no-repeat;
-  padding: 0 25px 30px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 4;
 }
 
+.users__content {
+  margin: 0 auto;
+  width: 270px;
+  padding: 104px 25px 30px;
+}
+
 .users__title {
   padding-left: 25px;
-  margin-top: 124px;
 }
 
 .users__text {
@@ -45,4 +49,67 @@
   padding: 22px 0 22px 24px;
   display: block;
   margin: 0;
+}
+
+.users__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .users {
+    top: 2945px;
+    border-radius: 0 0 60px 60px;
+    background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back-direction-tablet.svg"), url("../../img/rogovaya-back-desktop@1x.png");
+    background-position: 6% 41.6%, 7% 13%, 84% 14%;
+  }
+
+  .users__content {
+    width: 688px;
+    margin: 0 auto;
+    padding: 168px 40px 88px;
+  }
+
+  .users__title {
+    padding-left: 32px;
+    margin-bottom: 56px;
+  }
+
+  .users__text {
+    font-size: 28px;
+    line-height: 33px;
+    padding-left: 35px;
+    padding-right: 215px;
+    margin-bottom: 39px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      padding-right: 401px;
+    }
+  }
+
+  .users__list {
+    flex-direction: row;
+    padding-left: 36px;
+    padding-top: 19px;
+    margin-bottom: 70px;
+  }
+
+  .users__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 14px;
+    margin-bottom: 5px;
+  }
+
+  .users__button {
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 585px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 30px 0 27px 33px;
+  }
 }

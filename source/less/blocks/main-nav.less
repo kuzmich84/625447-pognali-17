@@ -1,11 +1,18 @@
 .main-nav {
   width: 270px;
-  position: relative;
+  margin: 0 auto;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 80px bottom, 0 0;
+  min-height: 478px;
+  padding: 0 25px;
 }
 
 .main-nav__top {
-  margin-bottom: 44px;
-  background-color: #161c35;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
 }
 
 .main-nav__title {
@@ -37,16 +44,58 @@
 }
 
 .main-nav__toggle--open {
-  margin-top: 25px;
-  margin-left: 40px;
-  position: absolute;
   width: 25px;
   height: 11px;
-  right: 0;
-  top: 6px;
   background: transparent url("../../img/menu-tablet-mobile.png");
   border: none;
   cursor: pointer;
   font-size: 0;
-  z-index: 50;
+  margin-top: 4px;
+}
+
+.main-nav__button {
+  display: none;
+  .set-font-bold();
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #161c35;
+  text-transform: uppercase;
+  background-color: #ffd74b;
+  border-radius: 25px;
+  padding: 11px 30px 9px 28px;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 688px;
+    position: relative;
+    margin: 0 auto;
+    background-image: none;
+    padding: 0 40px;
+    min-height: 0;
+  }
+
+  .main-nav__top {
+    padding-top: 41px;
+    margin-bottom: 71px;
+  }
+
+  .main-nav__button {
+    display: block;
+  }
+
+  .main-nav__toggle--open {
+    margin-top: 20px;
+    margin-left: 23px;
+  }
+
+  .main-nav__title {
+    font-size: 60px;
+    line-height: 70px;
+    padding-right: 128px;
+    padding-left: 129px;
+    margin: 0;
+  }
 }

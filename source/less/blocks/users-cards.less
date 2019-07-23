@@ -12,12 +12,28 @@
   flex-direction: column;
   align-items: center;
   width: 270px;
-
-  &:last-child {
-    margin-bottom: 20px;
-  }
 }
 
 .users-cards__avatar {
   border-radius: 10px;
+  width: 270px;
+  height: 270px;
+}
+
+@media (min-width: @tablet-width) {
+  .users-cards__item {
+    margin-right: 47px;
+    width: 285px;
+    border-radius: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .users-cards__avatar {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px;
+  }
 }

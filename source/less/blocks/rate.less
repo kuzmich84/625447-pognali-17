@@ -1,17 +1,23 @@
 .rate {
-  width: 270px;
+  min-width: 100%;
   position: absolute;
   top: 3676px;
   background-color: #edeff6;
   border-radius: 0 0 25px 25px;
-  padding: 0 25px 30px;
   z-index: 3;
+}
+
+.rate__content {
+  margin: 0 auto;
+  width: 270px;
+  position: relative;
+  padding: 82px 25px 30px;
 }
 
 .rate__title {
   padding-left: 25px;
   padding-right: 140px;
-  margin: 82px 0 40px;
+  margin: 0 0 40px;
 
   &::after {
     content: "";
@@ -37,4 +43,27 @@
   font-size: 16px;
   line-height: 16px;
   padding-left: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .rate {
+    top: 4215px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .rate__content {
+    width: 688px;
+    margin: 0 auto;
+    padding: 120px 40px 0;
+  }
+
+  .rate__title {
+    padding-left: 99px;
+    padding-right: 0px;
+  }
+
+  .rate-list__desc {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }

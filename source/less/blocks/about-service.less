@@ -1,19 +1,24 @@
 .about-service {
   background-color: #192144;
-  background-image: url("../../img/about-mobile@1x.png"), url("../../img/blue-back.png");
-  background-position: 18px 281px, 0 280px;
-  background-repeat: no-repeat;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 6;
   position: absolute;
-  width: 270px;
-  padding: 0 25px;
   top: 760px;
+  min-width: 100%;
+  background-image: url("../../img/about-mobile@1x.png"), url("../../img/blue-back.png");
+  background-position: 66% 100%, 0 56%;
+  background-repeat: no-repeat;
+}
+
+.about-service__content {
+  width: 270px;
+  margin: 0 auto;
+  padding: 315px 25px 0;
 }
 
 .about-service__title {
-  margin: 315px 0 19px 25px;
+  margin: 0 0 19px 25px;
 }
 
 .about-service__text {
@@ -21,12 +26,66 @@
   font-size: 16px;
   line-height: 22px;
   color: @font-white;
-  padding-right: 35px;
+  padding-right: 25px;
   padding-left: 25px;
   margin-bottom: 19px;
 
   &--bold {
     .set-font-bold();
     margin-bottom: 80px;
+    padding-right: 20px;
+  }
+}
+
+.about-service__button {
+  margin-left: 35px;
+  padding: 31px 0px 27px 33px;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  max-width: 241px;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about-service {
+    position: relative;
+    width: 688px;
+    top: 0;
+    padding-top: 100px;
+    background-image: url("../../img/about-tablet@1x.png"), url("../../img/blue-back-table.png");
+    background-position: 98% 76%, 47% 33%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .about-service__content {
+    width: 688px;
+    padding: 175px 40px 88px 40px;
+  }
+
+  .about-service__title {
+    padding-left: 9px;
+    margin-bottom: 40px;
+  }
+
+  .about-service__text {
+    font-size: 28px;
+    line-height: 33px;
+    padding-right: 350px;
+    padding-left: 37px;
+    margin-bottom: 31px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .about-service__button {
+    display: block;
+
   }
 }
