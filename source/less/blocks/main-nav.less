@@ -1,18 +1,21 @@
 .main-nav {
+  min-height: 478px;
+  min-width: 100%;
+}
+
+.main-nav__content {
   width: 270px;
   margin: 0 auto;
-  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 80px bottom, 0 0;
-  min-height: 478px;
   padding: 0 25px;
 }
 
+
 .main-nav__top {
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
   display: flex;
   justify-content: space-between;
   padding-top: 27px;
+  position: relative;
 }
 
 .main-nav__title {
@@ -24,19 +27,34 @@
   margin: 0 auto 245px;
   position: relative;
   padding-right: 7px;
-  padding-left: 8px;
+  padding-left: 5px;
+  width: 260px;
 }
 
 .main-nav__list {
   .reset-ul();
   position: absolute;
   z-index: 20;
+  left: 50%;
+  margin-left: -135px;
+  margin-bottom: 68px;
+  top: 459px;
+
+  &--tablet {
+    .reset-ul();
+    display: none;
+  }
 }
 
 .main-nav__wrapper {
   background-color: #ffffff;
   padding: 27px 25px 44px;
   display: none;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  z-index: 100;
+  min-width: 100%;
 
   &--show {
     display: none;
@@ -51,6 +69,23 @@
   cursor: pointer;
   font-size: 0;
   margin-top: 4px;
+  color: #cccccc;
+}
+
+.main-nav__toggle--close {
+  width: 19px;
+  height: 19px;
+  background: transparent url("../../img/menu-close.svg");
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  color: #cccccc;
+}
+
+.main-nav__top--popup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 79px;
 }
 
 .main-nav__button {
@@ -69,6 +104,10 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    min-height: 0;
+  }
+
+  .main-nav__content {
     width: 688px;
     position: relative;
     margin: 0 auto;
@@ -79,7 +118,7 @@
 
   .main-nav__top {
     padding-top: 41px;
-    margin-bottom: 71px;
+    margin-bottom: 75px;
   }
 
   .main-nav__button {
@@ -94,8 +133,28 @@
   .main-nav__title {
     font-size: 60px;
     line-height: 70px;
-    padding-right: 128px;
-    padding-left: 129px;
-    margin: 0;
+    margin: 0 auto;
+    width: 420px;
+  }
+
+  .main-nav__list {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .main-nav__top--popup {
+    align-items: center;
+  }
+
+  .main-nav__contacts {
+    margin-bottom: 75px;
+  }
+
+  .main-nav__wrapper {
+    padding-bottom: 40px;
+    padding-top: 37px;
   }
 }

@@ -11,9 +11,19 @@
 }
 
 .rate-list__item {
-  padding-top: 15px;
+  padding-top: 11px;
   padding-bottom: 7px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(68, 68, 68, 5%);
+  margin-bottom: 3px;
+
+  &:last-child {
+    border-bottom: 1px solid rgba(68, 68, 68, 5%);
+    padding-bottom: 10px;
+  }
+
 
   &::before {
     content: counter(li, decimal);
@@ -22,8 +32,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 8px;
-    right: 0;
+    top: 4px;
+    right: -45px;
     .set-font-normal();
     font-size: 16px;
     line-height: 14px;
@@ -51,6 +61,52 @@
   .rate-list__desc {
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .rate-list__item {
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgba(68, 68, 68, 5%);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    &:last-child {
+      border-bottom: 1px solid rgba(68, 68, 68, 5%);
+      padding-bottom: 0;
+    }
+
+    &::before {
+      left: -90px;
+      top: -1px;
+      width: 67px;
+      height: 67px;
+      font-size: 26.69px;
+      line-height: 26.69px;
+    }
+
+    .rate-list__desc {
+      padding-bottom: 15px;
+      padding-top: 17px;
+    }
+  }
+
+  .rate-list {
+    margin-bottom: 59px;
+    padding-left: 65px;
+    padding-right: 33px;
+
+    &::after {
+      content: "";
+      width: 198px;
+      height: 285px;
+      position: absolute;
+      top: 195px;
+      right: 39px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+      z-index: -1;
+    }
   }
 }
 

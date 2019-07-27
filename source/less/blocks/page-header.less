@@ -1,9 +1,22 @@
 .page-header {
-  min-width: 100%;
+  min-width: 320px;
   background-color: #161c36;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 62% 100%, 0 0;
+}
+
+.page-header__content {
+  padding: 0 25px;
+  margin: 0 auto;
+  width: 270px;
 }
 
 .logo-image--large {
+  display: none;
+}
+
+.logo-image--desktop {
   display: none;
 }
 
@@ -11,6 +24,12 @@
   .page-header {
     background-image: none;
     background-color: #182044;
+  }
+
+  .page-header__content {
+    width: 688px;
+    padding: 0 40px;
+    margin: 0 auto;
   }
 
   .logo-image--small {
@@ -21,5 +40,25 @@
     display: block;
     height: 42px;
     margin-top: 4px;
+  }
+
+  .logo-image--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__content {
+    width: 1320px;
+    padding: 0 60px;
+    margin: 0 auto;
+  }
+
+  .logo-image--large {
+    display: none;
+  }
+
+  .logo-image--desktop {
+    display: block;
   }
 }

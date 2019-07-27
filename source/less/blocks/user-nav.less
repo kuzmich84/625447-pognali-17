@@ -37,7 +37,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__list {
+  .user-nav__item {
     display: none;
+
+    &:last-child {
+      display: block;
+    }
   }
+
+  .user-nav__button {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 30px 15px 30px;
+  }
+
 }
+
+@media (min-width: @desktop-width) {
+  .user-nav__item {
+    display: block;
+  }
+
+  }
