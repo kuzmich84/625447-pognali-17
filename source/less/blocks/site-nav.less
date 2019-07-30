@@ -3,8 +3,32 @@
   margin-bottom: 60px;
 }
 
+.site-nav--top {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .site-nav__list {
     margin-bottom: 115px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-nav--top {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-nav__list {
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .site-nav__line {
+    width: 60px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-right: 45px;
+    margin-top: 4px;
   }
 }

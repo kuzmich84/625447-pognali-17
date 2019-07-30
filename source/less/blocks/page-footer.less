@@ -33,10 +33,19 @@
 
   .page-footer__content {
     width: 688px;
-    padding: 0 40px;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 56px;
-    padding-top: 56px;
+    padding: 56px 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    top: 3933px;
+  }
+
+  .page-footer__content {
+    width: 1320px;
+    padding: 56px 60px;
   }
 }

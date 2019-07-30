@@ -39,7 +39,7 @@
 
 .about-service__button {
   margin-left: 35px;
-  padding: 31px 0px 27px 33px;
+  padding: 31px 0 27px 33px;
   border-radius: 20px;
   font-size: 24px;
   line-height: 24px;
@@ -86,6 +86,40 @@
 
   .about-service__button {
     display: block;
+  }
+}
 
+@media (min-width: @desktop-width) {
+  .about-service {
+    position: absolute;
+    top: 690px;
+    z-index: -1;
+    background-image: url("../../img/about-desktop@1x.png"), url("../../img/blue-back-desktop.png");
+    background-position: 92.5% 100%, 5% 22%;
+  }
+
+  .about-service__content {
+    width: 1320px;
+    padding: 91px 60px 163px 60px;
+  }
+
+  .about-service__title {
+    padding-left: 45px;
+    margin-bottom: 59px;
+  }
+
+  .about-service__text {
+    width: 620px;
+    padding-left: 71px;
+    margin-bottom: 39px;
+  }
+
+  .about-service__text--bold {
+    margin-bottom: 82px;
+    width: 420px;
+  }
+
+  .about-service__button {
+    margin-left: 72px;
   }
 }

@@ -4,50 +4,85 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+  <!-- // Pixel Glass -->
+  <link href="pixelPerfect/catalog.css" rel="stylesheet">
+  <link rel="stylesheet" href="pixelPerfect/pixel-glass/styles.css">
+  <script src="pixelPerfect/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
     <title>Погнали - каталог</title>
 </head>
 <body>
 <header class="catalog-header">
-  <div class="main-nav">
-    <div class="main-nav__top">
-      <a href="index.html"><img class="catalog-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19"></a>
-      <button class="main-nav__toggle--open catalog__toggle--open" type="button">Открыть меню</button>
-    </div>
-    <div class="main-nav__wrapper">
-      <a class="page-header__logo-link" href="index.html"><img class="page-header__logo-image--popup" src="http://placehold.it/100x19" alt="Погнали?" width="100" height="19"></a>
-      <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
-      <nav class="site-nav">
-        <ul class="site-nav__list site-list">
-          <li class="site-list__item"><a class="site-list_link" href="">О СЕРВИСЕ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="">НАПРАВЛЕНИЯ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="">ПОПУТЧИКИ</a></li>
-        </ul>
-      </nav>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__authorization" href="#">АВТОРИЗАЦИЯ</a>
-        </li>
-      </ul>
-      <div class="main-nav__contacts contacts">
-        <p class="contacts__phone">8 800 555-86-28</p>
-        <p class="contacts__email">mail@htmlacademy.ru</p>
+  <div class="main-nav--catalog">
+    <nav class="main-nav--catalog">
+      <div class="main-nav__top catalog-nav">
+        <img class="page-header__logo-image logo-image--small" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19">
+        <img class="page-header__logo-image logo-image--large" src="img/logo-tablet-white@1x.png" alt="Погнали?" width="166" height="42">
+        <img class="page-header__logo-image logo-image--desktop" src="img/logo-desktop-white@1x.png" alt="Погнали?" width="200" height="52">
+        <button class="main-nav__toggle--open" type="button">Открыть меню</button>
+        <div class="site-nav site-nav--top">
+          <div class="site-nav__line"></div>
+          <ul class="site-nav__list site-list">
+            <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
+            <li class="site-list__item"><a class="site-list_link" href="#">НАПРАВЛЕНИЯ</a></li>
+            <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="main-nav__social social">
-        <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-          <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
-        </ul>
+      <div class="main-nav__wrapper main-nav__wrapper--show">
+        <div class="main-nav__content">
+          <div class="main-nav__top--popup">
+            <img class="page-header__logo-image--popup logo-image--small" src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
+            <img class="page-header__logo-image--popup logo-image--large" src="img/logo-tablet-blue@1x.png" alt="Погнали?" width="166" height="42">
+            <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
+            <ul class="main-nav__list--tablet user-list">
+              <li class="user-list__item">
+                <a class="user-list__authorization button" href="#">АВТОРИЗАЦИЯ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="site-nav">
+            <ul class="site-nav__list site-list">
+              <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
+              <li class="site-list__item"><a class="site-list_link" href="#">НАПРАВЛЕНИЯ</a></li>
+              <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
+            </ul>
+          </div>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__authorization button" href="#">АВТОРИЗАЦИЯ</a>
+            </li>
+          </ul>
+          <div class="main-nav__contacts contacts">
+            <p class="contacts__phone">8 800 555-86-28</p>
+            <p class="contacts__email">mail@htmlacademy.ru</p>
+          </div>
+          <div class="main-nav__social social">
+            <ul class="social__list">
+              <li class="social__item social__item--bg-no"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
+              <li class="social__item social__item--bg-no"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
+              <li class="social__item social__item--bg-no"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
     <h2 class="catalog-header__title">Попутчики</h2>
   </div>
 </header>
 <main class="page-catalog">
+  <section class="country-filter">
+    <h2>ФИЛЬТРАЦИЯ ПО СТРАНАМ</h2>
+
+  </section>
+  <section class="user-filter">
+    <form action="#">
+      <h2>Подберите идеального попутчика</h2>
+    </form>
+  </section>
   <section class="catalog">
     <ul class="catalog__list card-list">
       <li class="card-list__item">
-        <div class="card-list__avatar user-avatar"></div>
         <img class="card-list__avatar-image" src="http://placehold.it/270x270"  width="70" height="70"  alt="аваторка пользователя">
         <div class="user-avatar__like user-avatar__like--like"></div>
         <h3 class="card-list__user-name ">Таня Фирсова</h3>
@@ -87,7 +122,6 @@
         <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
       </li>
       <li class="card-list__item">
-        <div class="card-list__avatar user-avatar"></div>
         <img class="card-list__avatar-image" src="http://placehold.it/270x270"  width="70" height="70"  alt="аваторка пользователя">
         <div class="user-avatar__like user-avatar__like--dislike"></div>
         <h3 class="card-list__user-name ">Петя Демин</h3>
@@ -125,8 +159,7 @@
         <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
       </li>
       <li class="card-list__item">
-      <div class="card-list__avatar user-avatar"></div>
-      <img class="card-list__avatar-image" src="http://placehold.it/270x270"  width="70" height="70"  alt="аваторка пользователя">
+        <img class="card-list__avatar-image" src="http://placehold.it/270x270"  width="70" height="70"  alt="аваторка пользователя">
       <div class="user-avatar__like user-avatar__like--dislike"></div>
       <h3 class="card-list__user-name ">Марк Смолов</h3>
       <p class="card-list__like-count">1700</p>
@@ -164,7 +197,6 @@
       <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
     </li>
       <li class="card-list__item">
-        <div class="card-list__avatar user-avatar"></div>
         <img class="card-list__avatar-image" src="http://placehold.it/270x270"  width="70" height="70"  alt="аваторка пользователя">
         <div class="user-avatar__like user-avatar__like--dislike"></div>
         <h3 class="card-list__user-name">Лариса Роговая</h3>

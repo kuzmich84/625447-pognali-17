@@ -75,6 +75,34 @@
     color: #132576;
     padding-left: 89px;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .rate {
+    top: 2940px;
+    z-index: -4;
+  }
 
+  .rate__content {
+    width: 1320px;
+    padding: 167px 60px 187px;
+  }
+
+  .rate__title {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 133px;
+
+    &::after {
+      width: 198px;
+      height: 198px;
+      background-size: 198px 198px;
+      right: 133px;
+      top: 346px;
+    }
+  }
+
+  .rate__link--business {
+    padding-left: 160px;
+  }
 }

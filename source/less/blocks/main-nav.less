@@ -1,5 +1,5 @@
 .main-nav {
-  min-height: 478px;
+  padding-bottom: 16px;
   min-width: 100%;
 }
 
@@ -53,7 +53,7 @@
   position: absolute;
   top: 0;
   left: -25px;
-  z-index: 100;
+  z-index: 49;
   min-width: 100%;
 
   &--show {
@@ -156,5 +156,31 @@
   .main-nav__wrapper {
     padding-bottom: 40px;
     padding-top: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle--open {
+    display: none;
+  }
+
+  .main-nav__top {
+    padding-top: 47px;
+    margin-bottom: 109px;
+    justify-content: flex-start;
+  }
+
+  .main-nav__list {
+    margin-top: 4px;
+    margin-left: auto;
+  }
+
+  .main-nav__title {
+    font-size: 60px;
+    line-height: 70px;
+    width: 420px;
+    margin-left: 62px;
+    text-align: left;
+    padding-bottom: 330px;
   }
 }
