@@ -16,8 +16,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .site-nav__list {
+  .main-nav--opened .site-nav__list {
     margin-bottom: 115px;
+    margin-left: 58px;
   }
 }
 
@@ -38,5 +39,23 @@
     background-color: #ffffff;
     margin-right: 45px;
     margin-top: 4px;
+  }
+
+  .main-nav--closed .site-nav__list {
+    display: flex;
+    margin-right: auto;
+    margin-left: 105px;
+    margin-top: 15px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 12px;
+      left: -105px;
+    }
   }
 }
