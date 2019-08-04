@@ -13,8 +13,7 @@
 </head>
 <body>
 <header class="catalog-header">
-
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <div class="main-nav__content">
           <div class="main-nav__top">
@@ -31,7 +30,7 @@
               <li class="site-list__item"><a class="site-list_link" href="#">НАПРАВЛЕНИЯ</a></li>
               <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
             </ul>
-            <ul class="main-nav__list user-nav">
+            <ul class="main-nav__list user-nav user-nav--catalog">
               <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800 555-86-28</a></li>
               <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация">mail@htmlacademy.ru</a></li>
               <li class="user-nav__item user-nav__item--authorization"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
@@ -47,9 +46,12 @@
         </div>
       </div>
     </nav>
+  <div class="catalog-header__wrapper">
     <h2 class="catalog-header__title">Попутчики</h2>
+  </div>
 </header>
 <main class="page-catalog">
+  <div class="page-catalog__content">
   <section class="country-filter">
     <h2>ФИЛЬТРАЦИЯ ПО СТРАНАМ</h2>
 
@@ -78,18 +80,19 @@
         <div class="card-list__future">
         <p class="card-list__desc">хочет посетить:</p>
         <ul class="card-list__list  flag-list">
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--sri-lanka" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">ШРИ ЛАНКА</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--seychelles" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">ТАИЛАНД</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--thailand" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">СЕЙШЕЛЫ</li>
+          <li class="flag-list__item"><img class="flag-list__image flag-list__image--sri-lanka" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">ШРИ ЛАНКА</li>
+          <li class="flag-list__item"><img class="flag-list__image flag-list__image--seychelles" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">ТАИЛАНД</li>
+          <li class="flag-list__item"><img class="flag-list__image flag-list__image--thailand" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">СЕЙШЕЛЫ</li>
         </ul>
         </div>
+        <div class="card-list__wrapper">
         <div class="card-list__transport">
-          <p class="card-list__desc">транспорт:</p>
+          <p class="card-list__desc card-list__desc--transport">транспорт:</p>
           <ul class="users-transport__list card-transport">
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Велосипед"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled " src="http://placehold.it/32x32" width="32" height="32" alt="Пешком"></li>
           </ul>
         </div>
         <div class="card-list__level">
@@ -98,13 +101,14 @@
             <span class="card-list__user-number">99</span>
           </div>
         </div>
+        </div>
         <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
       </li>
       <li class="card-list__item">
         <img class="card-list__avatar-image" src="http://placehold.it/270x270"  width="70" height="70"  alt="аваторка пользователя">
         <div class="user-avatar__like user-avatar__like--dislike"></div>
         <h3 class="card-list__user-name ">Петя Демин</h3>
-        <p class="card-list__like-count">520</p>
+        <p class="card-list__like-count">150</p>
         <span class="card-list__presence card-list__presence--off-line"></span>
         <ul class="card-tags__list tag-list">
           <li class="tag-list__item">#бургер</li>
@@ -115,24 +119,26 @@
         </ul>
         <div class="card-list__future">
           <p class="card-list__desc">хочет посетить:</p>
-          <ul class="users-flag__list  flag-list">
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image--belgum" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">БЕЛЬГИЯ</li>
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image--czech" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">ЧЕХИЯ</li>
+          <ul class="card-list__list  flag-list">
+            <li class="flag-list__item"><img class="flag-list__image flag-list__image--belgum" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">БЕЛЬГИЯ</li>
+            <li class="flag-list__item"><img class="flag-list__image flag-list__image--czech" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">ЧЕХИЯ</li>
           </ul>
         </div>
-        <div class="card-list__transport">
-          <p class="card-list__desc">транспорт:</p>
-          <ul class="users-transport__list card-transport">
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком"></li>
-          </ul>
-        </div>
-        <div class="card-list__level">
-          <p class="card-list__desc">левел</p>
-          <div class="card-list__user-level">
-            <span class="card-list__user-number">80</span>
+        <div class="card-list__wrapper">
+          <div class="card-list__transport">
+            <p class="card-list__desc card-list__desc--transport">транспорт:</p>
+            <ul class="users-transport__list card-transport">
+              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
+              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
+              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Велосипед"></li>
+              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled " src="http://placehold.it/32x32" width="32" height="32" alt="Пешком"></li>
+            </ul>
+          </div>
+          <div class="card-list__level">
+            <p class="card-list__desc">левел</p>
+            <div class="card-list__user-level">
+              <span class="card-list__user-number">80</span>
+            </div>
           </div>
         </div>
         <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
@@ -152,19 +158,20 @@
       </ul>
       <div class="card-list__future">
         <p class="card-list__desc">хочет посетить:</p>
-        <ul class="users-flag__list  flag-list">
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--usa" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">США</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--australia" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">АВСТРАЛИЯ</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--dominican" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">ДОМИНИКАНА</li>
+        <ul class="card-list__list  flag-list">
+          <li class="flag-list__item"><img class="flag-list__image flag-list__image--usa" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">США</li>
+          <li class="flag-list__item"><img class="flag-list__image flag-list__image--australia" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">АВСТРАЛИЯ</li>
+          <li class="flag-list__item"><img class="flag-list__image flag-list__image--dominican" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">ДОМИНИКАНА</li>
         </ul>
       </div>
-      <div class="card-list__transport">
-        <p class="card-list__desc">транспорт:</p>
+        <div class="card-list__wrapper">
+      <div class="card-list__transport ">
+        <p class="card-list__desc card-list__desc--transport">транспорт:</p>
         <ul class="users-transport__list card-transport">
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет"></li>
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус"></li>
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед"></li>
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком"></li>
+          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
+          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
+          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Велосипед"></li>
+          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Пешком"></li>
         </ul>
       </div>
       <div class="card-list__level">
@@ -172,6 +179,7 @@
         <div class="card-list__user-level">
           <span class="card-list__user-number">25</span>
         </div>
+      </div>
       </div>
       <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
     </li>
@@ -189,18 +197,19 @@
         </ul>
         <div class="card-list__future">
           <p class="card-list__desc">хочет посетить:</p>
-          <ul class="users-flag__list  flag-list">
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image--gb" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">ВЕЛИКОБРИТАНИЯ</li>
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image-germany" src="http://placehold.it/35x24" width="35" height="24" alt="флаг">ГЕРМАНИЯ</li>
+          <ul class="card-list__list  flag-list">
+            <li class="flag-list__item"><img class="flag-list__image flag-list__image--gb" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">ВЕЛИКОБРИТАНИЯ</li>
+            <li class="flag-list__item"><img class="flag-list__image flag-list__image-germany" src="http://placehold.it/26x18" width="26" height="18" alt="флаг">ГЕРМАНИЯ</li>
           </ul>
         </div>
+        <div class="card-list__wrapper">
         <div class="card-list__transport">
-          <p class="card-list__desc">транспорт:</p>
+          <p class="card-list__desc card-list__desc--transport">транспорт:</p>
           <ul class="users-transport__list card-transport">
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" height="21" alt="Велосипед"></li>
+            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" height="21" alt="Пешком"></li>
           </ul>
         </div>
         <div class="card-list__level">
@@ -209,26 +218,34 @@
             <span class="card-list__user-number">50</span>
           </div>
         </div>
+        </div>
         <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
       </li>
     </ul>
     <a class="page-catalog__link" href="#">+ Показать еще</a>
+    <div class="page-catalog__button">
     <button class="page-catalog__prev" type="button">Предыдущие попутчики</button>
     <button class="page-catalog__next" type="button">Следующие попутчики</button>
+    </div>
   </section>
+  </div>
 </main>
 <footer class="page-footer catalog-footer">
-  <img class="page-footer__logo-image" src="img/logo-mobile-blue-footer.png" alt="Погнали?" width="96" height="15">
-  <div class="page-footer__social social">
-    <ul class="social__list">
-      <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-      <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-      <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
-    </ul>
-  </div>
-  <div class="page-footer__copyright copyright">
-    <p class="copyright__text">Разработано</p>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
+  <div class="page-footer__content">
+    <img class="page-footer__logo-image logo-image--small" src="img/logo-mobile-blue-footer.png" alt="Погнали?" width="96" height="15">
+    <img class="page-footer__logo-image logo-image--large" src="img/logo-tablet-blue@1x.png" alt="Погнали?" width="166" height="42"> <!--Временно-->
+    <img class="page-footer__logo-image logo-image--desktop" src="img/logo-desktop-blue@1x.png" alt="Погнали?" width="200" height="52">  <!--Временно-->
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
+        <li class="social__item"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте"></a></li>
+        <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
+    </div>
   </div>
 </footer>
 <script src="js/popup-menu.js"></script>
