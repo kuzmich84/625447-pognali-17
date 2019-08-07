@@ -11,7 +11,7 @@
   <!-- // Pixel Glass -->
     <title>Погнали - каталог</title>
 </head>
-<body>
+<body class="catalog-bg">
 <header class="catalog-header">
   <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
@@ -53,7 +53,6 @@
       <path class="st0" d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1
   H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z"></path>
 </svg></a>
-
   </div>
 </header>
 <main class="page-catalog">
@@ -106,7 +105,8 @@
         <div class="card-list__level">
           <p class="card-list__desc card-list__desc--level">левел</p>
           <div class="card-list__user-level">
-            <span class="card-list__user-number">99</span>
+            <p class="card-list__user-number">99</p>
+            <p class="card-list__user-desc">level</p>
           </div>
         </div>
         </div>
@@ -145,9 +145,10 @@
             </ul>
           </div>
           <div class="card-list__level">
-            <p class="card-list__desc card-list__desc--level ">левел</p>
+            <p class="card-list__desc card-list__desc--level">левел</p>
             <div class="card-list__user-level">
-              <span class="card-list__user-number">80</span>
+              <p class="card-list__user-number">80</p>
+              <p class="card-list__user-desc">level</p>
             </div>
           </div>
         </div>
@@ -186,12 +187,13 @@
           <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Пешком"></li>
         </ul>
       </div>
-      <div class="card-list__level">
-        <p class="card-list__desc card-list__desc--level ">левел</p>
-        <div class="card-list__user-level">
-          <span class="card-list__user-number">25</span>
-        </div>
-      </div>
+          <div class="card-list__level">
+            <p class="card-list__desc card-list__desc--level">левел</p>
+            <div class="card-list__user-level">
+              <p class="card-list__user-number">25</p>
+              <p class="card-list__user-desc">level</p>
+            </div>
+          </div>
       </div>
       <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
     </li>
@@ -226,20 +228,36 @@
             <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" height="21" alt="Пешком"></li>
           </ul>
         </div>
-        <div class="card-list__level">
-          <p class="card-list__desc card-list__desc--level">левел</p>
-          <div class="card-list__user-level">
-            <span class="card-list__user-number">50</span>
+          <div class="card-list__level">
+            <p class="card-list__desc card-list__desc--level">левел</p>
+            <div class="card-list__user-level">
+              <p class="card-list__user-number">50</p>
+              <p class="card-list__user-desc">level</p>
+            </div>
           </div>
-        </div>
         </div>
         <a class="button card-list__link" href="#">ПОЗВАТЬ!</a>
       </li>
     </ul>
-    <a class="page-catalog__link" href="#">Показать еще</a>
-    <div class="page-catalog__button">
-    <button class="page-catalog__prev" type="button">Предыдущие попутчики</button>
-    <button class="page-catalog__next" type="button">Следующие попутчики</button>
+    <a class="page-catalog__link" href="#"><svg width="17" height="17"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 27 27" style="enable-background: new 0 0 27 27;" xml:space="preserve">
+<path d="M25.5,12H15V1.5C15,0.7,14.3,0,13.5,0S12,0.7,12,1.5V12H1.5C0.7,12,0,12.7,0,13.5S0.7,15,1.5,15H12v10.5 c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.5,12z"></path>
+</svg>Показать еще</a>
+    <div class="page-catalog__pagination">
+      <ul class="page-catalog__list catalog-pagination">
+        <li class="catalog-pagination__item"><a class="catalog-pagination__link catalog-pagination__link--current" href="">1</a></li>
+        <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">2</a></li>
+        <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">3</a></li>
+        <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">4</a></li>
+      </ul>
+      <button class="page-catalog__prev" type="button">Предыдущие попутчики <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20" viewBox="0 0 10 20">
+      <image id="Vector_Smart_Object_copy_4" data-name="Vector Smart Object copy 4" width="10" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAcElEQVQokY3OuRGAMAwF0eVICAgICaEOQnqCEiiK4hgzNuNDktnkK3iBmnnZ+dHV/kHAUYMvcocFP2TBBGmwQBIUUQ5VFEMTBVhF0o9q3TitNzAAm4bw0G0VB1jFMTRxDlUsQRFrsMAWTHBvKd8J8AB1uBSv1p7+ZwAAAABJRU5ErkJggg=="></image>
+    </svg>
+    </button>
+    <button class="page-catalog__next" type="button">Следующие попутчики <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20" viewBox="0 0 10 20">
+      <image id="Vector_Smart_Object_copy_3" data-name="Vector Smart Object copy 3" width="10" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAfElEQVQokY3Tuw2AIBSF4d9HY2FhaamzuBOOoDPpcIZEjXAfeBpC7hdCwqEap2UDVgpp+mE+gA44PVrfawA2MVVgEdfZ3sQ5NLEGVWxBgT2Y4FaMZMKfE3/d8cken7gE96cHHnyRBxNkQYE0qKIcmugLXRQTGx7b7X8F4AKntROjIqmb6AAAAABJRU5ErkJggg=="></image>
+    </svg>
+    </button>
     </div>
   </section>
   </div>

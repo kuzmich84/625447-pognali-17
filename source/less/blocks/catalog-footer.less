@@ -2,3 +2,38 @@
   top: 2686px;
 }
 
+@media (min-width: @tablet-width) {
+  .catalog-footer {
+    top: 2856px;
+    position: static;
+  }
+
+  .catalog-footer .page-footer__content {
+    padding-top: 36px;
+  }
+
+  .catalog-footer .page-footer__social {
+    margin-left: -69px;
+    padding-top: 11px;
+    margin-bottom: 0;
+  }
+
+  .catalog-footer .page-footer__logo-image {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .catalog-footer .page-footer__copyright {
+    padding-top: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-footer {
+    position: static;
+  }
+
+  .catalog-footer .page-footer__social {
+    margin-left: -103px;
+  }
+}

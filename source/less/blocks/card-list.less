@@ -1,6 +1,6 @@
 .card-list {
   .reset-ul();
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .card-list__item {
@@ -66,6 +66,12 @@
   line-height: 18px;
   color: #1d2e5b;
   margin-left: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-list__user-desc {
+  display: none;
 }
 
 .card-list__link {
@@ -112,6 +118,7 @@
   margin-bottom: 10px;
 }
 
+
 //.card-list__item:nth-child(2) .card-list__future {
 //  margin-bottom: 15px;
 //}
@@ -145,7 +152,6 @@
   background-color: #edeff6;
 }
 
-
 @media (min-width: @tablet-width) {
   .card-list__user-name {
     font-size: 30px;
@@ -175,6 +181,7 @@
     padding-bottom: 13px;
   }
 
+
   .card-list__avatar-image {
     position: static;
     width: 190px;
@@ -185,6 +192,7 @@
   .card-list__wrapper {
     flex-direction: column;
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .card-list__transport {
@@ -259,8 +267,96 @@
     margin-bottom: 6px;
   }
 
+  .card-list__user-level {
+    margin-left: 8px;
+  }
+
+  .card-list__user-desc {
+    margin: 0;
+    .set-font-normal();
+    font-size: 14px;
+    line-height: 14px;
+    opacity: 0.4;
+    color: #444444;
+    display: block;
+  }
+
+  .card-list__user-number {
+    margin-left: 0;
+    margin-bottom: 4px;
+  }
+
   //.card-list__item:nth-child(2) .card-list__future {
   //  margin-bottom: 0;
   //}
+}
+
+@media (min-width: @desktop-width) {
+  .card-list {
+    margin-bottom: 65px;
+  }
+
+  .card-list__item {
+    padding: 0;
+    width: 950px;
+    margin-bottom: 30px;
+  }
+
+  .card-list__avatar-image {
+    width: 285px;
+    height: 285px;
+    margin: 0;
+    order: 1;
+    margin-right: 42px;
+  }
+
+  .card-list__about-user {
+    order: 2;
+    margin-top: 45px;
+    margin-right: 93px;
+  }
+
+  .card-list__desc {
+    display: none;
+  }
+
+  .card-list__future {
+    order: 3;
+    margin-top: 48px;
+  }
+
+
+  .card-list__wrapper {
+    order: 4;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: -86px;
+    margin-right: 61px;
+  }
+
+  .card-list__list {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-list__list .flag-list__item {
+    margin-bottom: 6px;
+  }
+
+  .card-list__link {
+    top: 189px;
+    left: 319px;
+  }
+
+  .card-list__avatar-like {
+    top: 189px;
+    left: 488px;
+  }
+
+  .card-list__like-count {
+    top: 199px;
+    left: 536px;
+  }
 }
 
