@@ -2,18 +2,25 @@
   background-color: #161c36;
   position: absolute;
   z-index: 7;
-  width: 270px;
-  top: 480px;
-  padding: 50px 25px 89px;
+  min-width: 100%;
+  top: 475px;
 }
+
+.preview__content {
+  width: 270px;
+  padding: 50px 25px 89px;
+  margin: 0 auto;
+  position: relative;
+}
+
 
 .preview__blockquote {
   .set-font-light();
   font-size: 16px;
   line-height: 22px;
   color: @font-white;
-  margin: 0 0 25px 50px;
-  padding-right: 50px;
+  margin: 0 0 18px 26px;
+  padding-right: 90px;
 }
 
 .preview__blockquote-author {
@@ -21,14 +28,94 @@
   font-size: 16px;
   line-height: 22px;
   color: @font-white;
-  margin: 0 0 33px 50px;
-  padding-right: 50px;
+  margin: 0 0 20px 26px;
+  padding-right: 65px;
 }
 
 .preview__list {
   position: absolute;
-  min-width: 270px;
+  width: 270px;
   z-index: 8;
-  left: 25px;
-  top: 225px;
+  left: 50%;
+  top: 207px;
+  margin-left: -135px;
+}
+
+@media (min-width: @tablet-width) {
+  .preview {
+    background-color: #182044;
+    top: 0;
+    position: relative;
+    background-image: url("../../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
+    background-position: 72% 18%, 50% 82%;
+    background-repeat: no-repeat;
+  }
+
+  .preview__content {
+    position: relative;
+    width: 688px;
+    margin: 0 auto;
+    padding: 200px 40px 334px;
+  }
+
+  .preview__list {
+    width: 688px;
+    margin-left: -344px;
+    top: 482px;
+  }
+
+  .preview__blockquote {
+    font-size: 28px;
+    line-height: 33px;
+    padding-right: 370px;
+    margin-top: -114px;
+    margin-left: 34px;
+    margin-bottom: 44px;
+  }
+
+  .preview__blockquote-author {
+    font-size: 21px;
+    line-height: 25px;
+    padding-right: 300px;
+    margin-left: 34px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .preview {
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .preview__list {
+    width: 1350px;
+    left: 50%;
+    margin-left: -660px;
+    top: -230px;
+  }
+
+  .preview__blockquote-wrapper {
+    position: absolute;
+    top: -530px;
+    right: 80px;
+    width: 300px;
+  }
+
+  .preview__content {
+    width: 1320px;
+    padding: 200px 60px 334px;
+    position: relative;
+  }
+
+  .preview__blockquote-author {
+    padding-right: 0;
+    margin-left: 34px;
+  }
+
+  .preview__blockquote {
+    padding-right: 0;
+    margin-top: 0;
+    margin-left: 34px;
+    margin-bottom: 44px;
+  }
 }

@@ -4,6 +4,9 @@
   font-size: 18px;
   line-height: 18px;
   color: @font-blue;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .guide-site__item {
@@ -13,17 +16,21 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
-  margin-bottom: -8px;
+  margin-bottom: -7px;
+
+
+  &::after {
+    right: 22px;
+    top: 23px;
+    position: absolute;
+    color: @font-white;
+  }
 
   &--one {
     background-color: #ff8d30;
 
     &::after {
       content: "1";
-      right: 23px;
-      top: 23px;
-      position: absolute;
-      color: @font-white;
     }
   }
 
@@ -32,10 +39,6 @@
 
     &::after {
       content: "2";
-      right: 23px;
-      top: 23px;
-      position: absolute;
-      color: @font-white;
     }
   }
 
@@ -44,10 +47,6 @@
 
     &::after {
       content: "3";
-      right: 23px;
-      top: 23px;
-      position: absolute;
-      color: @font-white;
     }
   }
 
@@ -58,14 +57,116 @@
 
     &::after {
       content: "4";
-      right: 23px;
-      top: 23px;
-      position: absolute;
-      color: @font-white;
     }
   }
 
   &:last-child {
     padding-bottom: 23px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .guide-site {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 688px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: 1439px) {
+  .guide-site__item {
+    padding: 32px 100px 68px 33px;
+    width: 224px;
+
+    &::after {
+      left: 33px;
+      top: 41px;
+      font-size: 30px;
+      line-height: 120px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: -13px;
+      width: 210px;
+    }
+
+    &--one {
+      border-top-left-radius: 18px;
+    }
+
+    &--two {
+      border-top-right-radius: 18px;
+    }
+
+    &--three {
+      padding-bottom: 59px;
+      border-bottom-left-radius: 18px;
+      border-top-left-radius: 0;
+    }
+
+    &--four {
+      padding-bottom: 59px;
+      border-radius: 0 0 18px 18px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .guide-site {
+    width: 1320px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .guide-site__item {
+    width: 195px;
+    padding: 29px 105px 30px 33px;
+
+    &:nth-child(3) {
+      margin-left: -15px;
+      width: 222px;
+    }
+
+    &:nth-child(2) {
+      width: 222px;
+      margin-left: -20px;
+    }
+
+    &:last-child {
+      margin-left: -15px;
+      width: 179px;
+    }
+
+    &:first-child::after {
+      right: 52px;
+    }
+
+    &:last-child::after {
+      right: 33px;
+    }
+
+    &::after {
+      right: 46px;
+      top: 29px;
+      font-size: 24px;
+    }
+
+    &--one {
+      border-radius: 18px 0 0 18px;
+    }
+
+    &--two {
+      border-radius: 18px 0 0 18px;
+    }
+
+    &--three {
+      border-radius: 18px 0 0 18px;
+    }
+
+    &--four {
+      border-radius: 18px;
+    }
   }
 }

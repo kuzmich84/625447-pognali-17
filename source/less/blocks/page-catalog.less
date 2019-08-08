@@ -1,9 +1,14 @@
 .page-catalog {
+  background-color: #edeff6;
+}
+
+.page-catalog__content {
   width: 270px;
   padding: 0 25px;
   margin: 0 auto;
   background-color: #edeff6;
 }
+
 
 .page-catalog__link {
   .set-font-bold();
@@ -11,6 +16,128 @@
   line-height: 30px;
   color: #1d2e5b;
   text-transform: uppercase;
-  margin-left: 60px;
-  margin-bottom: 27px;
+  margin-bottom: 21px;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-catalog__link path {
+  fill: #161c35;
+}
+
+.page-catalog__link svg {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  margin-left: 30px;
+}
+
+
+.page-catalog__button {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 110px;
+}
+
+.page-catalog__list {
+  display: none;
+}
+
+.page-catalog__prev,
+.page-catalog__next {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.page-catalog__prev polygon,
+.page-catalog__next polygon {
+  fill: #192144;
+}
+
+.page-catalog__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 14px 56px 14px 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-catalog__content {
+    width: 688px;
+    padding: 0 40px;
+  }
+
+  .page-catalog__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 3px;
+    padding-left: 13px;
+    margin-bottom: 47px;
+  }
+
+  .page-catalog__link svg {
+    margin-left: 222px;
+    top: 7px;
+  }
+
+
+  .page-catalog__list {
+    display: block;
+  }
+
+  .page-catalog__pagination {
+    border-radius: 25px;
+    padding: 0 30px;
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+
+  .page-catalog__prev,
+  .page-catalog__next {
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .page-catalog__next {
+    margin-left: 20px;
+  }
+
+  .page-catalog__prev {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-catalog__content {
+    width: 1320px;
+    padding: 0 60px;
+  }
+
+  .page-catalog__link {
+    width: 950px;
+    padding: 0;
+    margin-bottom: 65px;
+    margin-left: -12px;
+  }
+
+  .page-catalog__link svg {
+    margin-left: 362px;
+    top: 4px;
+  }
+
+  .page-catalog__pagination {
+    width: 890px;
+    margin-bottom: 79px;
+  }
+
+  .page-catalog__next {
+    margin-left: 21px;
+    margin-right: 8px;
+  }
 }

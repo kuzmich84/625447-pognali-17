@@ -3,3 +3,30 @@
   margin-left: 25px;
   display: flex;
 }
+
+.card-transport__icon {
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .card-transport {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 22px;
+  }
+
+  .card-transport__icon {
+    border-radius: 0;
+  }
+
+  .card-transport__item {
+    margin-bottom: -4px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-transport {
+    flex-direction: row;
+    margin-right: 58px;
+  }
+}

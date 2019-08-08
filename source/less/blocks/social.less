@@ -1,0 +1,33 @@
+.social__list {
+  .reset-ul();
+  display: flex;
+  justify-content: center;
+}
+
+.social__item::after {
+  content: "";
+  display: flex;
+  width: 45px;
+  height: 45px;
+  background-color: #ffd74b;
+  border-radius: 50%;
+}
+
+.social__item--bg-no {
+  &::after {
+    background-color: transparent;
+    content: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__item::after {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social__list {
+    justify-content: flex-start;
+    margin-left: 60px;
+  }
+}

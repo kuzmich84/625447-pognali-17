@@ -2,95 +2,113 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
   <link href="css/style.css" rel="stylesheet">
+  <!-- // Pixel Glass -->
+  <link href="pixelPerfect/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="pixelPerfect/pixel-glass/styles.css">
+  <script src="pixelPerfect/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body>
 <header class="page-header">
-  <div class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <div class="main-nav__wrapper">
+    <div class="main-nav__content">
     <div class="main-nav__top">
-    <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19">
-    <button class="main-nav__toggle--open" type="button">Открыть меню</button>
-    </div>
-    <div class="main-nav__wrapper main-nav__wrapper--show">
-      <img class="page-header__logo-image--popup" src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
-      <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
-      <nav class="site-nav">
-        <ul class="site-nav__list site-list">
-          <li class="site-list__item"><a class="site-list_link" href="">О СЕРВИСЕ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="">НАПРАВЛЕНИЯ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="">ПОПУТЧИКИ</a></li>
+      <div class="main-nav__logo">
+        <picture class="page-header__logo-image">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+          <img src="img/logo-mobile-white@1x.png" alt="Погнали?">
+        </picture>
+        <picture class="page-header__logo-image--popup">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
+          <img src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+        </picture>
+        <button class="main-nav__toggle" type="button">Переключатель меню</button>
+      </div>
+      <ul class="site-nav__list site-list">
+          <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
+          <li class="site-list__item"><a class="site-list_link" href="form.html">НАПРАВЛЕНИЯ</a></li>
+          <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
         </ul>
-      </nav>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__authorization" href="#">АВТОРИЗАЦИЯ</a>
-        </li>
+      <ul class="main-nav__list user-nav">
+        <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800 555-86-28</a></li>
+        <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация">mail@htmlacademy.ru</a></li>
+        <li class="user-nav__item user-nav__item--authorization"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
       </ul>
-      <div class="main-nav__contacts contacts">
-        <p class="contacts__phone">8 800 555-86-28</p>
-        <p class="contacts__email">mail@htmlacademy.ru</p>
-      </div>
-      <div class="main-nav__social social">
-        <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-          <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
-        </ul>
-      </div>
     </div>
+      <div class="main-nav__social social">
+      <ul class="social__list">
+        <li class="social__item social__item--bg-no"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
+        <li class="social__item social__item--bg-no"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
+        <li class="social__item social__item--bg-no"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="page-header__content">
     <h2 class="main-nav__title">В путешествие с крутыми попутчиками!</h2>
-    <ul class="main-nav__list user-nav">
-      <li class="user-nav__item"><a class="user-nav__phone" href="#">Контактный телефон</a></li>
-      <li class="user-nav__item"><a class="user-nav__email" href="#">Регистрация</a></li>
-      <li class="user-nav__item"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
-    </ul>
   </div>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Приложение Погнали</h1>
   <section class="preview">
+    <div class="preview__content">
+      <div class="preview__blockquote-wrapper">
     <p class="preview__blockquote">«Лучшее приложение, что я видел в жизни!»</p>
-    <p class="preview__blockquote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+    <p class="preview__blockquote-author">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</p>
+      </div>
     <ul class="preview__list guide-site">
       <li class="guide-site__item guide-site__item--one">Выберите <br> направление</li>
       <li class="guide-site__item guide-site__item--two">Изучите идеи <br> путешественников</li>
       <li class="guide-site__item guide-site__item--three">Находите тех, <br> кто похож на вас</li>
       <li class="guide-site__item guide-site__item--four">Путешествуйте <br> вместе!</li>
     </ul>
+    </div>
   </section>
   <section class="about-service">
+    <div class="about-service__content">
     <h2 class="about-service__title title">О сервисе</h2>
-    <p class="about-service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-    <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+    <p class="about-service__text">Любое путешествие веселее <br> с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <br> и черпайте вдохновение в чужих. </p>
+    <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу — скорее зовите его в совместный трип!</p>
+      <a class="button about-service__button" href="#">Подробнее</a>
+    </div>
   </section>
   <section class="direction">
-    <h2 class="direction__title title">Направления</h2>
-    <p class="direction__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
-      отправиться и чем можно там заняться.</p>
+    <div class="direction__content">
+      <div class="direction__wrapper">
+      <h2 class="direction__title title">Направления</h2>
+    <p class="direction__text">Мы не продаем туры <br> и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
+      отправиться <br> и чем можно там заняться.</p>
+      </div>
     <ul class="direction__list countries">
       <li class="countries__item">
-        <img class="countries__image" src="http://placehold.it/270x110" alt="Тайланд" width="270" height="110">
+        <div class="countries__image countries__image--thailand "></div>
         <div class="countries__wrapper">
-          <img class="countries__flag" src="http://placehold.it/35x24" alt="Флаг Тайланда" width="35" height="24">
+          <div class="countries__flag countries__flag--thailand"></div>
           <h3 class="countries__title">Тайланд</h3>
           <span class="countries__rating">18321</span>
           <p class="countries__text">Джунгли зовут!</p>
         </div>
       </li>
       <li class="countries__item">
-        <img class="countries__image" src="http://placehold.it/270x110" alt="Франция" width="270" height="110">
+        <div class="countries__image countries__image--france "></div>
         <div class="countries__wrapper">
-          <img class="countries__flag" src="http://placehold.it/35x24" alt="Флаг Франции" width="35" height="24">
+          <div class="countries__flag countries__flag--france"></div>
           <h3 class="countries__title">Франция</h3>
           <span class="countries__rating">12518</span>
           <p class="countries__text">Трэ бьен, манифик!</p>
         </div>
       </li>
       <li class="countries__item">
-        <img class="countries__image" src="http://placehold.it/270x110" alt="Чехия" width="270" height="110">
+        <div class="countries__image countries__image--czech"></div>
         <div class="countries__wrapper">
-          <img class="countries__flag" src="http://placehold.it/35x24" alt="Флаг Чехии" width="35" height="24">
+          <div class="countries__flag countries__flag--czech"></div>
           <h3 class="countries__title">Чехия</h3>
           <span class="countries__rating">5326</span>
           <p class="countries__text">Закоулки старой Европы</p>
@@ -98,12 +116,16 @@
       </li>
     </ul>
     <a class="button direction__button" href="form.html">Показать все</a>
+    </div>
   </section>
   <section class="users">
+    <div class="users__content">
+      <div class="users__wrapper">
     <h2 class="users__title title">Попутчики</h2>
     <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
-      коктейль, а другому маршрут для хайкинга.</p>
-    <p class="users__text users__text--bold">Теперь можно легко найти единомышленников!</p>
+      коктейль, <br> а другому маршрут для хайкинга.</p>
+    <p class="users__text users__text--bold">Теперь можно легко <br> найти единомышленников!</p>
+      </div>
     <ul class="users__list users-cards">
       <li class="users-cards__item">
         <div class="users-level">
@@ -169,10 +191,12 @@
       </li>
     </ul>
     <a class="button users__button" href="catalog.html">Показать всех</a>
+    </div>
   </section>
   <section class="rate">
-    <h2 class="rate__title title">Добавьте свой профиль</h2>
-    <ul class="rate__list rate-list">
+    <div class="rate__content">
+    <h2 class="rate__title title">Добавьте свой профиль!</h2>
+    <ol class="rate__list rate-list">
       <li class="rate-list__item">
         <p class="rate-list__desc">Базовое размещение</p>
         <p class="rate-list__desc">Бесплатно</p>
@@ -185,23 +209,32 @@
         <p class="rate-list__desc">Кастомный цвет карточки</p>
         <p class="rate-list__desc">59 руб./мес</p>
       </li>
-    </ul>
+    </ol>
     <a class="rate__link--business" href="#">Показать тарифы для бизнеса</a>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
-  <img class="page-footer__logo-image" src="img/logo-mobile-blue-footer.png" alt="Погнали?" width="96" height="15">
-  <div class="page-footer__social social">
+  <div class="page-footer__content">
+    <picture class="page-footer__logo-image">
+      <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+      <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+      <img src="img/logo-mobile-blue-footer.png" alt="Погнали?">
+    </picture>
+    <div class="page-footer__social social">
     <ul class="social__list">
-      <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-      <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-      <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
+      <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
+      <li class="social__item"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте"></a></li>
+      <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
     <p class="copyright__text">Разработано</p>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
   </div>
+  </div>
 </footer>
+
+<script src="js/popup-menu.js"></script>
 </body>
 </html>

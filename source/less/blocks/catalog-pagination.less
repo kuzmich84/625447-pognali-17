@@ -1,0 +1,24 @@
+@media (min-width: @tablet-width) {
+  .catalog-pagination {
+    .reset-ul();
+    display: flex;
+  }
+
+  .catalog-pagination__link {
+    .set-font-bold();
+    color: @font-darkblue;
+    font-size: 20px;
+    line-height: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalog-pagination__link--current {
+    background-color: #ffd74b;
+  }
+}

@@ -2,61 +2,80 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <!-- // Pixel Glass -->
+  <link href="pixelPerfect/form.css" rel="stylesheet">
+  <link rel="stylesheet" href="pixelPerfect/pixel-glass/styles.css">
+  <script src="pixelPerfect/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   <title>Погнали - направления</title>
 </head>
 <body>
-<header class="form-header">
-  <div class="main-nav">
-    <div class="main-nav__top">
-      <a href="index.html"><img class="form-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19"></a>
-      <button class="main-nav__toggle--open form__toggle--open" type="button">Открыть меню</button>
-    </div>
+<header class="catalog-header">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <div class="main-nav__wrapper">
-      <a class="page-header__logo-link" href="index.html"><img class="page-header__logo-image--popup" src="http://placehold.it/100x19" alt="Погнали?" width="100" height="19"></a>
-      <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
-      <nav class="site-nav">
-        <ul class="site-nav__list site-list">
-          <li class="site-list__item"><a class="site-list_link" href="">О СЕРВИСЕ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="">НАПРАВЛЕНИЯ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="">ПОПУТЧИКИ</a></li>
-        </ul>
-      </nav>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__authorization" href="#">АВТОРИЗАЦИЯ</a>
-        </li>
-      </ul>
-      <div class="main-nav__contacts contacts">
-        <p class="contacts__phone">8 800 555-86-28</p>
-        <p class="contacts__email">mail@htmlacademy.ru</p>
-      </div>
-      <div class="main-nav__social social">
-        <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-          <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
-        </ul>
+      <div class="main-nav__content">
+        <div class="main-nav__top">
+          <div class="main-nav__logo">
+            <picture class="page-header__logo-image">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+              <img src="img/logo-mobile-white@1x.png" alt="Погнали?">
+            </picture>
+            <picture class="page-header__logo-image--popup">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
+              <img src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+            </picture>
+            <button class="main-nav__toggle" type="button">Переключатель меню</button>
+          </div>
+          <ul class="site-nav__list site-list">
+            <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
+            <li class="site-list__item"><a class="site-list_link" href="form.html">НАПРАВЛЕНИЯ</a></li>
+            <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
+          </ul>
+          <ul class="main-nav__list user-nav user-nav--catalog">
+            <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800 555-86-28</a></li>
+            <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация">mail@htmlacademy.ru</a></li>
+            <li class="user-nav__item user-nav__item--authorization"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
+          </ul>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <h2 class="form-header__title">Направления</h2>
+  </nav>
+  <div class="catalog-header__wrapper">
+    <h2 class="catalog-header__title">Направления</h2>
   </div>
 </header>
 <main class="page-form">
 </main>
 <footer class="page-footer catalog-footer">
-  <img class="page-footer__logo-image" src="img/logo-mobile-blue-footer.png" alt="Погнали?" width="96" height="15">
-  <div class="page-footer__social social">
-    <ul class="social__list">
-      <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-      <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-      <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
-    </ul>
-  </div>
-  <div class="page-footer__copyright copyright">
-    <p class="copyright__text">Разработано</p>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
+  <div class="page-footer__content">
+    <picture class="page-footer__logo-image">
+      <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+      <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+      <img src="img/logo-mobile-blue-footer.png" alt="Погнали?">
+    </picture>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
+        <li class="social__item"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте"></a></li>
+        <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
+    </div>
   </div>
 </footer>
+<script src="js/popup-menu.js"></script>
 </body>
 </html>
