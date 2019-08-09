@@ -213,6 +213,32 @@
     <a class="rate__link--business" href="#">Показать тарифы для бизнеса</a>
     </div>
   </section>
+  <section class="registration">
+  <div class="registration__content">
+    <h2 class="registration__title title">Заинтересовались?</h2>
+    <p class="registration__text">Зарегистрируйтесь, <br> это быстро и бесплатно! <br> Уже зарегистрированы? Тогда скорее <a class="registration__link" href="">авторизуйтесь</a>.</p>
+    <form class="registration__form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="registration__input" type="text" placeholder="E-mail" id="e-mail" name="e-mail">
+      <button class="button registration__button" type="submit">Отправить</button>
+    </form>
+    <p  class="registration__text">Остались вопросы? <br>  Мы с радостью на них ответим!</p>
+    <ul class="registration__list user-nav">
+      <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800 555-86-28</a></li>
+      <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация">mail@htmlacademy.ru</a></li>
+    </ul>
+  </div>
+  </section>
+  <section class="address">
+  <h2 class="visually-hidden">Наш адрес</h2>
+    <div class="address__content">
+    <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+      <a class="button address__button" href="form.html">Проложить маршрут</a>
+    </div>
+  </section>
+  <section class="map">
+    <div class="map__content">
+    </div>
+  </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__content">
@@ -235,6 +261,31 @@
   </div>
 </footer>
 
+<section class="business-rate business-rate__popup">
+  <div class="rate__content">
+    <h2 class="rate__title title">Бизнес-тарифы</h2>
+    <ol class="rate__list rate-list">
+      <li class="rate-list__item">
+        <p class="rate-list__desc">Реклама у блоггера</p>
+        <p class="rate-list__desc">300 000 руб./пост</p>
+      </li>
+      <li class="rate-list__item">
+        <p class="rate-list__desc">Накрутка подписчиков</p>
+        <p class="rate-list__desc">от 1 руб./шт.</p>
+      </li>
+      <li class="rate-list__item">
+        <p class="rate-list__desc">Лайки от ботов</p>
+        <p class="rate-list__desc">от 20 коп./лайк</p>
+      </li>
+      <li class="rate-list__item">
+        <p class="rate-list__desc">Ваш продакт-плейсмент</p>
+        <p class="rate-list__desc">Индивидуально</p>
+      </li>
+    </ol>
+  </div>
+  <a class="business-rate__button" href="#">Закрыть окно</a>
+</section>
 <script src="js/popup-menu.js"></script>
+<script src="js/popup-business-rate.js"></script>
 </body>
 </html>

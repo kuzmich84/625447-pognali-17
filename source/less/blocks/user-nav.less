@@ -55,27 +55,17 @@
   font-size: 0;
 }
 
-.main-nav--opened .user-nav__phone {
-  position: relative;
-  padding-left: 61px;
+.user-nav__phone,
+.user-nav__email {
   .set-font-bold();
   font-size: 16px;
   line-height: 22px;
   color: #192144;
-
-  &::before {
-    content: "";
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    top: -16px;
-    left: 0;
-  }
+  text-transform: uppercase;
+  position: relative;
 }
 
+.main-nav--opened .user-nav__phone,
 .main-nav--opened .user-nav__email {
   position: relative;
   .set-font-bold();
@@ -83,8 +73,6 @@
   line-height: 22px;
   color: #192144;
   padding-left: 61px;
-  text-transform: uppercase;
-
 
   &::before {
     content: "";
@@ -105,20 +93,14 @@
 
 
 @media (min-width: @tablet-width) {
-  .main-nav--opened .user-nav__phone {
+  .user-nav__phone,
+  .user-nav__email {
     font-size: 28px;
     line-height: 28px;
     padding-left: 89px;
-
-    &::before {
-      content: "";
-      width: 68px;
-      height: 68px;
-      top: -24px;
-      left: 0;
-    }
   }
 
+  .main-nav--opened .user-nav__phone,
   .main-nav--opened .user-nav__email {
     font-size: 28px;
     line-height: 28px;
