@@ -1,16 +1,15 @@
 .registration {
   min-width: 100%;
-  position: absolute;
-  top: 4120px;
   background-color: #192144;
   border-radius: 0 0 25px 25px;
   z-index: 2;
+  margin-top: -20px;
 }
 
 .registration__content {
   margin: 0 auto;
   width: 270px;
-  padding: 109px 25px 16px;
+  padding: 92px 25px 16px;
 }
 
 .registration__title {
@@ -92,16 +91,20 @@
   margin-bottom: 23px;
 }
 
+.registration__text--desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .registration {
-    top: 4755px;
     border-radius: 0 0 60px 60px;
+    margin-top: -50px;
   }
 
   .registration__content {
     margin: 0 auto;
     width: 688px;
-    padding: 138px 40px 36px;
+    padding: 127px 40px 36px;
   }
 
   .registration__text {
@@ -156,5 +159,73 @@
 
   .registration__list .user-nav__item {
     margin-bottom: 40px;
+  }
+
+  .registration__text--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .registration {
+    margin-top: -55px;
+  }
+
+  .registration__content {
+    width: 1320px;
+    padding: 162px 60px 92px;
+  }
+
+  .registration__text {
+    margin-bottom: 56px;
+  }
+
+  .registration__text--last {
+    margin-bottom: 76px;
+  }
+
+  .registration__form {
+    margin: 0 72px 68px;
+  }
+
+  .registration__button {
+    width: 325px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .registration__button--pos {
+    display: flex;
+    padding-left: 29px;
+    padding-top: 2px;
+  }
+
+  .registration__text--desktop {
+    display: inline;
+  }
+
+  .registration__text--tablet {
+    display: none;
+  }
+
+  .registration__list {
+    display: flex;
+    margin-left: 224px;
+  }
+
+  .registration__list .user-nav__item {
+    margin-right: 113px;
+  }
+
+  .registration__list .user-nav__phone,
+  .registration__list .user-nav__email {
+    padding-left: 120px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -34px;
+      left: 0;
+    }
   }
 }

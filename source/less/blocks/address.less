@@ -1,16 +1,15 @@
 .address {
   min-width: 100%;
-  position: absolute;
-  top: 4630px;
   background-color: #ffd74b;
   border-radius: 0 0 25px 25px;
   z-index: 1;
+  margin-top: -20px;
 }
 
 .address__content {
   margin: 0 auto;
   width: 270px;
-  padding: 48px 25px 35px;
+  padding: 38px 25px 35px;
 }
 
 .address__text {
@@ -46,14 +45,14 @@
 
 @media (min-width: @tablet-width) {
   .address {
-    top: 5500px;
     border-radius: 0 0 60px 60px;
+    margin-top: -50px;
   }
 
   .address__content {
     margin: 0 auto;
     width: 688px;
-    padding: 73px 25px 85px;
+    padding: 90px 25px 85px;
   }
 
   .address__text {
@@ -76,5 +75,38 @@
     line-height: 24px;
     padding: 27px 0 24px 33px;
     border-radius: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    margin-top: -55px;
+  }
+
+  .address__content {
+    width: 1320px;
+    padding: 112px 60px 62px;
+  }
+
+  .address__wrapper {
+    display: flex;
+    margin-left: 215px;
+  }
+
+  .address__text {
+    margin-bottom: 0;
+    margin-right: 83px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -31px;
+      left: -27px;
+    }
+  }
+
+  .address__button {
+    margin-top: 1px;
+    padding-right: 64px;
   }
 }

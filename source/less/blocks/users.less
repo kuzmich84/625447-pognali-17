@@ -1,7 +1,5 @@
 .users {
   min-width: 100%;
-  position: absolute;
-  top: 2332px;
   background-color: #192144;
   background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back.png"), url("../../img/rogovaya-back-mobile@1x.png");
   background-position: 86% 7.5%, 0 7.5%, -4% 27.8%;
@@ -9,12 +7,13 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 4;
+  margin-top: -20px;
 }
 
 .users__content {
   margin: 0 auto;
   width: 270px;
-  padding: 104px 25px 30px;
+  padding: 71px 25px 30px;
 }
 
 .users__title {
@@ -63,16 +62,16 @@
 
 @media (min-width: @tablet-width) {
   .users {
-    top: 2945px;
     border-radius: 0 0 60px 60px;
     background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back-direction-tablet.svg"), url("../../img/rogovaya-back-desktop@1x.png");
-    background-position: 6% 41.6%, 7% 13%, 84% 14%;
+    background-position: 6% 41%, 7% 12%, 84% 13%;
+    margin-top: -50px;
   }
 
   .users__content {
     width: 688px;
     margin: 0 auto;
-    padding: 168px 40px 88px;
+    padding: 154px 40px 88px;
   }
 
   .users__title {
@@ -124,15 +123,14 @@
 
 @media (min-width: @desktop-width) {
   .users {
-    top: 2175px;
-    z-index: -3;
     background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back-direction-tablet.svg"), url("../../img/rogovaya-back-desktop@1x.png");
     background-position: 42.1% 30.6%, 5% 23%, 16.7% 85%;
+    margin-top: -55px;
   }
 
   .users__content {
     width: 1320px;
-    padding: 168px 60px 52px;
+    padding: 149px 60px 52px;
     display: flex;
     position: relative;
   }

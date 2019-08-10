@@ -1,10 +1,10 @@
 .map {
   min-width: 100%;
-  position: absolute;
-  top: 4831px;
   background-repeat: no-repeat;
   background-image: url("../../img/map-mobile.jpg");
   background-size: cover;
+  background-position: 0 6%;
+  margin-top: -20px;
 }
 
 
@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   overflow: auto;
-  min-height: 323px;
+  min-height: 313px;
 }
 
 .map__content::before {
@@ -30,16 +30,29 @@
 
 @media (min-width: @tablet-width) {
   .map {
-    top: 5771px;
     background-image: url("../../img/map-tablet.jpg");
+    margin-top: -50px;
+    background-position-y: 30%;
   }
 
   .map__content {
-    min-height: 597px;
+    min-height: 578px;
 
     &::before {
       width: 54px;
       height: 54px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../../img/map-desktop.jpg");
+    margin-top: -55px;
+    background-position: 0 49%;
+  }
+
+  .map__content {
+    min-height: 505px;
   }
 }
