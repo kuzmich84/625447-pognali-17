@@ -26,13 +26,14 @@
   width: 41px;
   height: 41px;
   z-index: 50;
+  top: 40%;
 }
 
 @media (min-width: @tablet-width) {
   .map {
     background-image: url("../../img/map-tablet.jpg");
     margin-top: -50px;
-    background-position-y: 30%;
+    background-position-y: 28%;
   }
 
   .map__content {
@@ -41,6 +42,7 @@
     &::before {
       width: 54px;
       height: 54px;
+      top: 41%;
     }
   }
 }
@@ -49,10 +51,14 @@
   .map {
     background-image: url("../../img/map-desktop.jpg");
     margin-top: -55px;
-    background-position: 0 49%;
+    background-position: 0 63%;
   }
 
   .map__content {
-    min-height: 505px;
+    min-height: 516px;
+
+    &::before {
+      top: 39%;
+    }
   }
 }

@@ -17,13 +17,22 @@
 
 .page-footer__logo-image {
   align-self: center;
-  margin-bottom: 36px;
+  margin-bottom: 39px;
 }
 
 .page-footer__social {
-  margin-bottom: 58px;
+  margin-bottom: 50px;
   align-self: center;
 }
+
+.page-footer__social svg {
+  fill: #1d2e5b;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+}
+
 
 @media (min-width: @tablet-width) {
   .page-footer {
@@ -57,11 +66,14 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     z-index: 10;
-    margin-top: -20px;
   }
 
   .page-footer__content {
     width: 1320px;
-    padding: 56px 60px;
+    padding: 49px 60px;
+  }
+
+  .page-footer__social {
+    margin-left: -107px;
   }
 }

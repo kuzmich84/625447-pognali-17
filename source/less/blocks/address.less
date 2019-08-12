@@ -21,18 +21,22 @@
   padding: 0 30px 0 61px;
   position: relative;
   margin-bottom: 31px;
+}
 
-  &::before {
-    content: "";
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    top: -2px;
-    left: 0;
-  }
+.address__location {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address__location svg {
+  fill: #ffd74b;
 }
 
 .address__button {
@@ -41,6 +45,37 @@
   margin: 0;
   border: 3px solid #192144;
   border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #192144;
+    color: #ffffff;
+  }
+}
+
+.address__icon {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  right: 23px;
+}
+
+.address__button svg {
+  fill: #1d2e5b;
+}
+
+.address__button:hover svg,
+.address__button:focus svg {
+  fill: #ffffff;
+}
+
+.address__button:active svg {
+  opacity: 0.3;
+}
+
+
+.address__content .button::before {
+  content: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -91,6 +126,7 @@
   .address__wrapper {
     display: flex;
     margin-left: 215px;
+
   }
 
   .address__text {

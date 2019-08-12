@@ -12,45 +12,74 @@
   <!-- // Pixel Glass -->
 </head>
 <body class="main">
+<svg style="display: none;">
+  <symbol id="status-bar" viewBox="0 0 33.847132 33.847132" >
+    <style type="text/css">
+      .circle-status-bar__circle {
+        transform: rotate(-90deg);
+        transform-origin: center;
+      }
+    </style>
+    <circle r="16.923566" cx="50%" cy="50%"></circle>
+    <circle class="circle-status-bar__circle"  r="15.923566" cx="50%" cy="50%" fill="none" stroke="orange" stroke-width="2"></circle>
+  </symbol>
+</svg>
 <header class="page-header">
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <div class="main-nav__wrapper">
-    <div class="main-nav__content">
-    <div class="main-nav__top">
-      <div class="main-nav__logo">
-        <picture class="page-header__logo-image">
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
-          <img src="img/logo-mobile-white@1x.png" alt="Погнали?">
-        </picture>
-        <picture class="page-header__logo-image--popup">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
-          <img src="img/logo-mobile-blue@1x.png" alt="Погнали?">
-        </picture>
-        <button class="main-nav__toggle" type="button">Переключатель меню</button>
+      <div class="main-nav__content">
+        <div class="main-nav__top">
+          <div class="main-nav__logo">
+            <picture class="page-header__logo-image">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+              <img src="img/logo-mobile-white@1x.png" alt="Погнали?">
+            </picture>
+            <picture class="page-header__logo-image--popup">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
+              <img src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+            </picture>
+            <button class="main-nav__toggle" type="button">Переключатель меню</button>
+          </div>
+          <ul class="site-nav__list site-list">
+            <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
+            <li class="site-list__item"><a class="site-list_link" href="form.html">НАПРАВЛЕНИЯ</a></li>
+            <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
+          </ul>
+          <ul class="main-nav__list user-nav">
+            <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон"><span class="user-nav__icon">
+              <svg width="18" height="18">
+                <use href="img/sprite.svg#phone"></use>
+              </svg></span>8 800 555-86-28</a></li>
+            <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация"><span class="user-nav__icon">
+              <svg width="18" height="18">
+                <use href="img/sprite.svg#mail"></use>
+              </svg>
+            </span>mail@htmlacademy.ru</a></li>
+            <li class="user-nav__item user-nav__item--authorization"><a class="user-nav__button button__authorization" href="#"><span>АВТОРИЗАЦИЯ</span></a></li>
+          </ul>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
+              <svg width="11" height="21">
+                <use  href="img/sprite.svg#facebook" ></use>
+              </svg></a></li>
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте">
+              <svg width="23" height="12">
+                <use  href="img/sprite.svg#vk"></use>
+              </svg></a></li>
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме">
+              <svg width="18" height="18">
+                <use  href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="site-nav__list site-list">
-          <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="form.html">НАПРАВЛЕНИЯ</a></li>
-          <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
-        </ul>
-      <ul class="main-nav__list user-nav">
-        <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800 555-86-28</a></li>
-        <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация">mail@htmlacademy.ru</a></li>
-        <li class="user-nav__item user-nav__item--authorization"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
-      </ul>
-    </div>
-      <div class="main-nav__social social">
-      <ul class="social__list">
-        <li class="social__item social__item--bg-no"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-        <li class="social__item social__item--bg-no"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-        <li class="social__item social__item--bg-no"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
-      </ul>
-    </div>
-    </div>
     </div>
   </nav>
-
   <div class="page-header__content">
     <h2 class="main-nav__title">В путешествие с крутыми попутчиками!</h2>
   </div>
@@ -60,180 +89,241 @@
   <section class="preview">
     <div class="preview__content">
       <div class="preview__blockquote-wrapper">
-    <p class="preview__blockquote">«Лучшее приложение, что я видел в жизни!»</p>
-    <p class="preview__blockquote-author">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</p>
+        <p class="preview__blockquote">«Лучшее приложение, что я видел в жизни!»</p>
+        <p class="preview__blockquote-author">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</p>
       </div>
-    <ul class="preview__list guide-site">
-      <li class="guide-site__item guide-site__item--one">Выберите <br> направление</li>
-      <li class="guide-site__item guide-site__item--two">Изучите идеи <br> путешественников</li>
-      <li class="guide-site__item guide-site__item--three">Находите тех, <br> кто похож на вас</li>
-      <li class="guide-site__item guide-site__item--four">Путешествуйте <br> вместе!</li>
-    </ul>
+      <ul class="preview__list guide-site">
+        <li class="guide-site__item guide-site__item--one">Выберите <br> направление</li>
+        <li class="guide-site__item guide-site__item--two">Изучите идеи <br> путешественников</li>
+        <li class="guide-site__item guide-site__item--three">Находите тех, <br> кто похож на вас</li>
+        <li class="guide-site__item guide-site__item--four">Путешествуйте <br> вместе!</li>
+      </ul>
     </div>
   </section>
   <section class="about-service">
     <div class="about-service__content">
-    <h2 class="about-service__title title">О сервисе</h2>
-    <p class="about-service__text">Любое путешествие веселее <br> с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <br> и черпайте вдохновение в чужих. </p>
-    <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу — скорее зовите его в совместный трип!</p>
+      <h2 class="about-service__title title">О сервисе</h2>
+      <p class="about-service__text">Любое путешествие веселее <br> с попутчиками, которые на одной волне с тобой!
+        Делитесь своими идеями путешествий <br> и черпайте вдохновение в чужих. </p>
+      <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу — скорее зовите
+        его в совместный трип!</p>
       <a class="button about-service__button" href="#">Подробнее</a>
     </div>
   </section>
   <section class="direction">
     <div class="direction__content">
       <div class="direction__wrapper">
-      <h2 class="direction__title title">Направления</h2>
-    <p class="direction__text">Мы не продаем туры <br> и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
-      отправиться <br> и чем можно там заняться.</p>
+        <h2 class="direction__title title">Направления</h2>
+        <p class="direction__text">Мы не продаем туры <br> и ничего не рекламируем. Люди сами пишут о странах, куда
+          хотели бы
+          отправиться <br> и чем можно там заняться.</p>
       </div>
-    <ul class="direction__list countries">
-      <li class="countries__item">
-        <div class="countries__image countries__image--thailand "></div>
-        <div class="countries__wrapper">
-          <div class="countries__flag countries__flag--thailand"></div>
-          <h3 class="countries__title">Тайланд</h3>
-          <span class="countries__rating">18321</span>
-          <p class="countries__text">Джунгли зовут!</p>
-        </div>
-      </li>
-      <li class="countries__item">
-        <div class="countries__image countries__image--france "></div>
-        <div class="countries__wrapper">
-          <div class="countries__flag countries__flag--france"></div>
-          <h3 class="countries__title">Франция</h3>
-          <span class="countries__rating">12518</span>
-          <p class="countries__text">Трэ бьен, манифик!</p>
-        </div>
-      </li>
-      <li class="countries__item">
-        <div class="countries__image countries__image--czech"></div>
-        <div class="countries__wrapper">
-          <div class="countries__flag countries__flag--czech"></div>
-          <h3 class="countries__title">Чехия</h3>
-          <span class="countries__rating">5326</span>
-          <p class="countries__text">Закоулки старой Европы</p>
-        </div>
-      </li>
-    </ul>
-    <a class="button direction__button" href="form.html">Показать все</a>
+      <ul class="direction__list countries">
+        <li class="countries__item">
+          <picture>
+            <source srcset="img/thailand-desktop@1x.jpg" media="(min-width: 768px)">
+            <img class="countries__image countries__image--thailand" src="img/thailand-mobile@1x.jpg" alt="Таиланд">
+          </picture>
+          <div class="countries__wrapper">
+            <div class="countries__flag countries__flag--thailand"></div>
+            <h3 class="countries__title">Тайланд</h3>
+            <span class="countries__rating">18321</span>
+            <p class="countries__text">Джунгли зовут!</p>
+          </div>
+        </li>
+        <li class="countries__item">
+          <picture>
+            <source srcset="img/france-desktop@1x.jpg" media="(min-width: 768px)">
+            <img class="countries__image countries__image--france" src="img/france-mobile@1x.jpg" alt="Франция">
+          </picture>
+          <div class="countries__wrapper">
+            <div class="countries__flag countries__flag--france"></div>
+            <h3 class="countries__title">Франция</h3>
+            <span class="countries__rating">12518</span>
+            <p class="countries__text">Трэ бьен, манифик!</p>
+          </div>
+        </li>
+        <li class="countries__item">
+          <picture>
+            <source srcset="img/czech-desktop@1x.jpg" media="(min-width: 768px)">
+            <img class="countries__image countries__image--czech" src="img/czech-mobile@1x.jpg" alt="Чехия">
+          </picture>
+          <div class="countries__wrapper">
+            <div class="countries__flag countries__flag--czech"></div>
+            <h3 class="countries__title">Чехия</h3>
+            <span class="countries__rating">5326</span>
+            <p class="countries__text">Закоулки старой Европы</p>
+          </div>
+        </li>
+      </ul>
+      <a class="button direction__button" href="form.html"><span>Показать все</span></a>
     </div>
   </section>
   <section class="users">
     <div class="users__content">
       <div class="users__wrapper">
-    <h2 class="users__title title">Попутчики</h2>
-    <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
-      коктейль, <br> а другому маршрут для хайкинга.</p>
-    <p class="users__text users__text--bold">Теперь можно легко <br> найти единомышленников!</p>
+        <h2 class="users__title title">Попутчики</h2>
+        <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+          коктейль, <br> а другому маршрут для хайкинга.</p>
+        <p class="users__text users__text--bold">Теперь можно легко <br> найти единомышленников!</p>
       </div>
-    <ul class="users__list users-cards">
-      <li class="users-cards__item">
-        <div class="users-level">
-          <span class="users-level__number">99</span>
-          <span class="users-level__desc">level</span>
-        </div>
-        <img class="users-cards__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="аваторка пользователя">
-        <ul class="users-flag__list  flag-list">
-          <li class="flag-list__item"><img class="flag-list__image--sri-lanka" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
-          <li class="flag-list__item"><img class="flag-list__image--seychelles" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
-          <li class="flag-list__item"><img class="flag-list__image--thailand" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
-        </ul>
-        <span class="users__presence users__presence--off-line"></span>
-        <h3 class="users__name">Таня Фирсова</h3>
-        <ul class="users-tags__list tag-list">
-          <li class="tag-list__item">#ЗОЖ</li>
-          <li class="tag-list__item">#ПП</li>
-          <li class="tag-list__item">#Фитнес</li>
-          <li class="tag-list__item">#пляж</li>
-          <li class="tag-list__item">#авокадо</li>
-          <li class="tag-list__item">#смузи</li>
-        </ul>
-        <ul class="users-transport__list transport-list ">
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет">
-          </li>
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус">
-          </li>
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед">
-          </li>
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком">
-          </li>
-        </ul>
-      </li>
-      <li class="users-cards__item">
-        <div class="users-level">
-          <span class="users-level__number">80</span>
-          <span class="users-level__desc">level</span>
-        </div>
-        <img class="users-cards__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="аваторка пользователя">
-        <ul class="users-flag__list  flag-list">
-          <li class="flag-list__item"><img class="flag-list__image--belgium" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
-          <li class="flag-list__item"><img class="flag-list__image--czech" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
-        </ul>
-        <span class="users__presence users__presence--on-line"></span>
-        <h3 class="users__name">Петя Демин</h3>
-        <ul class="users-tags__list tag-list">
-          <li class="tag-list__item">#бургер</li>
-          <li class="tag-list__item">#бар</li>
-          <li class="tag-list__item">#футбол</li>
-          <li class="tag-list__item">#концерт</li>
-          <li class="tag-list__item">#крафт</li>
-        </ul>
-        <ul class="users-transport__list transport-list ">
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет">
-          </li>
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус">
-          </li>
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед">
-          </li>
-          <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком">
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <a class="button users__button" href="catalog.html">Показать всех</a>
+      <ul class="users__list users-cards">
+        <li class="users-cards__item">
+          <div class="users-level">
+            <div class="users-level__icon">
+              <svg class="status__icon status__icon--firsova" width="60" height="60">
+                <use href="#status-bar"></use>
+              </svg>
+              <div class="users-level__value">
+            <span class="users-level__number">99</span>
+            <span class="users-level__desc">level</span>
+            </div>
+                  </div>
+          </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg">
+            <img class="users-cards__avatar" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова">
+          </picture>
+          <ul class="users-flag__list  flag-list">
+            <li class="flag-list__item"><img class="flag-list__image--sri-lanka" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+            <li class="flag-list__item"><img class="flag-list__image--thailand" src="img/thailand-flag.png" width="35" height="24" alt="флаг"></li>
+            <li class="flag-list__item"><img class="flag-list__image--seychelles" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+          </ul>
+          <span class="users__presence users__presence--off-line"></span>
+          <h3 class="users__name">Таня Фирсова</h3>
+          <ul class="users-tags__list tag-list">
+            <li class="tag-list__item">#ЗОЖ</li>
+            <li class="tag-list__item">#ПП</li>
+            <li class="tag-list__item">#Фитнес</li>
+            <li class="tag-list__item">#пляж</li>
+            <li class="tag-list__item">#авокадо</li>
+            <li class="tag-list__item">#смузи</li>
+          </ul>
+          <ul class="users-transport__list transport-list ">
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled" src="http://placehold.it/19x21" width="19" height="21" alt="Самолет">
+            </li>
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/17x21" width="17" height="21" alt="Автобус">
+            </li>
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled" src="http://placehold.it/24x21" width="24" height="21" alt="Велосипед">
+            </li>
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled " src="http://placehold.it/20x21" width="20" height="21" alt="Пешком">
+            </li>
+          </ul>
+        </li>
+        <li class="users-cards__item">
+          <div class="users-level">
+            <div class="users-level__icon">
+              <svg class="status__icon status__icon--demin" width="60" height="60">
+                <use href="#status-bar"></use>
+              </svg>
+              <div class="users-level__value">
+                <span class="users-level__number">80</span>
+                <span class="users-level__desc">level</span>
+              </div>
+            </div>
+          </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
+            <img class="users-cards__avatar" src="img/demin-mobile@1x.jpg" alt="Петя Демин">
+          </picture>
+          <ul class="users-flag__list  flag-list">
+            <li class="flag-list__item"><img class="flag-list__image--belgium" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+            <li class="flag-list__item"><img class="flag-list__image--czech" src="http://placehold.it/35x24" width="35" height="24" alt="флаг"></li>
+          </ul>
+          <span class="users__presence users__presence--on-line"></span>
+          <h3 class="users__name">Петя Демин</h3>
+          <ul class="users-tags__list tag-list">
+            <li class="tag-list__item">#бургер</li>
+            <li class="tag-list__item">#бар</li>
+            <li class="tag-list__item">#футбол</li>
+            <li class="tag-list__item">#концерт</li>
+            <li class="tag-list__item">#крафт</li>
+          </ul>
+          <ul class="users-transport__list transport-list ">
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled"
+                                                  src="http://placehold.it/19x21" width="19" height="21" alt="Самолет">
+            </li>
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled"
+                                                  src="http://placehold.it/17x21" width="17" height="21" alt="Автобус">
+            </li>
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--disabled"
+                                                  src="http://placehold.it/24x21" width="24" height="21"
+                                                  alt="Велосипед">
+            </li>
+            <li class="transport-list__item"><img class="transport-list__icon transport-list__icon--enabled "
+                                                  src="http://placehold.it/20x21" width="20" height="21" alt="Пешком">
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a class="button users__button" href="catalog.html"><span>Показать всех</span></a>
     </div>
   </section>
   <section class="rate">
     <div class="rate__content">
-    <h2 class="rate__title title">Добавьте свой профиль!</h2>
-    <ol class="rate__list rate-list">
-      <li class="rate-list__item">
-        <p class="rate-list__desc">Базовое размещение</p>
-        <p class="rate-list__desc">Бесплатно</p>
-      </li>
-      <li class="rate-list__item">
-        <p class="rate-list__desc">Вывод на первых позициях</p>
-        <p class="rate-list__desc">99 руб./мес</p>
-      </li>
-      <li class="rate-list__item">
-        <p class="rate-list__desc">Кастомный цвет карточки</p>
-        <p class="rate-list__desc">59 руб./мес</p>
-      </li>
-    </ol>
-    <a class="rate__link--business" href="#">Показать тарифы для бизнеса</a>
+      <h2 class="rate__title title">Добавьте свой профиль!</h2>
+      <ol class="rate__list rate-list">
+        <li class="rate-list__item">
+          <p class="rate-list__desc">Базовое размещение</p>
+          <p class="rate-list__desc">Бесплатно</p>
+        </li>
+        <li class="rate-list__item">
+          <p class="rate-list__desc">Вывод на первых позициях</p>
+          <p class="rate-list__desc">99 руб./мес</p>
+        </li>
+        <li class="rate-list__item">
+          <p class="rate-list__desc">Кастомный цвет карточки</p>
+          <p class="rate-list__desc">59 руб./мес</p>
+        </li>
+      </ol>
+      <a class="rate__link--business" href="#">Показать тарифы для бизнеса</a>
     </div>
   </section>
   <section class="registration">
-  <div class="registration__content">
-    <h2 class="registration__title title">Заинтересовались?</h2>
-    <p class="registration__text">Зарегистрируйтесь, <br> это быстро и бесплатно! <br> Уже зарегистрированы? Тогда скорее <a class="registration__link" href="">авторизуйтесь</a>.</p>
-    <form class="registration__form" action="https://echo.htmlacademy.ru" method="post">
-      <input class="registration__input" type="text" placeholder="E-mail" id="e-mail" name="e-mail">
-      <button class="button registration__button" type="submit"><span class="registration__button--pos">Регистрация<span></button>
-    </form>
-    <p  class="registration__text registration__text--last">Остались вопросы? <br>  <span class="registration__text--tablet">Мы с радостью на них ответим!</span><span class="registration__text--desktop">Свяжитесь с нами удобным для вас способом:</span></p>
-    <ul class="registration__list user-nav">
-      <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800 555-86-28</a></li>
-      <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация">mail@htmlacademy.ru</a></li>
-    </ul>
-  </div>
+    <div class="registration__content">
+      <h2 class="registration__title title">Заинтересовались?</h2>
+      <p class="registration__text">Зарегистрируйтесь, <br> это быстро и бесплатно! <br> Уже зарегистрированы? Тогда
+        скорее <a class="registration__link" href="">авторизуйтесь</a>.</p>
+      <form class="registration__form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="registration__input" type="text" placeholder="E-mail" id="e-mail" name="e-mail">
+        <button class="button registration__button" type="submit"><span
+          class="registration__button--pos">Регистрация</span></button>
+      </form>
+      <p class="registration__text registration__text--last">Остались вопросы? <br> <span
+        class="registration__text--tablet">Мы с радостью на них ответим!</span><span
+        class="registration__text--desktop">Свяжитесь с нами удобным для вас способом:</span></p>
+      <ul class="registration__list user-nav">
+        <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон"><span
+          class="user-nav__icon">
+              <svg width="18" height="18">
+                <use href="img/sprite.svg#phone"></use>
+              </svg></span><span class="user-nav__text"> 8 800 555-86-28 </span></a></li>
+        <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация"><span
+          class="user-nav__icon">
+          <svg width="18" height="18">
+                <use href="img/sprite.svg#mail"></use>
+          </svg>
+        </span><span class="user-nav__text">mail@htmlacademy.ru </span></a>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="address">
-  <h2 class="visually-hidden">Наш адрес</h2>
+    <h2 class="visually-hidden">Наш адрес</h2>
     <div class="address__content">
       <div class="address__wrapper">
-    <p class="address__text">ул. Большая Конюшенная, 19/8</p>
-      <a class="button address__button" href="form.html">Проложить маршрут</a>
+        <span class="address__location">
+        <svg width="14" height="22">
+          <use href="img/sprite.svg#contacts-location"></use>
+        </svg>
+        </span>
+        <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+        <a class="button address__button" href="form.html">
+          <svg class="address__icon" width="10" height="14">
+          <use  href="img/sprite.svg#arrow-right"></use>
+          </svg><span>Проложить маршрут</span></a>
       </div>
     </div>
   </section>
@@ -250,16 +340,31 @@
       <img src="img/logo-mobile-blue-footer.png" alt="Погнали?">
     </picture>
     <div class="page-footer__social social">
-    <ul class="social__list">
-      <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
-      <li class="social__item"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте"></a></li>
-      <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
-    </ul>
-  </div>
-  <div class="page-footer__copyright copyright">
-    <p class="copyright__text">Разработано</p>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
-  </div>
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
+          <svg width="11" height="21">
+          <use  href="img/sprite.svg#facebook" ></use>
+        </svg></a>
+        </li>
+        <li class="social__item"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте">
+          <svg width="23" height="12">
+          <use  href="img/sprite.svg#vk"></use>
+        </svg>
+        </a></li>
+        <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме">
+          <svg width="18" height="18">
+          <use  href="img/sprite.svg#instagram"></use>
+        </svg>
+        </a></li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <p class="copyright__text">Разработано</p>
+        <svg width="27" height="34">
+        <use  href="img/sprite.svg#htmlacademy"></use>
+      </svg></a>
+    </div>
   </div>
 </footer>
 

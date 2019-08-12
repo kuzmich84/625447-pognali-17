@@ -1,10 +1,39 @@
 .users-level {
   position: absolute;
-  top: 29px;
-  left: 28px;
+  top: 15px;
+  left: 16px;
   width: 60px;
   height: 60px;
   color: @font-white;
+}
+
+.users-level__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.circle-status-bar__circle {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.status__icon {
+  fill: #000000;
+  fill-opacity: 0.6;
+}
+
+.status__icon--firsova {
+  stroke-dasharray: 99, 100;
+}
+
+.status__icon--demin {
+  stroke-dasharray: 80, 100;
+}
+
+.users-level__value {
+  position: absolute;
+  top: 14px;
+  left: 13px;
 }
 
 .users-level__number {
@@ -12,6 +41,17 @@
   font-size: 24px;
   line-height: 24px;
   padding: 0 5px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 31px;
+    height: 1px;
+    bottom: 0;
+    left: 2px;
+  }
 }
 
 .users-level__desc {

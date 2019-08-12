@@ -37,6 +37,8 @@
   padding: 22px 137px 22px 24px;
   display: block;
   margin: 0;
+  position: relative;
+  border-radius: 10px;
 }
 
 
@@ -53,6 +55,18 @@
     background-repeat: no-repeat;
     background-position: 92% 23%;
     padding: 122px 40px 80px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 141px;
+      height: 141px;
+      background-color: #e2e5f2;
+      position: absolute;
+      top: 456px;
+      left: 40px;
+      border-radius: 20px;
+    }
   }
 
   .direction__title {
@@ -64,7 +78,7 @@
     line-height: 33px;
     padding-left: 35px;
     padding-right: 294px;
-    margin-bottom: 104px;
+    margin-bottom: 106px;
   }
 
   .direction__button {
@@ -75,6 +89,11 @@
     margin: 0 auto;
     border-radius: 20px;
   }
+
+  .direction__list {
+    margin-bottom: 44px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -92,12 +111,17 @@
     background-position: 95% 63%;
     padding: 215px 60px 72px;
     position: relative;
+
+    &::before {
+      top: 143px;
+      left: 60px;
+    }
   }
 
   .direction__button {
     position: absolute;
     width: 241px;
-    top: 580px;
+    top: 585px;
     right: 301px;
   }
 
