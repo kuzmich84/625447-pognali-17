@@ -1,0 +1,56 @@
+@media (min-width: @desktop-width) {
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    display: none;
+    background-color: #101d41;
+    .set-font-normal();
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 17px 21px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left: -50%;
+  }
+
+  .tooltiptext__plane {
+    margin-left: -60px;
+  }
+
+  .tooltiptext__bus {
+    margin-left: -65px;
+  }
+
+  .tooltiptext__bike {
+    margin-left: -45px;
+  }
+
+  .tooltiptext__run {
+    margin-left: -35px;
+  }
+
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #101d41 transparent;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    display: block;
+    opacity: 1;
+  }
+}

@@ -43,6 +43,7 @@
   font-size: 16px;
   line-height: 16px;
   padding-left: 25px;
+  position: relative;
 
   &:hover,
   &:focus {
@@ -82,6 +83,22 @@
     line-height: 20px;
     color: #132576;
     padding-left: 89px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      background-color: #e2e5f2;
+      background-image: url("../../img/business.svg");
+      background-repeat: no-repeat;
+      background-size: 17px 21px;
+      background-position: 50% 50%;
+      left: 0;
+      top: -26px;
+    }
+
   }
 }
 
@@ -111,5 +128,10 @@
 
   .rate__link--business {
     padding-left: 160px;
+  }
+
+  .rate__link--business::before {
+    left: 71px;
+    top: -24px;
   }
 }

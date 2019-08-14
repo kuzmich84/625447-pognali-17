@@ -41,7 +41,20 @@
   line-height: 21px;
   color: @user-name-color;
   text-align: center;
-  margin: 5px 0 0 0;
+  margin: 0;
+}
+
+.users__link {
+  color: #1d2e5b;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .users__button {
@@ -163,5 +176,6 @@
 
   .users-cards__item {
     margin-right: 60px;
+    padding-bottom: 26px;
   }
 }

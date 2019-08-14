@@ -10,10 +10,7 @@
 }
 
 .business-rate .rate__content {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 44px;
-  padding-bottom: 0;
+  padding: 44px 0 0;
 }
 
 .business-rate .rate__title {
@@ -40,6 +37,10 @@
   background-color: #f3f4f8;
   padding: 20px 0;
   cursor: pointer;
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .business-rate .rate-list__item::before {
@@ -98,5 +99,25 @@
     padding: 42px 0;
     text-transform: none;
     border-radius: 0 0 30px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .business-rate {
+    width: 750px;
+    margin-left: -375px;
+  }
+
+  .business-rate .rate__content {
+    width: 632px;
+    padding: 53px 59px 0 59px;
+  }
+
+  .business-rate .rate__list {
+    padding: 0;
+  }
+
+  .business-rate .rate-list__item {
+    margin-right: 0;
   }
 }

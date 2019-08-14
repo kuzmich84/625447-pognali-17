@@ -6,6 +6,10 @@
   margin-top: -20px;
 }
 
+.address__wrapper {
+  position: relative;
+}
+
 .address__content {
   margin: 0 auto;
   width: 270px;
@@ -87,7 +91,7 @@
   .address__content {
     margin: 0 auto;
     width: 688px;
-    padding: 90px 25px 85px;
+    padding: 91px 25px 85px;
   }
 
   .address__text {
@@ -95,7 +99,7 @@
     line-height: 28px;
     margin-left: 35px;
     padding-left: 94px;
-    margin-bottom: 61px;
+    margin-bottom: 62px;
 
     &::before {
       width: 68px;
@@ -111,6 +115,23 @@
     padding: 27px 0 24px 33px;
     border-radius: 20px;
   }
+
+  .address__location {
+    width: 68px;
+    height: 68px;
+    top: -20px;
+    left: 35px;
+  }
+
+  .address__location svg {
+    width: 21px;
+    height: 32px;
+  }
+
+  .address__icon {
+    right: 33px;
+    top: 31px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -120,13 +141,12 @@
 
   .address__content {
     width: 1320px;
-    padding: 112px 60px 62px;
+    padding: 114px 60px 62px;
   }
 
   .address__wrapper {
     display: flex;
     margin-left: 215px;
-
   }
 
   .address__text {
@@ -144,5 +164,17 @@
   .address__button {
     margin-top: 1px;
     padding-right: 64px;
+  }
+
+  .address__location {
+    width: 90px;
+    height: 90px;
+    top: -3px;
+    left: 8px;
+  }
+
+  .address__location svg {
+    width: 28px;
+    height: 43px;
   }
 }
