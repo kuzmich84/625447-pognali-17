@@ -40,12 +40,33 @@
   font-size: 21px;
   line-height: 21px;
   color: @user-name-color;
-  text-align: center;
   margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+
+  &::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #f97676;
+    border-radius: 50%;
+    margin-left: -16px;
+    position: absolute;
+    display: block;
+  }
+}
+
+.users__name--online::before {
+  background-color: #81e31e;
 }
 
 .users__link {
   color: #1d2e5b;
+  position: relative;
+  display: flex;
+
 
   &:hover,
   &:focus {
@@ -131,6 +152,12 @@
 
   .users__text br {
     display: inline;
+  }
+
+  .users__name::before {
+    width: 7px;
+    height: 7px;
+    margin-left: -22px;
   }
 }
 

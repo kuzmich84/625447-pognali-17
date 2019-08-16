@@ -1,285 +1,590 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <!-- // Pixel Glass -->
   <link href="pixelPerfect/catalog.css" rel="stylesheet">
   <link rel="stylesheet" href="pixelPerfect/pixel-glass/styles.css">
   <script src="pixelPerfect/pixel-glass/script.js"></script>
   <!-- // Pixel Glass -->
-    <title>Погнали - каталог</title>
+  <title>Погнали - каталог</title>
 </head>
-<body class="catalog-bg">
+<body class="main catalog-bg">
+<svg style="display: none;">
+  <symbol id="status-bar" viewBox="0 0 33.847132 33.847132">
+    <style type="text/css">
+      .circle-status-bar__circle {
+        transform: rotate(-90deg);
+        transform-origin: center;
+      }
+    </style>
+    <circle r="16.923566" cx="50%" cy="50%"></circle>
+    <circle class="circle-status-bar__circle" r="15.923566" cx="50%" cy="50%" fill="none" stroke="#ff8d30"
+            stroke-width="2"></circle>
+  </symbol>
+</svg>
 <header class="catalog-header">
   <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="main-nav__wrapper">
-        <div class="main-nav__content">
-          <div class="main-nav__top">
-            <div class="main-nav__logo">
-              <picture class="page-header__logo-image">
-                <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
-                <img src="img/logo-mobile-white@1x.png" alt="Погнали?">
-              </picture>
-              <picture class="page-header__logo-image--popup">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
-                <img src="img/logo-mobile-blue@1x.png" alt="Погнали?">
-              </picture>
-              <button class="main-nav__toggle" type="button">Переключатель меню</button>
-            </div>
-            <ul class="site-nav__list site-list">
-              <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
-              <li class="site-list__item"><a class="site-list_link" href="form.html">НАПРАВЛЕНИЯ</a></li>
-              <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
-            </ul>
-            <ul class="main-nav__list user-nav user-nav--catalog">
-              <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800 555-86-28</a></li>
-              <li class="user-nav__item"><a class="user-nav__email" href="#" aria-label="Регистрация">mail@htmlacademy.ru</a></li>
-              <li class="user-nav__item user-nav__item--authorization"><a class="user-nav__button button__authorization" href="#">АВТОРИЗАЦИЯ</a></li>
-            </ul>
+    <div class="main-nav__wrapper">
+      <div class="main-nav__content">
+        <div class="main-nav__top">
+          <div class="main-nav__logo">
+            <a href="index.html">
+            <picture class="page-header__logo-image">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+              <img src="img/logo-mobile-white@1x.png" alt="Погнали?">
+            </picture>
+            </a>
+            <picture class="page-header__logo-image--popup">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
+              <img src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+            </picture>
+            <button class="main-nav__toggle" type="button">Переключатель меню</button>
           </div>
-          <div class="main-nav__social social">
-            <ul class="social__list">
-              <li class="social__item social__item--bg-no"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-              <li class="social__item social__item--bg-no"><a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a></li>
-              <li class="social__item social__item--bg-no"><a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a></li>
-            </ul>
-          </div>
+          <ul class="site-nav__list site-list">
+            <li class="site-list__item"><a class="site-list_link" href="#"><span data-hover="О СЕРВИСЕ">О СЕРВИСЕ</span></a></li>
+            <li class="site-list__item"><a class="site-list_link" href="form.html"><span data-hover="НАПРАВЛЕНИЯ">НАПРАВЛЕНИЯ</span></a></li>
+            <li class="site-list__item"><a class="site-list_link" href="catalog.html"><span data-hover="ПОПУТЧИКИ">ПОПУТЧИКИ</span></a></li>
+          </ul>
+          <ul class="main-nav__list user-nav user-nav--catalog">
+            <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон">8 800
+              555-86-28</a></li>
+            <li class="user-nav__item"><a class="user-nav__email" href="#"
+                                          aria-label="Регистрация">mail@htmlacademy.ru</a></li>
+            <li class="user-nav__item user-nav__item--authorization"><a class="user-nav__button button__authorization"
+                                                                        href="#">АВТОРИЗАЦИЯ</a></li>
+          </ul>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--facebook" href="#">Мы в
+              Фейсбуке</a></li>
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--vkontakte" href="#">Мы в
+              Контакте</a></li>
+            <li class="social__item social__item--bg-no"><a class="social__link social__link--instagram" href="#">Мы в
+              Инстаграме</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
   <div class="catalog-header__wrapper">
     <h2 class="catalog-header__title">Попутчики</h2>
-    <a class="catalog-header__link" href="index.html">НА ГЛАВНУЮ<svg class="catalog-header__icon" width="32" height="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                        viewBox="0 0 32 16.1" style="enable-background: new 0 0 32 16.1;" xml:space="preserve">
+    <a class="catalog-header__link" href="index.html">НА ГЛАВНУЮ
+      <svg class="catalog-header__icon" width="32" height="16" version="1.1" id="Layer_1"
+           xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+           viewBox="0 0 32 16.1" style="enable-background: new 0 0 32 16.1;" xml:space="preserve">
       <path class="st0" d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1
   H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z"></path>
-</svg></a>
+</svg>
+    </a>
   </div>
 </header>
 <main class="page-catalog">
-  <div class="page-catalog__content">
   <section class="country-filter">
-    <h2>ФИЛЬТРАЦИЯ ПО СТРАНАМ</h2>
+    <div class="country-filter__content">
+      <div class="country-filter--closed">
+        <div class="country-filter__top">
+      <svg class="country-filter__icon" width="15" height="10">
+        <use href="img/sprite.svg#filter"></use>
+      </svg>
+      <h2 class="country-filter__title">ФИЛЬТРАЦИЯ ПО СТРАНАМ</h2>
+          <ul class="country-filter__list country-list">
+            <li class="country-list__item"><a class="country-list__link country-list__link--active" href="#">ЕВРОПА</a></li>
+            <li class="country-list__item"><a class="country-list__link" href="#">АЗИЯ</a></li>
+            <li class="country-list__item"><a class="country-list__link" href="#">АМЕРИКА</a></li>
+            <li class="country-list__item"><a class="country-list__link" href="#">ОСТРОВА</a></li>
+          </ul>
+      <button class="country-filter__toggle" type="button">Переключатель меню</button>
+        </div>
+      </div>
+    </div>
+
 
   </section>
-  <section class="user-filter">
-    <form action="#">
-      <h2>Подберите идеального попутчика</h2>
-    </form>
-  </section>
-  <section class="catalog">
-    <ul class="catalog__list card-list">
-      <li class="card-list__item">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg">
-          <img class="card-list__avatar-image" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова">
-        </picture>
-        <div class="card-list__about-user">
-        <div class="card-list__avatar-like card-list__avatar-like--like"></div>
-        <h3 class="card-list__user-name ">Таня Фирсова</h3>
-        <p class="card-list__like-count">1,5 M</p>
-        <span class="card-list__presence card-list__presence--off-line"></span>
-        <ul class="card-tags__list tag-list">
-          <li class="tag-list__item">#ЗОЖ</li>
-          <li class="tag-list__item">#ПП</li>
-          <li class="tag-list__item">#Фитнес</li>
-          <li class="tag-list__item">#пляж</li>
-          <li class="tag-list__item">#авокадо</li>
-          <li class="tag-list__item">#смузи</li>
-        </ul>
-        </div>
-        <div class="card-list__future">
-        <p class="card-list__desc">хочет посетить:</p>
-        <ul class="card-list__list  flag-list">
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--sri-lanka" src="img/sri-lanka.png" width="35" height="24" alt="флаг">ШРИ ЛАНКА</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--seychelles" src="img/seychelles.png" width="35" height="24" alt="флаг">ТАИЛАНД</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--thailand" src="img/thailand.png" width="35" height="24" alt="флаг">СЕЙШЕЛЫ</li>
-        </ul>
-        </div>
-        <div class="card-list__wrapper">
-        <div class="card-list__transport">
-          <p class="card-list__desc card-list__desc--transport">транспорт:</p>
-          <ul class="users-transport__list card-transport">
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Велосипед"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled " src="http://placehold.it/32x32" width="32" height="32" alt="Пешком"></li>
-          </ul>
-        </div>
-        <div class="card-list__level">
-          <p class="card-list__desc card-list__desc--level">левел</p>
-          <div class="card-list__user-level">
-            <p class="card-list__user-number">99</p>
-            <p class="card-list__user-desc">level</p>
-          </div>
-        </div>
-        </div>
-        <a class="button card-list__link" href="#"><span>ПОЗВАТЬ!</span></a>
-      </li>
-      <li class="card-list__item">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
-          <img class="card-list__avatar-image" src="img/demin-mobile@1x.jpg" alt="Петя Демин">
-        </picture>
-        <div class="card-list__about-user">
-        <div class="card-list__avatar-like card-list__avatar-like--dislike"></div>
-        <h3 class="card-list__user-name ">Петя Демин</h3>
-        <p class="card-list__like-count">150</p>
-        <span class="card-list__presence card-list__presence--off-line"></span>
-        <ul class="card-tags__list tag-list">
-          <li class="tag-list__item">#бургер</li>
-          <li class="tag-list__item">#бар</li>
-          <li class="tag-list__item">#футбол</li>
-          <li class="tag-list__item">#концерт</li>
-          <li class="tag-list__item">#крафт</li>
-        </ul>
-        </div>
-        <div class="card-list__future">
-          <p class="card-list__desc">хочет посетить:</p>
-          <ul class="card-list__list  flag-list">
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image--belgum" src="img/belgium.png" width="35" height="24" alt="флаг">БЕЛЬГИЯ</li>
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image--czech" src="img/czech.png" width="35" height="24" alt="флаг">ЧЕХИЯ</li>
-          </ul>
-        </div>
-        <div class="card-list__wrapper">
-          <div class="card-list__transport">
-            <p class="card-list__desc card-list__desc--transport">транспорт:</p>
-            <ul class="users-transport__list card-transport">
-              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
-              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
-              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Велосипед"></li>
-              <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled " src="http://placehold.it/32x32" width="32" height="32" alt="Пешком"></li>
+  <div class="page-catalog__content">
+
+    <section class="user-filter">
+      <form action="#">
+        <h2>Подберите идеального попутчика</h2>
+      </form>
+    </section>
+    <section class="catalog">
+      <ul class="catalog__list card-list">
+        <li class="card-list__item">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg">
+            <img class="card-list__avatar-image" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова">
+          </picture>
+          <div class="card-list__about-user">
+            <div class="card-list__avatar-like card-list__avatar-like--like">
+              <svg class="avatar-like__icon avatar-like__icon--like" width="13" height="11">
+                <use href="img/sprite.svg#heart-active"></use>
+              </svg>
+              <svg class="avatar-like__icon avatar-like__icon--notlike" width="13" height="11">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>
+            </div>
+            <h3 class="card-list__user-name"><a class="users__link" href="#">Таня <br> Фирсова</a><span class="card-list__presence card-list__presence--off-line"></span></h3>
+            <p class="card-list__like-count">1,5 M</p>
+            <ul class="card-tags__list tag-list">
+              <li class="tag-list__item">#ЗОЖ</li>
+              <li class="tag-list__item">#ПП</li>
+              <li class="tag-list__item">#Фитнес</li>
+              <li class="tag-list__item">#пляж</li>
+              <li class="tag-list__item">#авокадо</li>
+              <li class="tag-list__item">#смузи</li>
             </ul>
           </div>
-          <div class="card-list__level">
-            <p class="card-list__desc card-list__desc--level">левел</p>
-            <div class="card-list__user-level">
-              <p class="card-list__user-number">80</p>
-              <p class="card-list__user-desc">level</p>
+          <div class="card-list__future">
+            <p class="card-list__desc">хочет посетить:</p>
+            <ul class="card-list__list  flag-list">
+              <li class="flag-list__item">
+                <div class="flag-list__image flag-list__image--sri-lanka">
+                     <span tooltip="Шри-Ланка">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/sri-lanka.png">
+                  <img src="img/Sri-Lanka-50percent.png"
+                       alt="флаг">
+                </picture>
+                     </span>
+                     </div>
+                <span>ШРИ ЛАНКА</span>
+              </li>
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Тайланд">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/thailand.png">
+                  <img class="flag-list__image--seychelles" src="img/Thailand-50percent.png"
+                       alt="флаг">
+                </picture>
+                 </span>
+                </div>
+                <span>ТАЙЛАНД</span>
+              </li>
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Сейшелы">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/seychelles.png">
+                  <img class="flag-list__image--thailand" src="img/Seychelles-50percent.png"
+                       alt="флаг">
+                </picture>
+                 </span>
+                </div>
+                <span>СЕЙШЕЛЫ</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-list__wrapper">
+            <div class="card-list__transport">
+              <p class="card-list__desc card-list__desc--transport">транспорт:</p>
+              <ul class="users-transport__list transport-list card-transport">
+                <li class="transport-list__item card-transport__item">
+              <span tooltip="Авиаперелет">
+              <svg class="transport-list__icon transport-list__icon--avia transport-list__icon--enabled" width="14"
+                   height="16">
+              <use href="img/sprite.svg#plane"></use>
+              </svg>
+              </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+               <span tooltip="Автотранспорт">
+              <svg class="transport-list__icon transport-list__icon--auto " width="13" height="16">
+              <use href="img/sprite.svg#bus"></use>
+            </svg>
+               </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+                <span tooltip="Велосипед">
+              <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
+              <use href="img/sprite.svg#bike"></use>
+            </svg>
+                </span>
+                </li>
+                <li class="transport-list__item  card-transport__item">
+              <span tooltip="Пешком">
+              <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
+              <use href="img/sprite.svg#run"></use>
+              </svg>
+              </span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-list__level">
+              <p class="card-list__desc card-list__desc--level"><span>левел:</span></p>
+              <div class="users-level__icon">
+                <svg class="status__icon status__icon--firsova" width="45" height="45">
+                  <use xlink:href="#status-bar"></use>
+                </svg>
+                <div class="users-level__value">
+                  <span class="users-level__number">99</span>
+                  <span class="users-level__desc">level</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <a class="button card-list__link" href="#"><span><span>ПОЗВАТЬ!</span></span></a>
-      </li>
-      <li class="card-list__item">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg">
-          <img class="card-list__avatar-image" src="img/smolov-mobile@1x.jpg" alt="Марк Смолов">
-        </picture>
-        <div class="card-list__about-user">
-        <div class="card-list__avatar-like card-list__avatar-like--dislike"></div>
-      <h3 class="card-list__user-name ">Марк Смолов</h3>
-      <p class="card-list__like-count">1700</p>
-      <span class="card-list__presence card-list__presence--off-line"></span>
-      <ul class="card-tags__list tag-list">
-        <li class="tag-list__item">#рэп</li>
-        <li class="tag-list__item">#тату</li>
-        <li class="tag-list__item">#хайпбист</li>
-        <li class="tag-list__item">#кроссовки</li>
-        <li class="tag-list__item">#суприм</li>
+          <a class="button card-list__link" href="#"><span>ПОЗВАТЬ!</span></a>
+        </li>
+        <li class="card-list__item">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
+            <img class="card-list__avatar-image" src="img/demin-mobile@1x.jpg" alt="Петя Демин">
+          </picture>
+          <div class="card-list__about-user">
+            <div class="card-list__avatar-like card-list__avatar-like--dislike">
+              <svg class="avatar-like__icon avatar-like__icon--like" width="13" height="11">
+                <use href="img/sprite.svg#heart-active"></use>
+              </svg>
+              <svg class="avatar-like__icon avatar-like__icon--notlike" width="13" height="11">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>
+            </div>
+            <h3 class="card-list__user-name"><a class="users__link" href="#">Петя <br> Демин</a></h3>
+            <p class="card-list__like-count">150</p>
+            <span class="card-list__presence card-list__presence--off-line"></span>
+            <ul class="card-tags__list tag-list">
+              <li class="tag-list__item">#бургер</li>
+              <li class="tag-list__item">#бар</li>
+              <li class="tag-list__item">#футбол</li>
+              <li class="tag-list__item">#концерт</li>
+              <li class="tag-list__item">#крафт</li>
+            </ul>
+          </div>
+          <div class="card-list__future">
+            <p class="card-list__desc">хочет посетить:</p>
+            <ul class="card-list__list  flag-list">
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Бельгия">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/belgium.png">
+                  <img class="flag-list__image--belgum" src="img/Belgium-50percent.png" alt="флаг">
+                </picture>
+                 </span>
+                </div>
+                <span>БЕЛЬГИЯ</span>
+              </li>
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Чехия">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/czech.png">
+                  <img class="flag-list__image--czech" src="img/Czech-50percent.png" alt="флаг">
+                </picture>
+                   </span>
+                </div>
+                <span>ЧЕХИЯ</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-list__wrapper">
+            <div class="card-list__transport">
+              <p class="card-list__desc card-list__desc--transport">транспорт:</p>
+              <ul class="users-transport__list transport-list card-transport">
+                <li class="transport-list__item card-transport__item">
+              <span tooltip="Авиаперелет">
+              <svg class="transport-list__icon transport-list__icon--avia transport-list__icon--enabled" width="14"
+                   height="16">
+              <use href="img/sprite.svg#plane"></use>
+              </svg>
+              </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+               <span tooltip="Автотранспорт">
+              <svg class="transport-list__icon transport-list__icon--auto transport-list__icon--enabled" width="13" height="16">
+              <use href="img/sprite.svg#bus"></use>
+            </svg>
+               </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+                <span tooltip="Велосипед">
+              <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
+              <use href="img/sprite.svg#bike"></use>
+            </svg>
+                </span>
+                </li>
+                <li class="transport-list__item  card-transport__item">
+              <span tooltip="Пешком">
+              <svg class="transport-list__icon transport-list__icon--run transport-list__icon--enabled" width="15" height="17">
+              <use href="img/sprite.svg#run"></use>
+              </svg>
+              </span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-list__level">
+              <p class="card-list__desc card-list__desc--level"><span>левел:</span>:</p>
+              <div class="users-level__icon">
+                <svg class="status__icon status__icon--demin" width="45" height="45">
+                  <use xlink:href="#status-bar"></use>
+                </svg>
+                <div class="users-level__value">
+                  <span class="users-level__number">80</span>
+                  <span class="users-level__desc">level</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="button card-list__link" href="#"><span><span>ПОЗВАТЬ!</span></span></a>
+        </li>
+        <li class="card-list__item">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg">
+            <img class="card-list__avatar-image" src="img/smolov-mobile@1x.jpg" alt="Марк Смолов">
+          </picture>
+          <div class="card-list__about-user">
+            <div class="card-list__avatar-like card-list__avatar-like--dislike">
+              <svg class="avatar-like__icon avatar-like__icon--like" width="13" height="11">
+                <use href="img/sprite.svg#heart-active"></use>
+              </svg>
+              <svg class="avatar-like__icon avatar-like__icon--notlike" width="13" height="11">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>
+            </div>
+            <h3 class="card-list__user-name"><a class="users__link" href="#">Марк <br> Смолов</a></h3>
+            <p class="card-list__like-count">1700</p>
+            <span class="card-list__presence card-list__presence--off-line"></span>
+            <ul class="card-tags__list tag-list">
+              <li class="tag-list__item">#рэп</li>
+              <li class="tag-list__item">#тату</li>
+              <li class="tag-list__item">#хайпбист</li>
+              <li class="tag-list__item">#кроссовки</li>
+              <li class="tag-list__item">#суприм</li>
+            </ul>
+          </div>
+          <div class="card-list__future">
+            <p class="card-list__desc">хочет посетить:</p>
+            <ul class="card-list__list  flag-list">
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="США">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/united-states-of-america.png">
+                  <img class="flag-list__image--usa" src="img/United-States-of-America-50percent.png"
+                       alt="флаг">
+                </picture>
+                </span>
+                </div>
+                <span>США</span>
+              </li>
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Австралия">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/australia.png">
+                  <img class="flag-list__image--australia" src="img/Australia-50percent.png"
+                       alt="флаг">
+                </picture>
+                </span>
+                </div>
+                <span>АВСТРАЛИЯ </span>
+              </li>
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Доминикана">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/dominica.png">
+                  <img class="flag-list__image--dominican" src="img/Dominica-50percent.png" alt="флаг">
+                </picture>
+                  </span>
+                </div>
+               <span>ДОМИНИКАНА</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-list__wrapper">
+            <div class="card-list__transport ">
+              <p class="card-list__desc card-list__desc--transport">транспорт:</p>
+              <ul class="users-transport__list transport-list card-transport">
+                <li class="transport-list__item card-transport__item">
+              <span tooltip="Авиаперелет">
+              <svg class="transport-list__icon transport-list__icon--avia transport-list__icon--enabled" width="14"
+                   height="16">
+              <use href="img/sprite.svg#plane"></use>
+              </svg>
+              </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+               <span tooltip="Автотранспорт">
+              <svg class="transport-list__icon transport-list__icon--auto" width="13" height="16">
+              <use href="img/sprite.svg#bus"></use>
+            </svg>
+               </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+                <span tooltip="Велосипед">
+              <svg class="transport-list__icon transport-list__icon--bike transport-list__icon--enabled" width="19" height="17">
+              <use href="img/sprite.svg#bike"></use>
+            </svg>
+                </span>
+                </li>
+                <li class="transport-list__item  card-transport__item">
+              <span tooltip="Пешком">
+              <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
+              <use href="img/sprite.svg#run"></use>
+              </svg>
+              </span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-list__level">
+              <p class="card-list__desc card-list__desc--level"><span>левел:</span>:</p>
+              <div class="users-level__icon">
+                <svg class="status__icon status__icon--smolov" width="45" height="45">
+                  <use xlink:href="#status-bar"></use>
+                </svg>
+                <div class="users-level__value">
+                  <span class="users-level__number">25</span>
+                  <span class="users-level__desc">level</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="button card-list__link" href="#"><span>ПОЗВАТЬ!</span></a>
+        </li>
+        <li class="card-list__item">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg">
+            <img class="card-list__avatar-image" src="img/rogovaya-mobile@1x.jpg" alt="Лариса Роговая">
+          </picture>
+          <div class="card-list__about-user">
+            <div class="card-list__avatar-like card-list__avatar-like--dislike">
+              <svg class="avatar-like__icon avatar-like__icon--like" width="13" height="11">
+                <use href="img/sprite.svg#heart-active"></use>
+              </svg>
+              <svg class="avatar-like__icon avatar-like__icon--notlike" width="13" height="11">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>
+            </div>
+            <h3 class="card-list__user-name users__name--online"><a class="users__link" href="#">Лариса <br>
+              Роговая</a></h3>
+            <p class="card-list__like-count">23</p>
+            <span class="card-list__presence card-list__presence--on-line"></span>
+            <ul class="card-tags__list tag-list">
+              <li class="tag-list__item">#образование</li>
+              <li class="tag-list__item">#карьера</li>
+              <li class="tag-list__item">#учеба</li>
+              <li class="tag-list__item">#линкедин</li>
+            </ul>
+          </div>
+          <div class="card-list__future">
+            <p class="card-list__desc">хочет посетить:</p>
+            <ul class="card-list__list  flag-list">
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Великобритания">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/united-kingdom.png">
+                  <img class="flag-list__image--gb" src="img/United-Kingdom-50percent.png" alt="флаг">
+                </picture>
+                    </span>
+                </div>
+                <span>ВЕЛИКОБРИТАНИЯ</span>
+              </li>
+              <li class="flag-list__item">
+                <div class="flag-list__image">
+                <span tooltip="Германия">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/germany.png">
+                  <img class="flag-list__image-germany" src="img/Germany-50percent.png" alt="флаг">
+                </picture>
+                  </span>
+                </div>
+                <span>ГЕРМАНИЯ</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-list__wrapper">
+            <div class="card-list__transport">
+              <p class="card-list__desc card-list__desc--transport">транспорт:</p>
+              <ul class="users-transport__list transport-list card-transport">
+                <li class="transport-list__item card-transport__item">
+              <span tooltip="Авиаперелет">
+              <svg class="transport-list__icon transport-list__icon--avia transport-list__icon--enabled" width="14"
+                   height="16">
+              <use href="img/sprite.svg#plane"></use>
+              </svg>
+              </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+               <span tooltip="Автотранспорт">
+              <svg class="transport-list__icon transport-list__icon--auto transport-list__icon--enabled" width="13" height="16">
+              <use href="img/sprite.svg#bus"></use>
+            </svg>
+               </span>
+                </li>
+                <li class="transport-list__item card-transport__item">
+                <span tooltip="Велосипед">
+              <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
+              <use href="img/sprite.svg#bike"></use>
+            </svg>
+                </span>
+                </li>
+                <li class="transport-list__item  card-transport__item">
+              <span tooltip="Пешком">
+              <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
+              <use href="img/sprite.svg#run"></use>
+              </svg>
+              </span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-list__level">
+              <p class="card-list__desc card-list__desc--level"><span>левел:</span>:</p>
+              <div class="users-level__icon">
+                <svg class="status__icon status__icon--rogovaya" width="45" height="45">
+                  <use xlink:href="#status-bar"></use>
+                </svg>
+                <div class="users-level__value">
+                  <span class="users-level__number">50</span>
+                  <span class="users-level__desc">level</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="button card-list__link" href="#"><span>ПОЗВАТЬ!</span></a>
+        </li>
       </ul>
-        </div>
-      <div class="card-list__future">
-        <p class="card-list__desc">хочет посетить:</p>
-        <ul class="card-list__list  flag-list">
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--usa" src="img/united-states-of-america.png" width="35" height="24" alt="флаг">США</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--australia" src="img/australia.png" width="35" height="24" alt="флаг">АВСТРАЛИЯ</li>
-          <li class="flag-list__item"><img class="flag-list__image flag-list__image--dominican" src="img/dominica.png" width="35" height="24" alt="флаг">ДОМИНИКАНА</li>
-        </ul>
-      </div>
-        <div class="card-list__wrapper">
-      <div class="card-list__transport ">
-        <p class="card-list__desc card-list__desc--transport">транспорт:</p>
-        <ul class="users-transport__list card-transport">
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Велосипед"></li>
-          <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" alt="Пешком"></li>
-        </ul>
-      </div>
-          <div class="card-list__level">
-            <p class="card-list__desc card-list__desc--level">левел</p>
-            <div class="card-list__user-level">
-              <p class="card-list__user-number">25</p>
-              <p class="card-list__user-desc">level</p>
-            </div>
-          </div>
-      </div>
-      <a class="button card-list__link" href="#"><span>ПОЗВАТЬ!</span></a>
-    </li>
-      <li class="card-list__item">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg">
-          <img class="card-list__avatar-image" src="img/rogovaya-mobile@1x.jpg" alt="Лариса Роговая">
-        </picture>
-        <div class="card-list__about-user">
-        <div class="card-list__avatar-like card-list__avatar-like--dislike"></div>
-        <h3 class="card-list__user-name">Лариса Роговая</h3>
-        <p class="card-list__like-count">23</p>
-        <span class="card-list__presence card-list__presence--on-line"></span>
-        <ul class="card-tags__list tag-list">
-          <li class="tag-list__item">#образование</li>
-          <li class="tag-list__item">#карьера</li>
-          <li class="tag-list__item">#учеба</li>
-          <li class="tag-list__item">#линкедин</li>
-        </ul>
-        </div>
-        <div class="card-list__future">
-          <p class="card-list__desc">хочет посетить:</p>
-          <ul class="card-list__list  flag-list">
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image--gb" src="img/united-kingdom.png" width="35" height="24" alt="флаг">ВЕЛИКОБРИТАНИЯ</li>
-            <li class="flag-list__item"><img class="flag-list__image flag-list__image-germany" src="img/germany.png" width="35" height="24" alt="флаг">ГЕРМАНИЯ</li>
-          </ul>
-        </div>
-        <div class="card-list__wrapper">
-        <div class="card-list__transport">
-          <p class="card-list__desc card-list__desc--transport">транспорт:</p>
-          <ul class="users-transport__list card-transport">
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Самолет"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--enabled" src="http://placehold.it/32x32" width="32" height="32" alt="Автобус"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" height="21" alt="Велосипед"></li>
-            <li class="card-transport__item"><img class="card-transport__icon card-transport__icon--disabled" src="http://placehold.it/32x32" width="32" height="32" height="21" alt="Пешком"></li>
-          </ul>
-        </div>
-          <div class="card-list__level">
-            <p class="card-list__desc card-list__desc--level">левел</p>
-            <div class="card-list__user-level">
-              <p class="card-list__user-number">50</p>
-              <p class="card-list__user-desc">level</p>
-            </div>
-          </div>
-        </div>
-        <a class="button card-list__link" href="#"><span>ПОЗВАТЬ!</span></a>
-      </li>
-    </ul>
-    <a class="page-catalog__link" href="#"><svg width="17" height="17"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <a class="page-catalog__link" href="#">
+        <svg width="17" height="17"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   viewBox="0 0 27 27" style="enable-background: new 0 0 27 27;" xml:space="preserve">
-<path d="M25.5,12H15V1.5C15,0.7,14.3,0,13.5,0S12,0.7,12,1.5V12H1.5C0.7,12,0,12.7,0,13.5S0.7,15,1.5,15H12v10.5 c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.5,12z"></path>
-</svg>Показать еще</a>
-    <div class="page-catalog__pagination">
-      <ul class="page-catalog__list catalog-pagination">
-        <li class="catalog-pagination__item"><a class="catalog-pagination__link catalog-pagination__link--current" href="">1</a></li>
-        <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">2</a></li>
-        <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">3</a></li>
-        <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">4</a></li>
-      </ul>
-      <button class="page-catalog__prev" type="button">Предыдущие попутчики <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20" viewBox="0 0 10 20">
-      <image id="Vector_Smart_Object_copy_4" data-name="Vector Smart Object copy 4" width="10" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAcElEQVQokY3OuRGAMAwF0eVICAgICaEOQnqCEiiK4hgzNuNDktnkK3iBmnnZ+dHV/kHAUYMvcocFP2TBBGmwQBIUUQ5VFEMTBVhF0o9q3TitNzAAm4bw0G0VB1jFMTRxDlUsQRFrsMAWTHBvKd8J8AB1uBSv1p7+ZwAAAABJRU5ErkJggg=="></image>
-    </svg>
-    </button>
-    <button class="page-catalog__next" type="button">Следующие попутчики <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20" viewBox="0 0 10 20">
-      <image id="Vector_Smart_Object_copy_3" data-name="Vector Smart Object copy 3" width="10" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAfElEQVQokY3Tuw2AIBSF4d9HY2FhaamzuBOOoDPpcIZEjXAfeBpC7hdCwqEap2UDVgpp+mE+gA44PVrfawA2MVVgEdfZ3sQ5NLEGVWxBgT2Y4FaMZMKfE3/d8cken7gE96cHHnyRBxNkQYE0qKIcmugLXRQTGx7b7X8F4AKntROjIqmb6AAAAABJRU5ErkJggg=="></image>
-    </svg>
-    </button>
-    </div>
-  </section>
+<path
+  d="M25.5,12H15V1.5C15,0.7,14.3,0,13.5,0S12,0.7,12,1.5V12H1.5C0.7,12,0,12.7,0,13.5S0.7,15,1.5,15H12v10.5 c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.5,12z"></path>
+</svg>
+        <span>Показать еще</span></a>
+      <div class="page-catalog__pagination">
+        <ul class="page-catalog__list catalog-pagination">
+          <li class="catalog-pagination__item"><a class="catalog-pagination__link catalog-pagination__link--current"
+                                                  href="">1</a></li>
+          <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">2</a></li>
+          <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">3</a></li>
+          <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="">4</a></li>
+        </ul>
+        <button class="page-catalog__prev" type="button">Предыдущие попутчики
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20"
+               viewBox="0 0 10 20">
+            <image id="Vector_Smart_Object_copy_4" data-name="Vector Smart Object copy 4" width="10" height="20"
+                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAcElEQVQokY3OuRGAMAwF0eVICAgICaEOQnqCEiiK4hgzNuNDktnkK3iBmnnZ+dHV/kHAUYMvcocFP2TBBGmwQBIUUQ5VFEMTBVhF0o9q3TitNzAAm4bw0G0VB1jFMTRxDlUsQRFrsMAWTHBvKd8J8AB1uBSv1p7+ZwAAAABJRU5ErkJggg=="></image>
+          </svg>
+        </button>
+        <button class="page-catalog__next" type="button">Следующие попутчики
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20"
+               viewBox="0 0 10 20">
+            <image id="Vector_Smart_Object_copy_3" data-name="Vector Smart Object copy 3" width="10" height="20"
+                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAfElEQVQokY3Tuw2AIBSF4d9HY2FhaamzuBOOoDPpcIZEjXAfeBpC7hdCwqEap2UDVgpp+mE+gA44PVrfawA2MVVgEdfZ3sQ5NLEGVWxBgT2Y4FaMZMKfE3/d8cken7gE96cHHnyRBxNkQYE0qKIcmugLXRQTGx7b7X8F4AKntROjIqmb6AAAAABJRU5ErkJggg=="></image>
+          </svg>
+        </button>
+      </div>
+    </section>
   </div>
 </main>
 <footer class="page-footer catalog-footer">
@@ -291,14 +596,29 @@
     </picture>
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
-        <li class="social__item"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте"></a></li>
-        <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
+          <svg width="11" height="21">
+            <use  href="img/sprite.svg#facebook" ></use>
+          </svg></a>
+        </li>
+        <li class="social__item"><a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Контакте">
+          <svg width="23" height="12">
+            <use  href="img/sprite.svg#vk"></use>
+          </svg>
+        </a></li>
+        <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме">
+          <svg width="18" height="18">
+            <use  href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru"></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__text">Разработано</p>
+        <svg width="27" height="34">
+          <use  href="img/sprite.svg#htmlacademy"></use>
+        </svg></a>
     </div>
   </div>
 </footer>

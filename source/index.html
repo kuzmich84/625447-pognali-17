@@ -42,9 +42,9 @@
             <button class="main-nav__toggle" type="button">Переключатель меню</button>
           </div>
           <ul class="site-nav__list site-list">
-            <li class="site-list__item"><a class="site-list_link" href="#">О СЕРВИСЕ</a></li>
-            <li class="site-list__item"><a class="site-list_link" href="form.html">НАПРАВЛЕНИЯ</a></li>
-            <li class="site-list__item"><a class="site-list_link" href="catalog.html">ПОПУТЧИКИ</a></li>
+            <li class="site-list__item"><a class="site-list_link" href="#"><span data-hover="О СЕРВИСЕ">О СЕРВИСЕ</span></a></li>
+            <li class="site-list__item"><a class="site-list_link" href="form.html"><span data-hover="НАПРАВЛЕНИЯ">НАПРАВЛЕНИЯ</span></a></li>
+            <li class="site-list__item"><a class="site-list_link" href="catalog.html"><span data-hover="ПОПУТЧИКИ">ПОПУТЧИКИ</span></a></li>
           </ul>
           <ul class="main-nav__list user-nav">
             <li class="user-nav__item"><a class="user-nav__phone" href="#" aria-label="Контактный телефон"><span class="user-nav__icon">
@@ -183,14 +183,13 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg">
-            <img class="users-cards__avatar" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова">
+            <img class="users-cards__avatar" src="img/firsova-tablet@1x.jpg" alt="Таня Фирсова">
           </picture>
           <ul class="users-flag__list  flag-list">
-            <li class="flag-list__item"><img class="flag-list__image--sri-lanka" src="img/sri-lanka.png" width="35" height="24" alt="флаг"></li>
-            <li class="flag-list__item"><img class="flag-list__image--thailand" src="img/thailand.png" width="35" height="24" alt="флаг"></li>
-            <li class="flag-list__item"><img class="flag-list__image--seychelles" src="img/seychelles.png" width="35" height="24" alt="флаг"></li>
+            <li class="flag-list__item"><span tooltip="Шри-Ланка"><img class="flag-list__image--sri-lanka" src="img/sri-lanka.png" width="35" height="24" alt="флаг"></span></li>
+            <li class="flag-list__item"><span tooltip="Таиланд"><img class="flag-list__image--thailand" src="img/thailand.png" width="35" height="24" alt="флаг"></span></li>
+            <li class="flag-list__item"><span tooltip="Сейшелы"><img class="flag-list__image--seychelles" src="img/seychelles.png" width="35" height="24" alt="флаг"></span></li>
           </ul>
-          <span class="users__presence users__presence--off-line"></span>
           <h3 class="users__name"><a class="users__link" href="#">Таня Фирсова</a></h3>
           <ul class="users-tags__list tag-list">
             <li class="tag-list__item">#ЗОЖ</li>
@@ -202,36 +201,32 @@
           </ul>
           <ul class="users-transport__list transport-list ">
             <li class="transport-list__item">
-              <div class="tooltip">
-              <span class="tooltiptext tooltiptext__plane">Авиаперелет</span>
+              <span tooltip="Авиаперелет">
               <svg class="transport-list__icon transport-list__icon--enabled" width="19" height="21">
               <use  href="img/sprite.svg#plane"></use>
-            </svg>
-              </div>
+              </svg>
+              </span>
             </li>
             <li class="transport-list__item">
-              <div class="tooltip">
-                <span class="tooltiptext tooltiptext__bus">Автотранспорт</span>
+               <span tooltip="Автотранспорт">
               <svg class="transport-list__icon " width="17" height="21">
               <use  href="img/sprite.svg#bus"></use>
             </svg>
-              </div>
+               </span>
             </li>
             <li class="transport-list__item">
-              <div class="tooltip">
-                <span class="tooltiptext tooltiptext__bike">Велосипед</span>
+                <span tooltip="Велосипед">
               <svg class="transport-list__icon" width="24" height="21">
               <use  href="img/sprite.svg#bike"></use>
             </svg>
-              </div>
+                </span>
             </li>
             <li class="transport-list__item">
-              <div class="tooltip">
-                <span class="tooltiptext tooltiptext__run">Пешком</span>
+              <span tooltip="Пешком">
               <svg class="transport-list__icon" width="20" height="21">
               <use  href="img/sprite.svg#run"></use>
-            </svg>
-              </div>
+              </svg>
+              </span>
             </li>
           </ul>
         </li>
@@ -250,14 +245,13 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
-            <img class="users-cards__avatar" src="img/demin-mobile@1x.jpg" alt="Петя Демин">
+            <img class="users-cards__avatar" src="img/demin-tablet@1x.jpg" alt="Петя Демин">
           </picture>
           <ul class="users-flag__list  flag-list">
-            <li class="flag-list__item"><img class="flag-list__image--belgium" src="img/belgium.png" width="35" height="24" alt="флаг"></li>
-            <li class="flag-list__item"><img class="flag-list__image--czech" src="img/czech.png" width="35" height="24" alt="флаг"></li>
+            <li class="flag-list__item"><span tooltip="Бельгия"><img class="flag-list__image--belgium" src="img/belgium.png" width="35" height="24" alt="флаг"></span></li>
+            <li class="flag-list__item"><span tooltip="Чехия"><img class="flag-list__image--czech" src="img/czech.png" width="35" height="24" alt="флаг"></span></li>
           </ul>
-          <span class="users__presence users__presence--on-line"></span>
-          <h3 class="users__name"><a class="users__link" href="#">Петя Демин</a></h3>
+          <h3 class="users__name users__name--online"><a class="users__link" href="#">Петя Демин</a></h3>
           <ul class="users-tags__list tag-list">
             <li class="tag-list__item">#бургер</li>
             <li class="tag-list__item">#бар</li>
@@ -267,36 +261,32 @@
           </ul>
           <ul class="users-transport__list transport-list ">
             <li class="transport-list__item">
-              <div class="tooltip">
-                <span class="tooltiptext tooltiptext__plane">Авиаперелет</span>
-                <svg class="transport-list__icon transport-list__icon--enabled" width="19" height="21">
-                  <use  href="img/sprite.svg#plane"></use>
-                </svg>
-              </div>
+              <span tooltip="Авиаперелет">
+              <svg class="transport-list__icon transport-list__icon--enabled" width="19" height="21">
+              <use  href="img/sprite.svg#plane"></use>
+              </svg>
+              </span>
             </li>
             <li class="transport-list__item">
-              <div class="tooltip">
-                <span class="tooltiptext tooltiptext__bus">Автотранспорт</span>
-                <svg class="transport-list__icon transport-list__icon--enabled " width="17" height="21">
-                  <use  href="img/sprite.svg#bus"></use>
-                </svg>
-              </div>
+               <span tooltip="Автотранспорт">
+              <svg class="transport-list__icon transport-list__icon--enabled" width="17" height="21">
+              <use  href="img/sprite.svg#bus"></use>
+            </svg>
+               </span>
             </li>
             <li class="transport-list__item">
-              <div class="tooltip">
-                <span class="tooltiptext tooltiptext__bike">Велосипед</span>
-                <svg class="transport-list__icon" width="24" height="21">
-                  <use  href="img/sprite.svg#bike"></use>
-                </svg>
-              </div>
+                <span tooltip="Велосипед">
+              <svg class="transport-list__icon" width="24" height="21">
+              <use  href="img/sprite.svg#bike"></use>
+            </svg>
+                </span>
             </li>
             <li class="transport-list__item">
-              <div class="tooltip">
-                <span class="tooltiptext tooltiptext__run ">Пешком</span>
-                <svg class="transport-list__icon transport-list__icon--enabled" width="20" height="21">
-                  <use  href="img/sprite.svg#run"></use>
-                </svg>
-              </div>
+              <span tooltip="Пешком">
+              <svg class="transport-list__icon transport-list__icon--enabled" width="20" height="21">
+              <use  href="img/sprite.svg#run"></use>
+              </svg>
+              </span>
             </li>
           </ul>
         </li>
