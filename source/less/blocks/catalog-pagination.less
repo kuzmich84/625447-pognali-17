@@ -16,9 +16,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
   }
 
   .catalog-pagination__link--current {
     background-color: #ffd74b;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
 }

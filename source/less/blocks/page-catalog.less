@@ -31,7 +31,6 @@
 
 .page-catalog__link svg {
   margin-right: 17px;
-
 }
 
 
@@ -78,17 +77,22 @@
     padding-top: 3px;
     margin-left: 247px;
     margin-bottom: 47px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-catalog__link svg {
     width: 27px;
     height: 27px;
-  }
-
-  .page-catalog__link svg {
     margin-right: 24px;
   }
-
 
   .page-catalog__list {
     display: block;
@@ -106,6 +110,16 @@
     font-size: 0;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-catalog__next {

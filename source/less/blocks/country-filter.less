@@ -18,11 +18,13 @@
   line-height: 22px;
   color: @font-blue;
   margin: 0 0 0 -15px;
+  order: 2;
 }
 
 .country-filter__icon {
   fill: #121936;
   margin-right: 0;
+  order: 1;
 }
 
 .country-filter__toggle {
@@ -33,10 +35,16 @@
   cursor: pointer;
   font-size: 0;
   margin-right: 4px;
+  order: 3;
+}
+
+.country-filter__list {
+  order: 4;
 }
 
 .country-filter__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }

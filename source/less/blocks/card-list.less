@@ -227,6 +227,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
 .avatar-like__icon--like {
@@ -243,10 +245,33 @@
 
 .card-list__avatar-like--like {
   background-color: #f9eaea;
+
+  &:hover,
+  &:focus {
+    background-color: #f9d8d8;
+  }
+
+  &:active .avatar-like__icon--like {
+    opacity: 0.3;
+  }
 }
 
 .card-list__avatar-like--dislike {
   background-color: #edeff6;
+
+  &:hover,
+  &:focus {
+    background-color: #e2e5f2;
+  }
+
+  &:hover .avatar-like__icon--notlike,
+  &:focus .avatar-like__icon--notlike {
+    opacity: 0.5;
+  }
+
+  &:active .avatar-like__icon--notlike {
+    opacity: 0.1;
+  }
 }
 
 .avatar-like__icon--notlike {
@@ -337,6 +362,12 @@
     padding-top: 35px;
     margin-bottom: 40px;
     width: 688px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+      transform: scale(1.05);
+    }
   }
 
 
@@ -475,7 +506,6 @@
   //.card-list__item:nth-child(2) .card-list__future {
   //  margin-bottom: 11px;
   //}
-
   .card-list__item:last-child {
     margin-bottom: 42px;
   }
@@ -490,6 +520,16 @@
     padding: 0;
     width: 950px;
     margin-bottom: 30px;
+
+    &:hover,
+    &:focus {
+      transform: none;
+    }
+  }
+
+  .card-list__item:hover .card-list__avatar-image,
+  .card-list__item:focus .card-list__avatar-image {
+    transform: scale(1.02);
   }
 
   .card-list__avatar-image {
