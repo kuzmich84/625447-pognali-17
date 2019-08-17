@@ -16,5 +16,3 @@ btnSub.addEventListener("mouseup", function (evt) {
   evt.preventDefault();
   subEmail.classList.remove("send-error");
 });
-
-
