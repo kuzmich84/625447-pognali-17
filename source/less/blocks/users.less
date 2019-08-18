@@ -1,20 +1,19 @@
 .users {
   min-width: 100%;
-  position: absolute;
-  top: 2332px;
   background-color: #192144;
   background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back.png"), url("../../img/rogovaya-back-mobile@1x.png");
-  background-position: 86% 7.5%, 0 7.5%, -4% 27.8%;
+  background-position: 86% 5%, 0 5%, -4% 26%;
   background-repeat: no-repeat;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 4;
+  margin-top: -20px;
 }
 
 .users__content {
   margin: 0 auto;
   width: 270px;
-  padding: 104px 25px 30px;
+  padding: 71px 25px 30px;
 }
 
 .users__title {
@@ -41,8 +40,42 @@
   font-size: 21px;
   line-height: 21px;
   color: @user-name-color;
-  text-align: center;
-  margin: 9px 0 0 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+
+  &::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #f97676;
+    border-radius: 50%;
+    margin-left: -16px;
+    position: absolute;
+    display: block;
+  }
+}
+
+.users__name--online::before {
+  background-color: #81e31e;
+}
+
+.users__link {
+  color: #1d2e5b;
+  position: relative;
+  display: flex;
+
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .users__button {
@@ -63,16 +96,16 @@
 
 @media (min-width: @tablet-width) {
   .users {
-    top: 2945px;
     border-radius: 0 0 60px 60px;
     background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back-direction-tablet.svg"), url("../../img/rogovaya-back-desktop@1x.png");
-    background-position: 6% 41.6%, 7% 13%, 84% 14%;
+    background-position: 6% 41%, 7% 12%, 84% 13%;
+    margin-top: -50px;
   }
 
   .users__content {
     width: 688px;
     margin: 0 auto;
-    padding: 168px 40px 88px;
+    padding: 154px 40px 88px;
   }
 
   .users__title {
@@ -85,7 +118,7 @@
     line-height: 33px;
     padding-left: 35px;
     padding-right: 215px;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
 
     &--bold {
       font-size: 21px;
@@ -98,7 +131,7 @@
     flex-direction: row;
     padding-left: 36px;
     padding-top: 19px;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .users__name {
@@ -120,19 +153,24 @@
   .users__text br {
     display: inline;
   }
+
+  .users__name::before {
+    width: 7px;
+    height: 7px;
+    margin-left: -22px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .users {
-    top: 2175px;
-    z-index: -3;
     background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/blue-back-direction-tablet.svg"), url("../../img/rogovaya-back-desktop@1x.png");
-    background-position: 42.1% 30.6%, 5% 23%, 16.7% 85%;
+    background-position: 42% 29%, 5% 21%, 16.7% 85%;
+    margin-top: -55px;
   }
 
   .users__content {
     width: 1320px;
-    padding: 168px 60px 52px;
+    padding: 149px 60px 52px;
     display: flex;
     position: relative;
   }
@@ -165,5 +203,6 @@
 
   .users-cards__item {
     margin-right: 60px;
+    padding-bottom: 26px;
   }
 }

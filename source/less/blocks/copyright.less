@@ -1,14 +1,24 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
-  margin: 0;
   .set-font-normal();
   font-size: 16px;
   line-height: 22px;
   color: @font-grey;
+  margin: -3px 0 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,6 +26,5 @@
     font-size: 20px;
     line-height: 24px;
     margin-right: 25px;
-    margin-top: 7px;
   }
 }

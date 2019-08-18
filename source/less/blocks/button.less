@@ -5,4 +5,31 @@
   line-height: 18px;
   background-color: @button-color;
   border-radius: 5px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/triangle-arrow-right.svg");
+    width: 10px;
+    height: 14px;
+    right: 23px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+}
+
+.button:active span,
+.button:active::before {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .button::before {
+    right: 36px;
+    top: 34px;
+  }
 }

@@ -1,0 +1,180 @@
+.address {
+  min-width: 100%;
+  background-color: #ffd74b;
+  border-radius: 0 0 25px 25px;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+.address__wrapper {
+  position: relative;
+}
+
+.address__content {
+  margin: 0 auto;
+  width: 270px;
+  padding: 38px 25px 35px;
+}
+
+.address__text {
+  .set-font-bold();
+  font-size: 16px;
+  line-height: 22px;
+  color: @font-blue;
+  text-transform: uppercase;
+  padding: 0 30px 0 61px;
+  position: relative;
+  margin-bottom: 31px;
+}
+
+.address__location {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address__location svg {
+  fill: #ffd74b;
+}
+
+.address__button {
+  padding: 20px 0 18px 20px;
+  display: block;
+  margin: 0;
+  border: 3px solid #192144;
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #192144;
+    color: #ffffff;
+  }
+}
+
+.address__icon {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  right: 23px;
+}
+
+.address__button svg {
+  fill: #1d2e5b;
+}
+
+.address__button:hover svg,
+.address__button:focus svg {
+  fill: #ffffff;
+}
+
+.address__button:active svg {
+  opacity: 0.3;
+}
+
+
+.address__content .button::before {
+  content: none;
+}
+
+@media (min-width: @tablet-width) {
+  .address {
+    border-radius: 0 0 60px 60px;
+    margin-top: -50px;
+  }
+
+  .address__content {
+    margin: 0 auto;
+    width: 688px;
+    padding: 91px 25px 85px;
+  }
+
+  .address__text {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 35px;
+    padding-left: 94px;
+    margin-bottom: 62px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      top: -23px;
+    }
+  }
+
+  .address__button {
+    margin: 0 35px;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 27px 0 24px 33px;
+    border-radius: 20px;
+  }
+
+  .address__location {
+    width: 68px;
+    height: 68px;
+    top: -20px;
+    left: 35px;
+  }
+
+  .address__location svg {
+    width: 21px;
+    height: 32px;
+  }
+
+  .address__icon {
+    right: 33px;
+    top: 31px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    margin-top: -55px;
+  }
+
+  .address__content {
+    width: 1320px;
+    padding: 114px 60px 62px;
+  }
+
+  .address__wrapper {
+    display: flex;
+    margin-left: 215px;
+  }
+
+  .address__text {
+    margin-bottom: 0;
+    margin-right: 83px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -31px;
+      left: -27px;
+    }
+  }
+
+  .address__button {
+    margin-top: 1px;
+    padding-right: 64px;
+  }
+
+  .address__location {
+    width: 90px;
+    height: 90px;
+    top: -3px;
+    left: 8px;
+  }
+
+  .address__location svg {
+    width: 28px;
+    height: 43px;
+  }
+}

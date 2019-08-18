@@ -6,7 +6,7 @@
 .main-nav--opened .user-nav {
   display: flex;
   flex-direction: column;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .main-nav--opened .user-nav__item--authorization {
@@ -31,6 +31,15 @@
   border-radius: 25px;
   padding: 13px 38px 11px 39px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+}
+
+.user-nav__button:active span {
+  opacity: 0.3;
 }
 
 .main-nav--opened .user-nav__button {
@@ -43,7 +52,25 @@
   background-color: #ff8d30;
   border-radius: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #f26926;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../../img/topmenu-phone.svg");
+    width: 18px;
+    height: 18px;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed .user-nav__email {
@@ -52,30 +79,38 @@
   background-color: #ffbd30;
   border-radius: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #ff8d30;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../../img/topmenu-mail.svg");
+    width: 18px;
+    height: 14px;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
-.main-nav--opened .user-nav__phone {
-  position: relative;
-  padding-left: 61px;
+.user-nav__phone,
+.user-nav__email {
   .set-font-bold();
   font-size: 16px;
   line-height: 22px;
   color: #192144;
-
-  &::before {
-    content: "";
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    top: -16px;
-    left: 0;
-  }
+  text-transform: uppercase;
+  position: relative;
 }
 
+.main-nav--opened .user-nav__phone,
 .main-nav--opened .user-nav__email {
   position: relative;
   .set-font-bold();
@@ -83,20 +118,39 @@
   line-height: 22px;
   color: #192144;
   padding-left: 61px;
-  text-transform: uppercase;
+}
+
+.main-nav--closed .user-nav__icon {
+  display: none;
+}
+
+.main-nav--opened .user-nav__icon,
+.registration__list .user-nav__icon {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -16px;
+  left: 0;
+}
 
 
-  &::before {
-    content: "";
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    top: -16px;
-    left: 0;
-  }
+.main-nav--opened .user-nav__icon path {
+  fill: #ffd74b;
+}
+
+.user-nav__icon svg {
+  fill: #ffd74b;
+}
+
+.user-nav__phone::before {
+  width: 45px;
+  height: 45px;
 }
 
 .main-nav--closed .user-nav--catalog {
@@ -105,32 +159,22 @@
 
 
 @media (min-width: @tablet-width) {
-  .main-nav--opened .user-nav__phone {
+  .user-nav__phone,
+  .user-nav__email {
     font-size: 28px;
     line-height: 28px;
-    padding-left: 89px;
-
-    &::before {
-      content: "";
-      width: 68px;
-      height: 68px;
-      top: -24px;
-      left: 0;
-    }
   }
 
+  .main-nav--opened .user-nav__icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .main-nav--opened .user-nav__phone,
   .main-nav--opened .user-nav__email {
     font-size: 28px;
     line-height: 28px;
     padding-left: 89px;
-
-    &::before {
-      content: "";
-      width: 68px;
-      height: 68px;
-      top: -24px;
-      left: 0;
-    }
   }
 
   .main-nav--opened .user-nav__item:last-child {
@@ -175,6 +219,11 @@
     padding: 18px 30px 12px 28px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .user-nav__icon svg {
+    width: 27px;
+    height: 27px;
   }
 }
 

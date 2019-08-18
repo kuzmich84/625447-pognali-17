@@ -8,30 +8,15 @@
 }
 
 .countries__image {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   width: 270px;
   height: 110px;
-
-  &--thailand {
-    background-image: url("../../img/thailand-mobile@1x.jpg");
-    background-repeat: no-repeat;
-  }
-
-  &--france {
-    background-image: url("../../img/france-mobile@1x.jpg");
-    background-repeat: no-repeat;
-  }
-
-  &--czech {
-    background-image: url("../../img/czech-mobile@1x.jpg");
-    background-repeat: no-repeat;
-  }
 }
 
 .countries__wrapper {
   background-color: #ffffff;
   border-radius: 10px;
-  margin-top: -11px;
+  margin-top: -15px;
   display: flex;
   flex-wrap: wrap;
   padding: 24px 25px 18px 24px;
@@ -47,6 +32,19 @@
   opacity: 0.3;
   margin-left: auto;
   order: 2;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-image: url("../../img/user.svg");
+    color: #192144;
+    top: 8px;
+    left: -16px;
+    opacity: 0.4;
+  }
 }
 
 .countries__text {
@@ -95,6 +93,7 @@
   .countries__item {
     flex-direction: row-reverse;
     width: 652px;
+    margin-bottom: 6px;
   }
 
   .countries__wrapper {
@@ -103,27 +102,14 @@
     margin-top: 0;
     flex-direction: column;
     border-radius: 20px 0 0 20px;
+    margin-bottom: 4px;
+    align-items: flex-start;
   }
 
   .countries__image {
     width: 186px;
     height: 140px;
     border-radius: 0 20px 20px 0;
-
-    &--thailand {
-      background-image: url("../../img/thailand-desktop@1x.jpg");
-      background-repeat: no-repeat;
-    }
-
-    &--france {
-      background-image: url("../../img/france-desktop@1x.jpg");
-      background-repeat: no-repeat;
-    }
-
-    &--czech {
-      background-image: url("../../img/czech-desktop@1x.jpg");
-      background-repeat: no-repeat;
-    }
   }
 
   .countries__title {
@@ -150,10 +136,13 @@
     font-size: 20px;
     line-height: 30px;
     order: 3;
-  }
 
-  .direction__list {
-    margin-bottom: 48px;
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: 4px;
+      left: -28px;
+    }
   }
 }
 

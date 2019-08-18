@@ -6,8 +6,76 @@
 
 .transport-list__item {
   margin-right: 13px;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.transport-list__icon {
+  opacity: 0.15;
+  color: #ffffff;
+}
+
+.transport-list__icon:hover {
+  opacity: 0.3;
+}
+
+.transport-list__icon:active {
+  opacity: 0.1;
+}
+
+.transport-list__icon--enabled {
+  fill: #1d2e5b;
+  opacity: 1;
+}
+
+.transport-list__icon--enabled:hover {
+  fill: #101e44;
+  opacity: 1;
+}
+
+.transport-list__icon--enabled:active {
+  opacity: 0.3;
+}
+
+
+.card-transport__item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #edeff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .card-transport .card-transport__item {
+    background-color: transparent;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .transport-list__icon--avia {
+    width: 19px;
+    height: 21px;
+  }
+
+  .transport-list__icon--auto {
+    width: 17px;
+    height: 21px;
+  }
+
+  .transport-list__icon--bike {
+    width: 24px;
+    height: 21px;
+  }
+
+  .transport-list__icon--run {
+    width: 20px;
+    height: 21px;
   }
 }

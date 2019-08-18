@@ -1,13 +1,28 @@
 .catalog {
   padding-top: 30px;
+  margin-bottom: 61px;
 }
 
 .catalog-bg {
   background-color: #edeff6;
 }
 
+.main-nav--closed .user-nav__catalog {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .catalog {
-    margin-bottom: 64px;
+    margin-bottom: 130px;
+  }
+
+  .main-nav--closed .user-nav__catalog {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    margin-bottom: 145px;
   }
 }

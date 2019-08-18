@@ -1,0 +1,27 @@
+.country-list {
+  .reset-ul();
+  display: flex;
+  flex-direction: column;
+}
+
+.country-list__link {
+  .set-font-bold();
+  font-size: 16px;
+  line-height: 22px;
+  color: #192144;
+  opacity: 0.3;
+}
+
+.country-list__link--active {
+  opacity: 1;
+}
+
+.country-filter--closed .country-list {
+  display: none;
+}
+
+.country-filter--opened .country-list {
+  display: flex;
+  margin-top: 31px;
+  margin-left: 25px;
+}

@@ -5,13 +5,46 @@
 
 .card-list__item {
   background-color: #ffffff;
-  border-radius: 25px;
+  border-radius: 20px;
   padding-top: 15px;
-  padding-bottom: 20px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.card-list__item:last-child {
+  margin-bottom: -9px;
+}
+
+
+.card-list__user-name {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  line-height: 20px;
+  .set-font-bold();
+  color: @user-name-color;
+  padding-bottom: 6px;
+  margin: 0 0 0 105px;
+
+
+  &::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #f97676;
+    border-radius: 50%;
+    display: block;
+    margin-right: 22px;
+    margin-top: 7px;
+  }
+}
+
+.users__name--online::after {
+  background-color: #81e31e;
 }
 
 .card-list__avatar-image {
@@ -20,18 +53,6 @@
   margin-right: 16px;
   margin-left: 17px;
   position: absolute;
-}
-
-.card-list__user-name {
-  margin: 0;
-  text-align: left;
-  padding-right: 70px;
-  font-size: 20px;
-  line-height: 20px;
-  .set-font-bold();
-  color: @user-name-color;
-  padding-bottom: 6px;
-  margin-left: 104px;
 }
 
 .card-list__like-count {
@@ -47,17 +68,39 @@
   font-size: 15px;
   line-height: 18px;
   color: @font-grey;
-  margin-left: 27px;
-  margin-bottom: 24px;
-  margin-top: 15px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-left: 26px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1px;
+    background: #edeff6;
+    border: solid #ffffff;
+    border-width: 0 10px;
+  }
+
+  &::before {
+    margin-left: -100%;
+  }
+
+  &::after {
+    margin-right: -100%;
+  }
 }
 
 .card-list__desc--transport {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
 
 .card-list__transport .card-list__desc {
   margin-top: 0;
+  padding-left: 26px;
 }
 
 .card-list__user-number {
@@ -78,10 +121,14 @@
   display: block;
   padding: 5px 78px;
   border-radius: 20px;
-  margin: 0 20px;
   font-size: 17px;
   line-height: 30px;
   color: @font-darkblue;
+  margin: 0 20px 20px;
+}
+
+.card-list__item .button::before {
+  content: none;
 }
 
 .card-tags__list {
@@ -90,7 +137,7 @@
 
 .catalog__list .card-tags__list {
   justify-content: flex-start;
-  margin-left: -5px;
+  padding-left: 26px;
   margin-bottom: -3px;
   padding-right: 50px;
 }
@@ -98,34 +145,73 @@
 .card-list__list {
   flex-direction: column;
   margin-left: 25px;
-  margin-bottom: 11px;
 }
 
 .card-list__list .flag-list__item {
   margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.card-list__list .flag-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .card-list__wrapper {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 18px;
+  justify-content: flex-start;
+}
+
+.card-list__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-list__desc--level {
+  padding-left: 52px;
+}
+
+.card-list__desc--level span {
+  margin-left: 3px;
 }
 
 .card-list__level .card-list__desc {
-  margin: 0 27px 23px 0;
+  margin: 0 0 7px 0;
 }
 
-//.card-list__item:nth-child(2) .card-list__future {
-//  margin-bottom: 15px;
-//}
-//
-//.card-list__item:nth-child(3) .card-list__future {
-//  margin-bottom: 10px;
-//}
-//
-//.card-list__item:nth-child(4) .card-list__future {
-//  margin-bottom: 15px;
-//}
+.card-list__level .users-level__desc {
+  display: none;
+}
+
+.card-list__level .status__icon {
+  fill: none;
+}
+
+.card-list__level .users-level__value {
+  top: 13px;
+  left: 5px;
+}
+
+.card-list__level .users-level__icon {
+  margin-left: 46px;
+}
+
+.card-list__item:nth-child(2) .card-list__future {
+  margin-bottom: 8px;
+}
+
+
+.card-list__item:nth-child(3) .card-list__future {
+  margin-bottom: 3px;
+}
+
+
+.card-list__item:nth-child(4) .card-list__future {
+  margin-bottom: 7px;
+}
+
 //
 //.card-list__item:last-child {
 //  margin-bottom: -5px;
@@ -137,21 +223,107 @@
   height: 31px;
   border-radius: 50%;
   top: 55px;
-  left: 65px;
+  left: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.avatar-like__icon--like {
+  fill: #f02323;
+}
+
+.card-list__avatar-like--dislike .avatar-like__icon--like {
+  display: none;
+}
+
+.card-list__avatar-like--like .avatar-like__icon--notlike {
+  display: none;
 }
 
 .card-list__avatar-like--like {
   background-color: #f9eaea;
+
+  &:hover,
+  &:focus {
+    background-color: #f9d8d8;
+  }
+
+  &:active .avatar-like__icon--like {
+    opacity: 0.3;
+  }
 }
 
 .card-list__avatar-like--dislike {
   background-color: #edeff6;
+
+  &:hover,
+  &:focus {
+    background-color: #e2e5f2;
+  }
+
+  &:hover .avatar-like__icon--notlike,
+  &:focus .avatar-like__icon--notlike {
+    opacity: 0.5;
+  }
+
+  &:active .avatar-like__icon--notlike {
+    opacity: 0.1;
+  }
+}
+
+.avatar-like__icon--notlike {
+  fill: #192144;
+  opacity: 0.3;
+}
+
+.card-list__user-name .users__link::before {
+  margin-left: 137px;
+  width: 7px;
+  height: 7px;
+}
+
+.card-list__about-user {
+  margin-bottom: 1px;
 }
 
 @media (min-width: @tablet-width) {
+  .card-list__item:nth-child(2) .card-list__future {
+    margin-bottom: 11px;
+  }
+
+  .card-list__item:nth-child(3) .card-list__future {
+    margin-bottom: 11px;
+  }
+
+  .card-list__item:nth-child(4) .card-list__future {
+    margin-bottom: 11px;
+  }
+
   .card-list {
     margin-bottom: 10px;
   }
+
+  .card-list__level .status__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-list__level .users-level__desc {
+    display: block;
+    color: #444444;
+    opacity: 0.4;
+    margin-top: 1px;
+  }
+
+  .card-list__level .users-level__number::before {
+    background-color: #000000;
+    opacity: 0.1;
+    bottom: 1px;
+  }
+
 
   .card-list__user-name {
     font-size: 30px;
@@ -159,6 +331,19 @@
     margin-left: 10px;
     padding-right: 0;
     padding-bottom: 3px;
+    justify-content: flex-start;
+
+    &::after {
+      width: 7px;
+      height: 7px;
+      margin-right: 0;
+      margin-left: 23px;
+      margin-top: 12px;
+    }
+  }
+
+  .card-list__user-name br {
+    display: none;
   }
 
   .card-list__like-count {
@@ -175,10 +360,14 @@
     flex-wrap: wrap;
     position: relative;
     padding-top: 35px;
-    padding-left: 18px;
-    margin-bottom: 41px;
-    width: 670px;
-    padding-bottom: 16px;
+    margin-bottom: 40px;
+    width: 688px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+      transform: scale(1.05);
+    }
   }
 
 
@@ -187,11 +376,13 @@
     width: 190px;
     height: 190px;
     border-radius: 20px;
+    margin-left: 35px;
   }
 
   .card-list__wrapper {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     margin-bottom: 0;
   }
 
@@ -204,14 +395,14 @@
     width: 260px;
     margin-left: 7px;
     margin-top: -2px;
-    margin-right: 104px;
+    margin-right: 94px;
   }
 
 
   .card-list__list {
     flex-direction: row;
-    margin-left: 23px;
-    margin-bottom: 0;
+    margin-left: 36px;
+    margin-bottom: 1px;
   }
 
   .card-list__link {
@@ -238,31 +429,28 @@
     line-height: 24px;
   }
 
-
   .catalog__list .card-tags__list {
-    margin-left: -17px;
+    margin-left: -13px;
     padding-right: 0;
   }
 
   .card-list__desc {
-    margin-top: 22px;
-    margin-left: 65px;
-    margin-bottom: 30px;
+    margin-top: 18px;
+    padding-left: 83px;
+    margin-bottom: 35px;
   }
 
   .card-list__avatar-like {
     width: 50px;
     height: 50px;
-    top: 174px;
+    top: 176px;
     left: 404px;
-  }
-
-  .card-list__list .flag-list__item {
-    margin-right: 34px;
   }
 
   .card-list__future {
     order: 100;
+    width: 100%;
+    margin-bottom: 11px;
   }
 
   .card-list__user-level {
@@ -287,6 +475,40 @@
   //.card-list__item:nth-child(2) .card-list__future {
   //  margin-bottom: 0;
   //}
+  .card-list__item .users__name::before {
+    width: 7px;
+    height: 7px;
+    margin-left: 210px;
+    top: 12px;
+  }
+
+  .avatar-like__icon {
+    width: 20px;
+    height: 17px;
+  }
+
+
+  .card-list__level .users-level__icon {
+    margin-left: 0;
+    margin-top: -1px;
+  }
+
+  .card-list__level .users-level__value {
+    left: 13px;
+  }
+
+  .card-list__list .flag-list__item {
+    align-items: flex-start;
+    margin-right: 30px;
+  }
+
+
+  //.card-list__item:nth-child(2) .card-list__future {
+  //  margin-bottom: 11px;
+  //}
+  .card-list__item:last-child {
+    margin-bottom: 42px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -298,20 +520,30 @@
     padding: 0;
     width: 950px;
     margin-bottom: 30px;
+
+    &:hover,
+    &:focus {
+      transform: none;
+    }
+  }
+
+  .card-list__item:hover .card-list__avatar-image,
+  .card-list__item:focus .card-list__avatar-image {
+    transform: scale(1.02);
   }
 
   .card-list__avatar-image {
     width: 285px;
     height: 285px;
     order: 1;
-    margin: 0 42px 0 0;
+    margin: 0 17px 0 0;
     border-radius: 20px 0 0 20px;
   }
 
   .card-list__about-user {
     order: 2;
     margin-top: 45px;
-    margin-right: 93px;
+    margin-right: 105px;
   }
 
   .card-list__desc {
@@ -321,6 +553,7 @@
   .card-list__future {
     order: 3;
     margin-top: 48px;
+    width: auto;
   }
 
 
@@ -328,18 +561,14 @@
     order: 4;
     flex-direction: row;
     margin-left: auto;
-    margin-top: -86px;
-    margin-right: 61px;
+    margin-top: -132px;
+    margin-right: 37px;
   }
 
   .card-list__list {
     flex-direction: column;
     margin: 0;
     padding: 0;
-  }
-
-  .card-list__list .flag-list__item {
-    margin-bottom: 6px;
   }
 
   .card-list__link {
@@ -355,5 +584,32 @@
   .card-list__like-count {
     top: 199px;
     left: 536px;
+  }
+
+  .card-list__item .users__name::before {
+    width: 7px;
+    height: 7px;
+    margin-left: -24px;
+    top: 12px;
+  }
+
+  .card-list__user-name::after {
+    order: -1;
+    margin-right: 19px;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .card-list__user-name {
+    margin-top: 2px;
+  }
+
+  .catalog__list .card-tags__list {
+    width: 230px;
+    margin-left: 12px;
+  }
+
+  .card-list__level .users-level__icon {
+    margin: 0 8px 10px 0;
   }
 }

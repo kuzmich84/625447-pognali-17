@@ -1,14 +1,12 @@
 .preview {
   background-color: #161c36;
-  position: absolute;
   z-index: 7;
   min-width: 100%;
-  top: 475px;
 }
 
 .preview__content {
   width: 270px;
-  padding: 50px 25px 89px;
+  padding: 47px 25px 89px;
   margin: 0 auto;
   position: relative;
 }
@@ -37,15 +35,13 @@
   width: 270px;
   z-index: 8;
   left: 50%;
-  top: 207px;
+  top: 204px;
   margin-left: -135px;
 }
 
 @media (min-width: @tablet-width) {
   .preview {
     background-color: #182044;
-    top: 0;
-    position: relative;
     background-image: url("../../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
     background-position: 72% 18%, 50% 82%;
     background-repeat: no-repeat;
@@ -61,7 +57,7 @@
   .preview__list {
     width: 688px;
     margin-left: -344px;
-    top: 482px;
+    top: 481px;
   }
 
   .preview__blockquote {
@@ -85,6 +81,7 @@
   .preview {
     background-color: transparent;
     background-image: none;
+    z-index: 9;
   }
 
   .preview__list {
@@ -103,7 +100,7 @@
 
   .preview__content {
     width: 1320px;
-    padding: 200px 60px 334px;
+    padding: 0 60px;
     position: relative;
   }
 

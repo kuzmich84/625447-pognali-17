@@ -7,7 +7,7 @@
   border-radius: 10px;
   margin-bottom: 10px;
   position: relative;
-  padding-bottom: 22px;
+  padding-bottom: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .users-cards__avatar {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   width: 270px;
   height: 270px;
 }
@@ -25,9 +25,16 @@
     margin-right: 47px;
     width: 285px;
     border-radius: 20px;
+    padding-bottom: 24px;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+      transform: scale(1.05);
     }
   }
 
