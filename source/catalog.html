@@ -108,9 +108,7 @@
   <div class="catalog-header__wrapper">
     <h2 class="catalog-header__title">Попутчики</h2>
     <a class="catalog-header__link" href="index.html">НА ГЛАВНУЮ
-      <svg class="catalog-header__icon" width="32" height="16" version="1.1" id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 32 16.1"
-          style="enable-background: new 0 0 32 16.1;" xml:space="preserve">
+      <svg class="catalog-header__icon" width="32" height="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 32 16.1" style="enable-background: new 0 0 32 16.1;" xml:space="preserve">
       <path class="st0" d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1
   H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z"></path>
 </svg>
@@ -140,9 +138,150 @@
   </section>
   <div class="page-catalog__content">
     <section class="user-filter">
-      <form action="#">
-        <h2>Подберите идеального попутчика</h2>
-      </form>
+      <div class="user-filter__content">
+        <form class="user-filter__form" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="user-filter__title">Подберите идеального попутчика</h2>
+          <fieldset class="user-filter__feildset user-filter__feildset--closed">
+            <legend class="user-filter__legend">
+              <span>ХОББИ</span>
+              <button class="user-filter__toggle" type="button"></button>
+            </legend>
+            <label class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="fitness" id="fitness" checked/>
+              <span class="user-filter__check-box"></span>
+              <span>Спортзал</span>
+            </label>
+            <label  class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="kalian" id="kalian"/>
+              <span class="user-filter__check-box"></span>
+            <span>Кальян</span>
+          </label>
+            <label class="user-filter__check">
+            <input class="user-filter__input" type="checkbox" name="sofa" id="sofa"/>
+              <span class="user-filter__check-box"></span>
+              <span>Диван</span>
+            </label>
+          </fieldset>
+          <fieldset class="user-filter__feildset user-filter__feildset--opened">
+            <legend class="user-filter__legend">
+              <span>МУЗЫКА</span>
+              <button class="user-filter__toggle" type="button"></button>
+            </legend>
+            <label class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="hardrock" id="hardrock" checked/>
+              <span class="user-filter__check-box"></span>
+              <span>Тяжелый рок</span>
+            </label>
+            <label  class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="rap" id="rap"/>
+              <span class="user-filter__check-box"></span>
+              <span>Русский рэп</span>
+            </label>
+            <label class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="eurodance" id="eurodance"/>
+              <span class="user-filter__check-box"></span>
+              <span>Евроденс</span>
+            </label>
+          </fieldset>
+          <fieldset class="user-filter__feildset user-filter__feildset--closed">
+          <legend class="user-filter__legend">
+            <span>ЕДА</span>
+            <button class="user-filter__toggle" type="button"></button>
+          </legend>
+          <label class="user-filter__check">
+            <input class="user-filter__input" type="checkbox" name="meat" id="meat" checked/>
+            <span class="user-filter__check-box"></span>
+            <span>Мясоед</span>
+          </label>
+          <label  class="user-filter__check">
+            <input class="user-filter__input" type="checkbox" name="pp" id="pp"/>
+            <span class="user-filter__check-box"></span>
+            <span>Сидит на ПП</span>
+          </label>
+          <label class="user-filter__check">
+            <input class="user-filter__input" type="checkbox" name="vegan" id="vegan"/>
+            <span class="user-filter__check-box"></span>
+            <span>Веган-сыроед</span>
+          </label>
+        </fieldset>
+          <fieldset class="user-filter__feildset user-filter__feildset--opened">
+            <legend class="user-filter__legend">
+              <span>ТРАНСПОРТ</span>
+              <button class="user-filter__toggle" type="button"></button>
+            </legend>
+            <div class="check-box-icon__wrapper">
+            <label class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="avia" id="avia" checked/>
+              <span class="user-filter__check-box--icon">
+                <span tooltip="Авиаперелет">
+                  <svg width="14" height="16">
+              <use href="img/sprite.svg#plane"></use>
+                  </svg>
+                </span>
+              </span>
+              <span class="visually-hidden">Авиаперелет</span>
+            </label>
+            <label  class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="auto" id="auto" checked/>
+              <span class="user-filter__check-box--icon">
+                <span tooltip="Автотранспорт">
+              <svg width="13" height="16">
+              <use href="img/sprite.svg#bus"></use>
+            </svg>
+                </span></span>
+              <span class="visually-hidden">Автотранспорт</span>
+            </label>
+            <label class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="bike" id="bike"/>
+              <span class="user-filter__check-box--icon">
+                <span tooltip="Велосипед">
+              <svg  width="19" height="17">
+              <use href="img/sprite.svg#bike"></use>
+            </svg>
+                </span>
+              </span>
+              <span class="visually-hidden">Велосипед</span>
+            </label>
+            <label class="user-filter__check">
+              <input class="user-filter__input" type="checkbox" name="run" id="run" checked/>
+              <span class="user-filter__check-box--icon">
+                <span tooltip="Пешком">
+              <svg width="15" height="17">
+              <use href="img/sprite.svg#run"></use>
+              </svg>
+                </span>
+              </span>
+              <span class="visually-hidden">Пешком</span>
+            </label>
+            </div>
+          </fieldset>
+          <fieldset class="user-filter__feildset user-filter__feildset--opened">
+            <legend class="user-filter__legend">
+              <span>ЛЕВЕЛ</span>
+              <button class="user-filter__toggle" type="button"></button>
+            </legend>
+            <div class="user-filter__level">
+            <label class="user-filter__min-level">
+              <input class="level__input--left" name="level" type="text" value="30">
+            </label>
+              <div class="level-line"><div class="line"></div></div>
+              <label class="user-filter__max-level">
+              <input class="level__input--right" name="level" type="text" value="100">
+            </label>
+            </div>
+            <div class="user-filter__slider-range">
+              <div class="user__filter__range_control">
+                <div class="user-filter__range">
+                  <div class="user-filter__active-range"></div>
+                  <div class="circle circle-left"></div>
+              <div class="circle circle-right"></div>
+                </div>
+            </div>
+            </div>
+          </fieldset>
+          <input class="button user-filter__button" type="submit" value="ПОКАЗАТЬ">
+        </form>
+      </div>
     </section>
     <section class="catalog">
       <ul class="catalog__list card-list">
@@ -181,8 +320,7 @@
                     <span tooltip="Шри-Ланка">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/sri-lanka.png">
-                  <img src="img/Sri-Lanka-50percent.png"
-                      alt="флаг">
+                  <img src="img/Sri-Lanka-50percent.png" alt="флаг">
                 </picture>
                     </span>
                 </div>
@@ -349,7 +487,7 @@
               </ul>
             </div>
             <div class="card-list__level">
-              <p class="card-list__desc card-list__desc--level"><span>левел:</span>:</p>
+              <p class="card-list__desc card-list__desc--level"><span>левел:</span></p>
               <div class="users-level__icon">
                 <svg class="status__icon status__icon--demin" width="45" height="45">
                   <use xlink:href="#status-bar"></use>
@@ -462,7 +600,7 @@
               </ul>
             </div>
             <div class="card-list__level">
-              <p class="card-list__desc card-list__desc--level"><span>левел:</span>:</p>
+              <p class="card-list__desc card-list__desc--level"><span>левел:</span></p>
               <div class="users-level__icon">
                 <svg class="status__icon status__icon--smolov" width="45" height="45">
                   <use xlink:href="#status-bar"></use>
@@ -564,7 +702,7 @@
               </ul>
             </div>
             <div class="card-list__level">
-              <p class="card-list__desc card-list__desc--level"><span>левел:</span>:</p>
+              <p class="card-list__desc card-list__desc--level"><span>левел:</span></p>
               <div class="users-level__icon">
                 <svg class="status__icon status__icon--rogovaya" width="45" height="45">
                   <use xlink:href="#status-bar"></use>
@@ -580,8 +718,7 @@
         </li>
       </ul>
       <a class="page-catalog__link" href="#">
-        <svg width="17" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 27 27" style="enable-background: new 0 0 27 27;" xml:space="preserve">
+        <svg width="17" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 27" style="enable-background: new 0 0 27 27;" xml:space="preserve">
 <path
   d="M25.5,12H15V1.5C15,0.7,14.3,0,13.5,0S12,0.7,12,1.5V12H1.5C0.7,12,0,12.7,0,13.5S0.7,15,1.5,15H12v10.5 c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.5,12z"></path>
 </svg>
