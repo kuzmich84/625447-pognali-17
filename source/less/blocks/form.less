@@ -1,0 +1,377 @@
+.form {
+  background-color: #edeff6;
+  border-radius: 0 0 25px 25px;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+.form-photo__content {
+  margin: 0 auto;
+  width: 270px;
+  padding: 43px 25px 0;
+  margin-bottom: 33px;
+}
+
+.form-photo__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.form-photo .status__icon {
+  fill: transparent;
+}
+
+.form-photo .users-level__number {
+  font-size: 38px;
+  line-height: 38px;
+
+  &::before {
+    content: "";
+    background-color: #cbced9;
+    width: 49px;
+    height: 2px;
+    bottom: 1px;
+    left: 2px;
+  }
+}
+
+.form-photo .users-level__desc {
+  font-size: 18px;
+  line-height: 22.17px;
+  color: #444444;
+  display: inline-block;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.form-photo__avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.form-photo .users-level__icon {
+  width: 100px;
+  height: 100px;
+}
+
+.form-photo .users-level__value {
+  top: 20px;
+  left: 25px;
+}
+
+.form-photo__button {
+  .set-font-bold();
+  font-size: 17px;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #dfe3f0;
+  border: none;
+  padding: 5px 73px;
+  margin-bottom: 33px;
+  color: #161c35;
+  width: 100%;
+}
+
+.form-photo__fieldset {
+  border: 0;
+  position: relative;
+}
+
+.form-photo__legend {
+  .set-font-bold();
+  font-size: 16px;
+  line-height: 18px;
+  color: #1d2e5b;
+  text-align: center;
+  padding: 0 17px;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  margin-left: -34px;
+  background-color: #edeff6;
+}
+
+.form-photo__legend--transport {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  margin-left: -57px;
+}
+
+.form-photo__textarea {
+  background-color: transparent;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  .set-font-normal();
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  padding: 21px 24px 22px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  margin: 0 0 20px;
+  position: relative;
+  height: 89px;
+
+  &:hover {
+    border-color: #aeb4cb;
+    outline: 1px #aeb4cb;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #161c35;
+    outline: 1px #161c35;
+  }
+}
+
+.form-photo__fieldset--transport {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    border-color: #aeb4cb;
+    outline: 1px #aeb4cb;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #161c35;
+    outline: 1px #161c35;
+  }
+}
+
+.form-photo__textarea::placeholder {
+  opacity: 0.6;
+}
+
+.form-photo .check-box-icon__list {
+  justify-content: center;
+  margin-top: 17px;
+}
+
+.form-photo__title {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .form {
+    border-radius: 0 0 60px 60px;
+    margin-bottom: 2px;
+  }
+
+  .form-photo__content {
+    width: 618px;
+    padding: 85px 40px 9px;
+    margin-bottom: 51px;
+    position: relative;
+  }
+
+  .form-photo__wrapper {
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  .form-photo__avatar-image {
+    width: 94px;
+    height: 94px;
+    border-radius: 10px;
+  }
+
+  .form-photo__fieldset {
+    transform: rotate(180deg);
+  }
+
+  .form-photo__legend {
+    transform: rotate(180deg);
+    .set-font-medium();
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1.6px;
+    color: #1d2e5b;
+    margin-left: -41px;
+  }
+
+  .form-photo__textarea {
+    transform: rotate(180deg);
+    font-size: 20px;
+    line-height: 24px;
+    padding: 32px 39px 12px 39px;
+    height: 94px;
+  }
+
+  .form-photo .check-box-icon__list {
+    transform: rotate(180deg);
+    padding: 25px 0 24px 0;
+    margin: 0;
+  }
+
+  .form-photo .check-box-icon__item {
+    margin-right: 7px;
+  }
+
+  .form-photo__button {
+    .set-font-medium();
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1.6px;
+    color: #1d2e5b;
+    border-radius: 10px;
+    padding: 21px 230px;
+    margin-bottom: 28px;
+  }
+
+  .form-photo__fieldset--transport {
+    width: 306px;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-left: -155px;
+  }
+
+  .form-photo .status__icon {
+    width: 94px;
+    height: 94px;
+  }
+
+  .form-photo .users-level__value {
+    top: 18px;
+    left: 21px;
+  }
+
+  .form-photo__legend--transport {
+    margin-left: -74px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-photo__content {
+    width: 1320px;
+    padding: 93px 60px 25px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .form-photo__wrapper {
+    align-items: center;
+    width: 330px;
+    position: absolute;
+    top: -170px;
+    right: 154px;
+    z-index: 100;
+  }
+
+  .form-photo__avatar-image {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
+    display: block;
+  }
+
+
+  .form-photo__title {
+    display: block;
+    margin: 0;
+    text-align: center;
+    .set-font-medium();
+    font-size: 20px;
+    line-height: 18px;
+    color: #1d2e5b;
+    letter-spacing: 1.8px;
+    background-color: #dfe3f0;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 0;
+  }
+
+  .form-photo .users-level__number,
+  .form-photo .users-level__desc {
+    color: #ffffff;
+  }
+
+  .form-photo .users-level__number::before {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  .form-photo__button {
+    position: absolute;
+    width: 190px;
+    border-radius: 0 0 10px 10px;
+    top: 18px;
+    right: 154px;
+    font-size: 0;
+    margin: 0;
+    padding: 17px 0 8px;
+
+    &:hover,
+    &:focus {
+      background-color: #d1d7e9;
+    }
+
+    &::before {
+      content: attr(data-photo);
+      .set-font-medium();
+      font-size: 20px;
+      line-height: 18px;
+      color: #1d2e5b;
+      letter-spacing: 1.8px;
+      text-align: center;
+      margin-left: 18px;
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .form-photo__fieldset-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 64px;
+    align-items: center;
+  }
+
+  .form-photo__fieldset {
+    width: 728px;
+    display: flex;
+  }
+
+  .form-photo__fieldset--transport {
+    position: static;
+    margin-left: 0;
+    width: 382px;
+  }
+
+  .form-photo__legend {
+    left: 91.5%;
+  }
+
+  .form-photo__legend--transport {
+    left: 50%;
+  }
+
+  .form-photo__fieldset--transport .form-photo__legend {
+    text-align: center;
+    padding-left: 18px;
+  }
+
+  .form-photo .check-box-icon__item {
+    margin-right: 0;
+  }
+
+  .form {
+    margin-bottom: 10px;
+  }
+
+  .form-photo__textarea {
+    margin-bottom: 0;
+  }
+}

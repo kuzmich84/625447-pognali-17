@@ -1,0 +1,260 @@
+.calendar {
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 21px;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #cbced9;
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #cbced9;
+    position: absolute;
+    top: 33px;
+    left: 0;
+  }
+}
+
+.calendar__title {
+  .set-font-bold();
+  font-size: 20px;
+  line-height: 20px;
+  color: #1d2e5b;
+}
+
+.calendar__button--prev,
+.calendar__button--next {
+  width: 9px;
+  height: 18px;
+  opacity: 0.3;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.calendar__button--prev {
+  background-image: url("../img/month-arrow-left.svg");
+  margin-left: -20px;
+}
+
+.calendar__button--next {
+  background-image: url("../img/month-arrow-right.svg");
+  margin-right: -25px;
+}
+
+.calendar__days td {
+  .set-font-normal();
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cbced9;
+  cursor: pointer;
+}
+
+.calendar__day-week {
+  .set-font-normal();
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 1;
+}
+
+.calendar__day-week .calendar__day-week--free {
+  color: #ff5c23;
+}
+
+.calendar__days .calendar__days--active {
+  background-color: rgba(29, 46, 91, 1);
+  color: #ffffff;
+  opacity: 1;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #ff5c23;
+    position: absolute;
+    z-index: 2;
+    margin-left: -1px;
+    margin-top: -1px;
+    height: 22px;
+    width: 27px;
+    padding-top: 4px;
+  }
+}
+
+.calendar__day-week td {
+  padding-bottom: 8px;
+  padding-top: 33px;
+}
+
+.calendar__days .calendar__days--enabled {
+  background-color: #edeff6;
+  opacity: 1;
+  color: #1d2e5b;
+  zoom: 1;
+}
+
+.calendar__days--first-day {
+  display: none;
+}
+
+.calendar__days--checkin,
+.calendar__days--checkout {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .calendar {
+    margin-bottom: 47px;
+  }
+
+  .calendar__title {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .calendar::before {
+    top: -21px;
+  }
+
+  .calendar::after {
+    top: 65px;
+  }
+
+  .calendar__day-week td {
+    font-size: 0;
+    padding-bottom: 3px;
+    padding-top: 53px;
+
+    &::before {
+      content: attr(data-weekday);
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .calendar__days td {
+    .set-font-medium();
+    letter-spacing: 1.9px;
+    font-size: 20px;
+    line-height: 18px;
+    width: 78px;
+    height: 66px;
+  }
+
+  .calendar__days {
+    margin-top: -20px;
+  }
+
+  .calendar__button--prev,
+  .calendar__button--next {
+    width: 18px;
+    height: 34px;
+  }
+
+  .calendar__days--first-day {
+    display: none;
+  }
+
+  .calendar__days--checkin,
+  .calendar__days--checkout {
+    display: none;
+  }
+
+  .calendar__days .calendar__days--active {
+    &:hover,
+    &:focus {
+      border: 4px solid #ff5c23;
+      position: absolute;
+      z-index: 2;
+      margin-left: -1px;
+      margin-top: -1px;
+      height: 38px;
+      width: 67px;
+      text-align: center;
+      padding-top: 22px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .calendar__day-week td {
+    padding-top: 27px;
+    padding-bottom: 14px;
+  }
+
+  .calendar__days td {
+    height: 58px;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 16px;
+    padding-top: 11px;
+    .set-font-normal();
+  }
+
+  .calendar__day-week td::before {
+    margin-right: 89px;
+  }
+
+  .calendar__button--prev {
+    margin-left: -123px;
+    margin-top: 6px;
+  }
+
+  .calendar__button--next {
+    margin-right: -123px;
+  }
+
+  .calendar__title-toggle {
+    margin-top: 5px;
+  }
+
+  .calendar__days--first-day {
+    display: inline;
+  }
+
+  .calendar__days--checkin,
+  .calendar__days--checkout {
+    margin: 9px 0 0;
+    display: block;
+  }
+
+  .calendar {
+    margin-bottom: 56px;
+  }
+
+  .calendar__days .calendar__days--active {
+    &:hover,
+    &:focus {
+      margin-left: -1px;
+      margin-top: -1px;
+      height: 55px;
+      width: 118px;
+      padding-top: 7px;
+      text-align: left;
+    }
+  }
+}
