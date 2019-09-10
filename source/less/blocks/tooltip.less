@@ -1,11 +1,11 @@
 @media (min-width: @tablet-width) {
-  [tooltip] {
+  [data-tooltip] {
     position: relative; /* opinion 1 */
   }
 
   /* Applies to all tooltips */
-  [tooltip]::before,
-  [tooltip]::after {
+  [data-tooltip]::before,
+  [data-tooltip]::after {
     text-transform: none; /* opinion 2 */
     font-size: 20px;
     line-height: 24px;
@@ -18,22 +18,22 @@
     transform: translate(-50%, 0.5em);
   }
 
-  [tooltip]::before {
+  [data-tooltip]::before {
     content: "";
     border: 8px solid transparent; /* opinion 4 */
     z-index: 1001; /* absurdity 1 */
-    top: 100%;
+    top: 111%;
     border-top-width: 0;
     border-bottom-color: #101d41;
     opacity: 0;
   }
 
-  .card-transport [tooltip]::before {
+  .card-transport [data-tooltip]::before {
     top: 110%;
   }
 
-  [tooltip]::after {
-    content: attr(tooltip);
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
     .set-font-normal();
     text-align: center;
     min-width: 3em;
@@ -57,8 +57,8 @@
   }
 
   /* Make the tooltips respond to hover */
-  [tooltip]:hover::before,
-  [tooltip]:hover::after {
+  [data-tooltip]:hover::before,
+  [data-tooltip]:hover::after {
     display: block;
     animation: tooltips-vert 300ms ease-out forwards;
   }

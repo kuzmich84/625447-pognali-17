@@ -1,6 +1,5 @@
 .catalog {
-  padding-top: 30px;
-  margin-bottom: 61px;
+  padding-top: 27px;
 }
 
 .catalog-bg {
@@ -11,18 +10,30 @@
   display: none;
 }
 
+
 @media (min-width: @tablet-width) {
   .catalog {
     margin-bottom: 130px;
+    padding-top: 40px;
   }
 
   .main-nav--closed .user-nav__catalog {
     display: flex;
   }
+
+  .catalog-bg .page-header--scroll {
+    margin-top: 47px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .catalog {
-    margin-bottom: 145px;
+    margin-bottom: 67px;
+    order: -1;
+    padding-top: 0;
+  }
+
+  .catalog-bg .page-header--scroll {
+    margin-top: 55px;
   }
 }

@@ -63,7 +63,7 @@
 
   &::before {
     content: "";
-    background-image: url("../../img/topmenu-phone.svg");
+    background-image: url("../img/topmenu-phone.svg");
     width: 18px;
     height: 18px;
   }
@@ -72,6 +72,7 @@
     opacity: 0.3;
   }
 }
+
 
 .main-nav--closed .user-nav__email {
   width: 40px;
@@ -90,7 +91,7 @@
 
   &::before {
     content: "";
-    background-image: url("../../img/topmenu-mail.svg");
+    background-image: url("../img/topmenu-mail.svg");
     width: 18px;
     height: 14px;
   }
@@ -98,6 +99,14 @@
   &:active::before {
     opacity: 0.3;
   }
+}
+
+.main-nav--closed .user-nav__icon {
+  display: none;
+}
+
+.user-nav__icon svg {
+  fill: #ffd74b;
 }
 
 .user-nav__phone,
@@ -120,9 +129,6 @@
   padding-left: 61px;
 }
 
-.main-nav--closed .user-nav__icon {
-  display: none;
-}
 
 .main-nav--opened .user-nav__icon,
 .registration__list .user-nav__icon {
@@ -135,17 +141,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -16px;
+  top: -12px;
   left: 0;
-}
-
-
-.main-nav--opened .user-nav__icon path {
-  fill: #ffd74b;
-}
-
-.user-nav__icon svg {
-  fill: #ffd74b;
 }
 
 .user-nav__phone::before {
@@ -157,6 +154,63 @@
   display: none;
 }
 
+@media (min-width: 0) and (max-width: 1439px) {
+  .main-nav--nojs .user-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .main-nav--nojs .user-nav__item--authorization {
+    order: -1;
+  }
+
+  .main-nav--nojs .user-nav__item:last-child {
+    margin-bottom: 73px;
+  }
+
+  .main-nav--nojs .user-nav__item {
+    margin-bottom: 23px;
+  }
+
+  .main-nav--nojs .user-nav__button {
+    padding: 17px 80px 15px 79px;
+  }
+
+  .main-nav--nojs .user-nav__phone::before,
+  .main-nav--nojs .user-nav__email::before {
+    content: none;
+  }
+
+  .main-nav--nojs .user-nav__phone,
+  .main-nav--nojs .user-nav__email {
+    position: relative;
+    .set-font-bold();
+    font-size: 16px;
+    line-height: 22px;
+    color: #192144;
+    padding-left: 40px;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-nav--nojs .user-nav__icon {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -12px;
+    left: 0;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .user-nav__phone,
@@ -181,7 +235,6 @@
     margin-bottom: 38px;
   }
 
-
   .main-nav--opened .user-nav__button {
     font-size: 20px;
     line-height: 30px;
@@ -199,7 +252,6 @@
     margin-bottom: 38px;
   }
 
-
   .main-nav--closed .user-nav {
     display: flex;
     position: static;
@@ -216,9 +268,19 @@
   }
 
   .main-nav--closed .user-nav__button {
-    padding: 18px 30px 12px 28px;
+    padding: 14px 30px 12px 28px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main-nav__logo--scroll .user-nav__button {
+    padding: 14px 30px 12px 28px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-nav--closed .user-nav__item--authorization {
+    margin-top: -5px;
   }
 
   .user-nav__icon svg {
@@ -227,6 +289,48 @@
   }
 }
 
+@media (min-width: @tablet-width) and (max-width: 1439px) {
+  .main-nav--nojs .user-nav__icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .main-nav--nojs .user-nav__phone,
+  .main-nav--nojs .user-nav__email {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 89px;
+  }
+
+  .main-nav--nojs .user-nav__item:last-child {
+    margin-bottom: 38px;
+  }
+
+  .main-nav--nojs .user-nav__button {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px 30px 8px 30px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+  }
+
+  .main-nav--nojs .user-nav {
+    margin-left: 59px;
+  }
+
+  .main-nav--nojs .user-nav__item {
+    margin-bottom: 38px;
+
+    &:first-child {
+      display: block;
+    }
+
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+}
 
 @media (min-width: @desktop-width) {
   .user-nav__item {
@@ -262,5 +366,9 @@
   .main-nav--closed .user-nav__email {
     width: 50px;
     height: 50px;
+  }
+
+  .main-nav--closed .user-nav__item--authorization {
+    margin-top: 0;
   }
 }

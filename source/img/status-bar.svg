@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 33.847132 33.847132" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 5 10;" xml:space="preserve">
-  <style type="text/css">
-    .circle-status-bar__circle {
-    transform: rotate(-90deg);
-    transform-origin: center;
-    }
-  </style>
-  <circle r="16.923566" cx="50%" cy="50%" fill="#000000" fill-opacity="0.6"/>
-  <circle class="circle-status-bar__circle" r="15.923566" cx="50%" cy="50%" fill="none" stroke="orange" stroke-width="2"
-          stroke-dasharray="75, 100"/>
-</svg>
+<svg viewBox="0 0 33.847 33.847" xmlns="http://www.w3.org/2000/svg"><circle r="16.924" cx="50%" cy="50%" fill-opacity=".6"/><circle r="15.924" cx="50%" cy="50%" fill="none" stroke="orange" stroke-width="2" stroke-dasharray="75, 100" style="transform-origin:center" transform="rotate(-90)"/></svg>

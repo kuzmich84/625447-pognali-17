@@ -1,7 +1,7 @@
 .registration {
   min-width: 100%;
   background-color: #192144;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   z-index: 2;
   margin-top: -20px;
 }
@@ -57,6 +57,7 @@
   .set-font-bold();
   font-size: 18px;
   line-height: 18px;
+  background-color: #ffffff;
 }
 
 .registration__input:active,
@@ -66,23 +67,26 @@
   border: 4px solid #ffffff;
 }
 
+.registration__input:valid {
+  background-color: #192144;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+}
 
 .registration__input::placeholder {
   .set-font-bold();
   font-size: 18px;
   line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
+  color: rgba(68, 68, 68, 0.3);
 }
 
 
 .registration__input:hover::placeholder {
-  opacity: 0.5;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .registration__input:focus::placeholder {
-  color: #ffffff;
-  opacity: 0.5;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .send-error {
@@ -164,13 +168,13 @@
   .registration__content {
     margin: 0 auto;
     width: 688px;
-    padding: 127px 40px 36px;
+    padding: 125px 40px 36px;
   }
 
   .registration__text {
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 62px;
+    margin-bottom: 65px;
   }
 
   .registration__text br:first-child {
@@ -182,7 +186,7 @@
   }
 
   .registration__form {
-    margin: 0 35px 59px;
+    margin: 0 35px 55px;
   }
 
   .registration__input::placeholder {
@@ -207,7 +211,7 @@
   .registration__list .user-nav__icon {
     width: 68px;
     height: 68px;
-    top: -24px;
+    top: -19px;
   }
 
   .registration__list {
@@ -242,11 +246,11 @@
 
   .registration__content {
     width: 1320px;
-    padding: 162px 60px 92px;
+    padding: 159px 60px 95px;
   }
 
   .registration__text {
-    margin-bottom: 56px;
+    margin-bottom: 59px;
   }
 
   .registration__text--last {
@@ -254,7 +258,7 @@
   }
 
   .registration__form {
-    margin: 0 72px 68px;
+    margin: 0 72px 66px;
   }
 
   .registration__button {
@@ -301,7 +305,7 @@
   .registration__list .user-nav__icon {
     width: 90px;
     height: 90px;
-    top: -32px;
+    top: -27px;
   }
 
   .user-nav__icon svg {

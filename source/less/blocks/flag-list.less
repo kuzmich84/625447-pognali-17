@@ -9,6 +9,10 @@
   margin-right: 14px;
 }
 
+.flag-list__image img {
+  height: 18px;
+}
+
 .flag-list__item {
   .set-font-medium();
   font-size: 15px;
@@ -20,6 +24,10 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.flag-list__item img {
+  height: 24px;
 }
 
 @media (min-width: @tablet-width) {
@@ -37,10 +45,19 @@
   .flag-list__image {
     margin-right: 10px;
   }
+
+  .flag-list__image img {
+    width: 35px;
+    height: 24px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .flag-list__image {
     margin-right: 19px;
+  }
+
+  .flag-list {
+    margin-top: -16px;
   }
 }

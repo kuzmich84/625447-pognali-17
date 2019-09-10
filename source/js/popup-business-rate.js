@@ -1,6 +1,6 @@
-let modalBusinessRate = document.querySelector('.business-rate__popup');
-let open = document.querySelector('.rate__link--business');
-let close =  document.querySelector('.business-rate__button');
+var modalBusinessRate = document.querySelector('.business-rate__popup');
+var open = document.querySelector('.rate__link--business');
+var close =  document.querySelector('.business-rate__button');
 
 
 open.addEventListener("click", function (evt) {

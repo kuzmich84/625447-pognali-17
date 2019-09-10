@@ -2,15 +2,15 @@
   background-color: #edeff6;
   z-index: 5;
   margin-top: -20px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   min-width: 100%;
 }
 
 .direction__content {
   margin: 0 auto;
   width: 270px;
-  padding: 93px 25px 30px 25px;
+  padding: 91px 25px 30px 25px;
 }
 
 
@@ -51,11 +51,17 @@
   .direction__content {
     width: 688px;
     margin: 0 auto;
-    background-image: url("../../img/flags-back@1x.png");
+    background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: 92% 23%;
     padding: 122px 40px 80px;
     position: relative;
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 289px 575px;
+    }
 
     &::before {
       content: "";
@@ -85,13 +91,23 @@
     font-size: 24px;
     line-height: 24px;
     max-width: 584px;
-    padding: 29px 0 28px 33px;
+    padding: 28px 0 29px 33px;
     margin: 0 auto;
     border-radius: 20px;
   }
 
   .direction__list {
     margin-bottom: 44px;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 70%, #edeff6);
+      bottom: 0;
+    }
   }
 }
 
@@ -105,11 +121,17 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-image: url("../../img/flags-back@1x.png");
+    background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: 95% 63%;
     padding: 215px 60px 72px;
     position: relative;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 289px 575px;
+    }
+
 
     &::before {
       top: 143px;
@@ -128,6 +150,10 @@
     width: 560px;
     margin-left: 70px;
     margin-right: 136px;
+
+    &::after {
+      bottom: 25px;
+    }
   }
 
   .direction__text {
